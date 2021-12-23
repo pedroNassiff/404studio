@@ -1,0 +1,30 @@
+#app {
+  font-family: $font_1;
+}
+@font-face {
+  font-family: Misto;
+  src: url("./Misto.ttf") format("truetype");
+}
+
+.title--distint {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Misto";
+  background-color: #0f0f0f;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

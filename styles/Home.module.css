@@ -2,6 +2,11 @@
   padding: 0 2rem;
 }
 
+.containerHome {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -43,6 +48,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: white;
 }
 
 .title,
@@ -113,4 +119,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.title {
+  font-family: Misto;
 }

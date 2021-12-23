@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./../node_modules/crumb-scss/src/helpers";
+
+// mixins
+
+@mixin title {
+  font-family: $font_1;
+  font-size: 30px;
+  line-height: 42px;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include breakpoint(sm) {
+    text-align: left;
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 48px;
+    line-height: 66px;
+  }
+}
+
+@mixin description {
+  font-family: $font_1;
+  font-size: 16px;
+  line-height: 28px;
+  color: #bbbbbe;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    font-size: 18px;
+    text-align: left;
+  }
+}
