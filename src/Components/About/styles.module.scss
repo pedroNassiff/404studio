@@ -1,0 +1,28 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 115px;
+  text-align: right;
+}
+
+.description {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: justify;
+  width: 500px;
+}
+
+.images {
+  width: 500px;
+}

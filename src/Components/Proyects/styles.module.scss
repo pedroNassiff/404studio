@@ -1,19 +1,37 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .title {
   font-weight: 400;
   font-size: 115px;
   color: white;
+  text-align: right;
 }
 
 .container__proyects {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-auto-flow: dense;
+  gap: 32px;
 }
 
 .image:nth-child(2) {
+  grid-column-start: span 2;
+}
+
+.image:nth-child(3) {
+  grid-column-start: span 2;
+}
+
+.image:nth-child(10) {
+  grid-column-start: span 2;
+}
+
+.image:nth-child(1) {
   grid-column-start: span 2;
 }
 

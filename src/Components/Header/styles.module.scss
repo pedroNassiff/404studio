@@ -1,10 +1,21 @@
 @import "./../../../styles/utils.scss";
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .title {
   font-weight: 400;
   font-size: 115px;
   color: white;
+  margin: 0;
 }
+
+.top {
+  margin-bottom: 150px;
+}
+
 .title--one {
   color: transparent;
   -webkit-text-stroke-width: 1px;

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import styles from "./HeaderStyle.module.css";
 const Coverflow = dynamic(() => import( 'react-coverflow'),{ssr:false})
 import dynamic from 'next/dynamic'
+import styles from "./styles.module.scss";
 import Button from "@mui/material/Button";
 
-/* import nutri1 from '../assets/secciones/NUTmirasoles/Fotos/mirasoles1.jpg';
- */
 const About = () => {
   const [stateCard, setStateCard] = useState(false);
   const [stateCard1, setStateCard1] = useState(false);
@@ -13,15 +11,9 @@ const About = () => {
   const [stateCard3, setStateCard3] = useState(false);
   const [stateCard4, setStateCard4] = useState(false);
   const [stateCard5, setStateCard5] = useState(false);
-
-  function onHover(e) {
-    setStateCard1(true);
-    e.target.style.background = "red";
-  }
   return (
     <Coverflow
-      width={960}
-      height={1200}
+      height={700}
       displayQuantityOfSide={2}
       navigation={false}
       enableHeading={true}
@@ -29,8 +21,8 @@ const About = () => {
       enableScroll={false}
       infiniteScroll={true}
       tabIndex="1"
-      className={styles.algo}
-    >
+      className={styles.container}
+      >
       <div
         onClick={() => setStateCard(true)}
         onKeyDown={() => setStateCard(false)}
@@ -39,11 +31,11 @@ const About = () => {
         alt="01 - 06"
         tabIndex="0"
         className={styles.cont}
-      >
+        >
         <img
           src="/imagenes/g_contenidos.png"                  
           className={styles.img}
-        />
+          />
           <div className={stateCard ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `  }>
             <p className={styles.texto}> Desarrollamos un análisis competitivo del entorno digital para
                 crear y ejecutar una estrategia de contenido. Creación y
@@ -62,11 +54,11 @@ const About = () => {
         tabIndex="1"
         alt="02 - 06"
         className={styles.cont}
-      >
+        >
         <img
           src="/imagenes/m_digital.png"
           className={styles.img}
-        />
+          />
           <div className={stateCard1 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
             <p className={styles.texto}>Planificación estratégica, ejecución y análisis posterior en los
                 distintos medios y canales digitales.Tenemos como objetivo
@@ -86,11 +78,11 @@ const About = () => {
         alt="03 - 06"
         className={styles.cont}
         tabIndex="0"
-      >
+        >
         <img
           src="/imagenes/id_marca.png"
           className={styles.img}
-        />
+          />
           <div className={stateCard2 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
             <p className={styles.texto}>Indagar en la esencia de cada cliente, aquello que lo hace único
                 y reconocible ante la competencia y como es percibido por sus
@@ -110,11 +102,11 @@ const About = () => {
         alt="04 - 06"
         tabIndex="0"
         className={styles.cont}
-      >
+        >
         <img
           src="/imagenes/e_comun.png"
           className={styles.img}
-        />
+          />
           <div className={stateCard3 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
             <p className={styles.texto}>Para lograr prueba de cambio comunicación efectiva es
                 imprescindible que la misma se desarrolle en base a una correcta
@@ -137,12 +129,12 @@ const About = () => {
         alt="05 - 06"
         tabIndex="0"
         className={styles.cont}
-      >
+        >
         <img
           src="/imagenes/desa.png"
           alt="05 - 06"
           className={styles.img}
-        />
+          />
           <div className={stateCard4 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
             <p className={styles.texto}> Planificación y creación de sitios web enfocados en la necesidad
                 estratégica, comerciales y comunicacionales de cada cliente.
