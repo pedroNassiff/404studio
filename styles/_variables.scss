@@ -32,13 +32,17 @@ $breakpoints: (
 
 // font_family
 // $font_1: cgMainText, sans-serif;
-$font_1: "Khula", serif;
-$font_2: Arial, serif;
+$font_1: Misto, serif;
+$font_2: Market Fresh, serif;
+$font_3: Market Fresh B, serif;
+$font_4: Chromate, serif;
 
 // fonts
 $fonts: (
   1: $font_1,
   2: $font_2,
+  3: $font_3,
+  4: $font_4,
 );
 
 // aspect-ratios

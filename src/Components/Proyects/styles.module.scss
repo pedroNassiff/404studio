@@ -1,11 +1,12 @@
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .title {
   font-weight: 400;
-  font-size: 115px;
+  font-size: 80px;
   color: white;
   text-align: right;
 }
@@ -16,27 +17,5 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: dense;
-  gap: 32px;
-}
-
-.image:nth-child(2) {
-  grid-column-start: span 2;
-}
-
-.image:nth-child(3) {
-  grid-column-start: span 2;
-}
-
-.image:nth-child(10) {
-  grid-column-start: span 2;
-}
-
-.image:nth-child(1) {
-  grid-column-start: span 2;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  gap: 42px;
 }

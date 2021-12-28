@@ -4,16 +4,12 @@ import dynamic from 'next/dynamic'
 import styles from "./styles.module.scss";
 import Button from "@mui/material/Button";
 
+// className={stateCard ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `  }
+
 const About = () => {
-  const [stateCard, setStateCard] = useState(false);
-  const [stateCard1, setStateCard1] = useState(false);
-  const [stateCard2, setStateCard2] = useState(false);
-  const [stateCard3, setStateCard3] = useState(false);
-  const [stateCard4, setStateCard4] = useState(false);
-  const [stateCard5, setStateCard5] = useState(false);
   return (
     <Coverflow
-      height={700}
+      height={900}
       displayQuantityOfSide={2}
       navigation={false}
       enableHeading={true}
@@ -24,10 +20,6 @@ const About = () => {
       className={styles.container}
       >
       <div
-        onClick={() => setStateCard(true)}
-        onKeyDown={() => setStateCard(false)}
-        onMouseOver={() => setStateCard(true)}
-        onMouseLeave={() => setStateCard(false)}
         alt="01 - 06"
         tabIndex="0"
         className={styles.cont}
@@ -36,7 +28,7 @@ const About = () => {
           src="/imagenes/g_contenidos.png"                  
           className={styles.img}
           />
-          <div className={stateCard ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `  }>
+          <div className={`${styles["text"]} ${styles["desplegar"]}`} >
             <p className={styles.texto}> Desarrollamos un análisis competitivo del entorno digital para
                 crear y ejecutar una estrategia de contenido. Creación y
                 difusión de los distintos formatos audiovisuales, enfocados en
@@ -46,10 +38,6 @@ const About = () => {
           </div>
       </div>
       <div
-        onClick={() => setStateCard1(true)}
-        onKeyDown={() => setStateCard1(false)}
-        onMouseOver={() => setStateCard1(true)}
-        onMouseLeave={() => setStateCard1(false)}
         role="menuitem"
         tabIndex="1"
         alt="02 - 06"
@@ -59,7 +47,7 @@ const About = () => {
           src="/imagenes/m_digital.png"
           className={styles.img}
           />
-          <div className={stateCard1 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
+          <div className={`${styles["text"]} ${styles["desplegar"]}`} >
             <p className={styles.texto}>Planificación estratégica, ejecución y análisis posterior en los
                 distintos medios y canales digitales.Tenemos como objetivo
                 construir, transformar la comercialización de los productos y/o
@@ -70,10 +58,6 @@ const About = () => {
           </div>
       </div>
       <div
-        onClick={() => setStateCard2(true)}
-        onKeyDown={() => setStateCard2(false)}
-        onMouseOver={() => setStateCard2(true)}
-        onMouseLeave={() => setStateCard2(false)}
         role="menuitem"
         alt="03 - 06"
         className={styles.cont}
@@ -83,7 +67,7 @@ const About = () => {
           src="/imagenes/id_marca.png"
           className={styles.img}
           />
-          <div className={stateCard2 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
+          <div className={`${styles["text"]} ${styles["desplegar"]}`} >
             <p className={styles.texto}>Indagar en la esencia de cada cliente, aquello que lo hace único
                 y reconocible ante la competencia y como es percibido por sus
                 publicos. Buscamos destacar los valores, objetivos, la misión y
@@ -94,10 +78,6 @@ const About = () => {
           </div>
       </div>
       <div
-        onClick={() => setStateCard3(true)}
-        onKeyDown={() => setStateCard3(false)}
-        onMouseOver={() => setStateCard3(true)}
-        onMouseLeave={() => setStateCard3(false)}
         role="menuitem"
         alt="04 - 06"
         tabIndex="0"
@@ -107,7 +87,7 @@ const About = () => {
           src="/imagenes/e_comun.png"
           className={styles.img}
           />
-          <div className={stateCard3 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
+          <div className={`${styles["text"]} ${styles["desplegar"]}`} >
             <p className={styles.texto}>Para lograr prueba de cambio comunicación efectiva es
                 imprescindible que la misma se desarrolle en base a una correcta
                 planificación. Esto permite optimizar los recursos, llegar al
@@ -121,10 +101,6 @@ const About = () => {
           </div>
       </div>
       <div
-        onClick={() => setStateCard4(true)}
-        onKeyDown={() => setStateCard4(false)}
-        onMouseOver={() => setStateCard4(true)}
-        onMouseLeave={() => setStateCard4(false)}
         role="menuitem"
         alt="05 - 06"
         tabIndex="0"
@@ -135,7 +111,7 @@ const About = () => {
           alt="05 - 06"
           className={styles.img}
           />
-          <div className={stateCard4 ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `}>
+          <div className={`${styles["text"]} ${styles["desplegar"]}`}>
             <p className={styles.texto}> Planificación y creación de sitios web enfocados en la necesidad
                 estratégica, comerciales y comunicacionales de cada cliente.
                 Buscamos brindar una buena experiencia de navegación para los

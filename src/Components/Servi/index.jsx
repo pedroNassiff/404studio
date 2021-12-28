@@ -4,12 +4,14 @@ import styles from "./styles.module.scss"
 
 export default function Index() {
   return (
-    <div className={styles.container}>
-      <div>
+    <div>
+      <div className={`${styles["container"]}`}>
         <h2 className={styles.title}>Our service.</h2>
       </div>
+      <div className={styles.contain}>
       {/* <Carousel/> */}
-      <Carousel2/>
+      <Carousel2 />
+      </div>
     </div>
   )
 }

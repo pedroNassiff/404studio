@@ -13,7 +13,7 @@ export default function Home() {
           <div className={home.frame_one}></div>
           <div className={home.frame_two}></div>
           <div className={home.frame_three}>
-            <img src="/gray.jpg" className={home.image} />
+            <video src="/header1.mp4" className={home.video} autoplay muted loop></video>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss"
 
 const index = (props) => {
-  console.log(props.left)
   return (
     <div className={styles.wrap}>
         <div className={props.left ? `${styles["text"]} ${styles["text--left"]}`:`${styles["text"]} ${styles["text--right"]}`}>
