@@ -1,5 +1,7 @@
+@import "./../../../styles/utils.scss";
+
 .container {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   margin-top: 150px;
@@ -9,13 +11,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  margin-left: 25px;
 }
 
 .right {
-  height: 500px;
+  position: relative;
+  height: 100%;
+  max-width: 500px;
+  width: 100%;
 }
 
-.wrap {
+.border {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  right: -10px;
+  border: 1px solid white;
 }
 
 .title {
@@ -23,17 +37,37 @@
   font-size: 80px;
   text-align: right;
   margin: 0;
+  width: 100%;
+}
+
+.subtitle {
+  font-family: $font_1;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 34px;
+  margin: 0;
+  padding: 14px 0;
+}
+
+.subtitle {
+  font-size: 72px;
+  background: linear-gradient(to left top, #0d3e5b, #752e50);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .description {
-  font-family: Roboto;
+  font-family: $font_2;
   font-size: 25px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 28px;
   text-align: justify;
-  width: 500px;
 }
 
-.images {
-  width: 500px;
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
 }

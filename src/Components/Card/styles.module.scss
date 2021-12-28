@@ -8,21 +8,24 @@
 .text {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .text--left {
   order: 2;
   align-items: flex-start;
+  margin-left: 18px;
 }
 
 .text--right {
   order: 1;
   align-items: flex-end;
+  margin-right: 18px;
 }
 
 .title_one {
   font-family: Market Fresh;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 900;
   margin: 0;
   margin-bottom: 8px;
@@ -31,7 +34,7 @@
 
 .title {
   font-family: Market Fresh;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 8px;
@@ -43,7 +46,6 @@
   font-weight: 100;
   margin: 0;
   width: 100%;
-  max-width: 900px;
   margin-bottom: 8px;
 }
 
