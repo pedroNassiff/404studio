@@ -1,17 +1,28 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  margin-top: 150px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  height: 500px;
 }
 
 .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .title {
+  text-align: right;
   font-size: 80px;
   text-align: right;
+  margin: 0;
 }
 
 .description {

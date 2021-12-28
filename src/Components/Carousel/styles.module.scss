@@ -5,26 +5,71 @@
   z-index: 10;
 }
 
+.border {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
 .text {
   display: flex;
   flex-direction: column;
-  font-family: Roboto;
-  font-size: 10px;
-  font-weight: 400;
   padding: 0 10px;
   position: absolute;
-  bottom: 0;
+  top: -100%;
+  height: 100%;
+  width: 100%;
   line-height: 16px;
-  transition: 500ms linear;
-  background-color: black;
+  transition: 400ms linear;
+  background-color: transparent;
+
+  &:hover {
+    backdrop-filter: blur(15px);
+    filter: drop-shadow(0 4px 4px 0);
+    background-color: rgba(black, $alpha: 0.5);
+    transition: 250ms linear;
+    width: 100%;
+  }
+
+  &:hover .texto {
+    color: white;
+    transition: 250ms linear;
+    width: 100%;
+  }
+
+  &:hover .btn.btn.btn {
+    color: white;
+    transition: 250ms linear;
+    width: 100%;
+  }
 }
 
 .desplegar {
   height: 100%;
-  bottom: -100%;
-  transition: 500ms linear;
+  top: 0;
+  transition: top 400ms linear;
+  z-index: 10;
+  width: 100%;
 }
 
 .texto {
-  text-align: center;
+  text-align: justify;
+  color: transparent;
+  height: 100%;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.btn.btn.btn {
+  color: transparent;
+  width: 100%;
+}
+
+.cont {
 }

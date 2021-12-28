@@ -1,5 +1,4 @@
 import Carousel from "../Carousel"
-import Carousel2 from "../Carousel2"
 import styles from "./styles.module.scss"
 
 export default function Index() {
@@ -9,8 +8,7 @@ export default function Index() {
         <h2 className={styles.title}>Our service.</h2>
       </div>
       <div className={styles.contain}>
-      {/* <Carousel/> */}
-      <Carousel2 />
+      <Carousel />
       </div>
     </div>
   )
