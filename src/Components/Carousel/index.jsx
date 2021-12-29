@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 const About = () => {
   return (
     <Coverflow
-      height={900}
+      height={2500}
       displayQuantityOfSide={2}
       navigation={true}
       enableHeading={true}

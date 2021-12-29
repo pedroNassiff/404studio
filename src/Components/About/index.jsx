@@ -6,7 +6,7 @@ const index = () => {
       <div>
         <div className={styles.right}>
           <div className={styles["border"]}></div>
-          <video src="/about_v.mov" className={styles.video} controls autoplay loop></video>
+          <video src="/about_v.mov" className={styles.video} autoPlay muted loop></video>
         </div>
       </div>
 
