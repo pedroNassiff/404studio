@@ -1,4 +1,5 @@
 import home from "./styles.module.scss";
+import Menu from "../../Shared/Menu"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Menu/>
     </div>
   );
 }

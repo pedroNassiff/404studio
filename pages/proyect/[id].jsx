@@ -1,6 +1,9 @@
+import Hero from "../../src/Components/Proyect/Hero"
+import Main from "../../src/Components/Proyect/Main"
+
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import {product} from "../../const"
+import {proyects} from "../../const"
 import styles from "../../styles/id.module.scss"
 
 export default function Proyect(){
@@ -10,8 +13,7 @@ const router = useRouter();
 useEffect(() => {  
   const {id} = router.query
   // const productFounded = productsPopulated.find((item) => item.id === parseInt(id));  
-  const select = product.find(item=>item.id === parseInt(id))
-  console.log(select)
+  const select = proyects.find(item=>item.id === parseInt(id))
   setstate(select)
   
 },[router.query])
@@ -20,9 +22,11 @@ useEffect(() => {
 return (
   state ?
     (
-      <div>
-        <p>{state.id}</p>
-        <img src={`/images/${state.images}`} className={styles.images}></img>
+      <div className={styles.container}>
+        <Hero props={state}/>
+        <Main props={state}/>
+        {/* <p>{state.id}</p>
+        <img src={`/images/${state.images}`} className={styles.images}></img> */}
       </div>
     )
     :

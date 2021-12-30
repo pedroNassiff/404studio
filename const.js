@@ -1,4 +1,4 @@
-const product = [
+const proyects = [
   {
     id: 1,
     left: true,
@@ -85,4 +85,4 @@ const product = [
   },
 ];
 
-export { product };
+export { proyects };

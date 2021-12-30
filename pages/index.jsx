@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Header from "../src/Components/Header";
-import Proyects from "../src/Components/Proyects";
-import Services from "../src/Components/Servi";
-import About from "../src/Components/About";
-import Blend from "../src/Components/Blend";
-import People from "../src/Components/People";
+import Header from "../src/Components/Home/Header";
+import ProyectList from "../src/Components/Home/ProyectList";
+import Services from "../src/Components/Home/Servi";
+import About from "../src/Components/Home/About";
+import Blend from "../src/Components/Home/Blend";
+import People from "../src/Components/Home/People";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <>
         <Header />
-        <Proyects />
+        <ProyectList />
         <Services />
         <About />
         <Blend />

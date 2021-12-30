@@ -1,0 +1,24 @@
+@import "./../../../../styles/utils";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: $font_1;
+  text-align: left;
+  font-size: 180px;
+  line-height: 200px;
+  max-width: 900px;
+}
+
+.id {
+  font-family: $font_2;
+  text-align: right;
+  font-size: 80px;
+  color: black;
+}
