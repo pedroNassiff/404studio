@@ -8,7 +8,7 @@
     transition: 300ms linear;
     backdrop-filter: blur(15px);
     filter: drop-shadow(0 4px 4px 0);
-    background-color: rgba(black, $alpha: 0.8);
+    background-color: rgba(black, $alpha: 0.6);
     color: white;
   }
 
@@ -74,13 +74,15 @@
 
 .text {
   margin: 40px;
-  font-family: $font_2;
+  font-family: $font_1;
   font-size: 25px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 36px;
+  max-width: 600px;
 }
 
 .arrow {
+  display: none;
   font-size: 50px;
   cursor: pointer;
 }

@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -13,7 +13,8 @@
 
 .container__proyects {
   height: 100%;
-  width: 100%;
+  width: 1400px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: dense;

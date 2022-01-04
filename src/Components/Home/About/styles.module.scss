@@ -1,16 +1,23 @@
 @import "./../../../../styles/utils";
 
 .container {
+  width: 1600px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.container_two {
   width: 1400px;
   margin: 0 auto;
   display: flex;
-  margin-top: 150px;
+  margin-top: 40px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
   margin-left: 25px;
 }
@@ -29,11 +36,12 @@
   z-index: 2;
   top: -10px;
   right: -10px;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .title {
-  text-align: right;
+  font-weight: 400;
+  line-height: 34px;
   font-size: 80px;
   text-align: right;
   margin: 0;
