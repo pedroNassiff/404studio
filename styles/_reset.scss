@@ -44,6 +44,106 @@ a {
   box-sizing: border-box;
 }
 
+// ---------------------- swiper3 ----------------
+
+// .swiper.swiper.swiper {
+//   margin: 0 auto !important;
+//   width: 100%;
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover !important;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-slide-active.swiper-slide-active.swiper-slide-active {
+//   height: 700px;
+//   object-fit: cover;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-slide.swiper-slide-visible.swiper-slide-active {
+//   margin-left: 60px !important;
+//   margin-right: 60px !important;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
+//   width: 400px !important;
+//   height: 500px !important;
+//   margin-top: 50px !important;
+//   margin-left: 120px !important;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-slide-next.swiper-slide-next.swiper-slide-next {
+//   width: 400px !important;
+//   height: 500px !important;
+//   margin-top: 50px !important;
+//   margin-right: 200px !important;
+//   transition: 300ms linear !important;
+// }
+
+// .swiper-3d,
+// .swiper-3d.swiper-css-mode .swiper-wrapper {
+//   perspective: none !important;
+// }
+
+// ------------------ Swiper --------------------------
+
+// .swiper.swiper.swiper {
+//   overflow: visible;
+// }
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 160px !important;
+  font-size: 40px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 80% !important;
+  // top: 70% !important;
+  width: 85px !important;
+  color: white !important;
+  z-index: 100 !important;
+}
+
+.swiper-button-prev.swiper-button-prev.swiper-button-prev {
+  left: 650px !important;
+  &::before {
+    content: "";
+    right: 0;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    border-radius: 200px;
+  }
+}
+
+.swiper-button-next.swiper-button-next.swiper-button-next {
+  right: 650px !important;
+  &::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    border-radius: 200px;
+  }
+}
+
 //------------------ Carousel --------------------------
 
 .coverflow__container__1P-xE.coverflow__container__1P-xE.coverflow__container__1P-xE {

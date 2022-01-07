@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 // className={stateCard ? ` ${styles.text} ${styles.desplegar} `:  `${styles.text} `  }
 
 const About = () => {
+
   return (
     <Coverflow
       height={2500}
@@ -45,7 +46,7 @@ const About = () => {
         className={styles.cont}
         >
         <img
-          src="/imagenes/m_digital.png"
+          src="/imagenes/m_digital.png" 
           className={styles.img}
           />
           <div className={styles.border}></div>

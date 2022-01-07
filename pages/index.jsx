@@ -5,7 +5,7 @@ import Services from "../src/Components/Home/Servi";
 import About from "../src/Components/Home/About";
 import Blend from "../src/Components/Home/Blend";
 import People from "../src/Components/Home/People";
-import Layout from "../src/Components/Layout/Layout"
+import Layout from "../src/Components/Layout/Layout";
 
 export default function Home() {
   return (
