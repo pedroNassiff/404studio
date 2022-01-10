@@ -12,8 +12,8 @@ export default function Index() {
       </div>
       <div className={styles.contain}>
       {/* <Carousel /> */}
-      <Carousel2/>
-      {/* <Carousel3/> */}
+      {/* <Carousel2/> */}
+      <Carousel3/>
       </div>
     </div>
   )

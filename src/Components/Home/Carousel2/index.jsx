@@ -49,9 +49,16 @@ export default function App() {
   return (
     <>
     
-  <Swiper onSwiper={setSwiperRef} slidesPerView={3} centeredSlides={true} spaceBetween={30} pagination={{
+  <Swiper 
+  onSwiper={setSwiperRef} 
+  slidesPerView={3} 
+  centeredSlides={true} 
+  spaceBetween={30} 
+  pagination={{
   "type": "fraction"
-}} navigation={true} className="mySwiper">
+}} 
+navigation={true} 
+className="mySwiper">
             <div className={styles.background__one }></div>
         <div className={styles.background__two }></div>  
           <SwiperSlide >
