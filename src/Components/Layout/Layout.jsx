@@ -1,3 +1,4 @@
+import Footer from "./../Shared/Footer"
 
 export default function Layout ({children}) {
   return (
@@ -11,6 +12,7 @@ export default function Layout ({children}) {
       </main>
 
       <footer>
+        <Footer/>
       </footer>
     </div>
   )

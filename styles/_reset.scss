@@ -54,14 +54,15 @@ a {
 }
 
 .swiper-slide.swiper-slide.swiper-slide {
-  margin-top: 50px;
-  height: 600px !important;
-  height: 100%;
+  margin-top: 30px;
+  //
+  height: 100% !important;
+  //
+  max-height: 550px !important;
+  //
   padding: 0 50px;
   background-color: transparent !important;
   opacity: 1 !important;
-  object-fit: cover;
-  object-position: center;
 }
 
 .swiper-3d .swiper-slide-shadow-left {
@@ -93,9 +94,16 @@ a {
   color: white !important;
   z-index: 100 !important;
 }
+
 .swiper-slide-active.swiper-slide-active.swiper-slide-active {
-  height: 700px !important;
+  height: 100% !important;
+  //
+  max-height: 600px !important;
+  //
   margin-top: 10px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
 }
 
 .swiper-3d,
@@ -130,60 +138,4 @@ a {
     border-radius: 200px;
     margin-right: 4px;
   }
-}
-
-//------------------ Carousel --------------------------
-
-.coverflow__container__1P-xE.coverflow__container__1P-xE.coverflow__container__1P-xE {
-  background-color: transparent;
-}
-
-.coverflow__figure__3bk_C.coverflow__figure__3bk_C.coverflow__figure__3bk_C {
-  z-index: 1000 !important;
-  transform: none;
-  margin-right: 45px;
-  margin-left: 45px;
-}
-
-.coverflow__figure__3bk_C {
-  -webkit-box-reflect: below 1px -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(
-          0,
-          0,
-          0,
-          0
-        )
-        20%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0)) !important;
-  box-shadow: none !important;
-}
-
-.coverflow__coverflow__53z9A.coverflow__coverflow__53z9A.coverflow__coverflow__53z9A {
-  height: fit-content;
-  margin-top: 200px;
-}
-
-#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v {
-  width: 60px !important;
-}
-
-#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__left__PhMc6 {
-  left: 800px !important;
-  top: 450px !important;
-}
-
-#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__right__1tzAF {
-  right: 800px !important;
-  top: 450px !important;
-}
-
-#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v span {
-  width: 100px !important;
-}
-
-.coverflow__text__39hqd.coverflow__text__39hqd.coverflow__text__39hqd {
-  background-color: transparent;
-  z-index: 1000;
-  bottom: -45px;
-  font-family: "Misto";
-  font-weight: 400;
-  font-size: 30px;
 }

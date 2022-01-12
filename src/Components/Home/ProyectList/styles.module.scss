@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -12,14 +13,9 @@
 
 .container__proyects {
   height: 100%;
-  width: 1800px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  // columns: 3;
-  // column-gap: 40px;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-auto-flow: dense;
-  // gap: 42px;
 }
 
 // --------------------
@@ -33,6 +29,8 @@
 }
 .my_masonry_grid_column {
   padding-left: 40px; /* gutter size */
+  // padding-left: 10px; /* responsive */
+
   background-clip: padding-box;
 }
 
@@ -40,5 +38,6 @@
 .my_masonry_grid_column > div {
   /* change div to reference your elements you put in <Masonry> */
   background: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  // margin-bottom: 10px; /* responsiv */
 }

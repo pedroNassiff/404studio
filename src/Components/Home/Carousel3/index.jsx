@@ -49,6 +49,13 @@ export default function App() {
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
     ]);
   }
+
+  const breakpoints ={
+    default:3,
+    940:2
+  }
+
+
   return (
     <>
       <Swiper 
@@ -68,27 +75,32 @@ export default function App() {
       navigation={true} 
       loop={true}>
         <SwiperSlide>
-        <img src='/imagenes/g_contenidos.png' className={styles.img} />
+        <img src='/imagenes/web 404 desarrollo web -07.png' className={styles.img} />
             <div className={styles.borde}></div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/m_digital.png' className={styles.img} />
+        <img src='/imagenes/web 404 estragtegia de comunicación -07-07.png' className={styles.img} />
             <div className={styles.borde}></div>
            
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/id_marca.png' className={styles.img} />
+        <img src='/imagenes/web 404 estragtegia de comunicación -07-07-07.png' className={styles.img} />
             <div className={styles.borde}></div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/e_comun.png' className={styles.img} />
+        <img src='/imagenes/web 404 Generación de contenidos -07-07.png' className={styles.img} />
             <div className={styles.borde}></div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/desa.png' className={styles.img} />
+        <img src='/imagenes/web 404 Identidad de marca -07-07.png' className={styles.img} />
+            <div className={styles.borde}></div>
+            
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src='/imagenes/web 404 Maketing digital -07.png' className={styles.img} />
             <div className={styles.borde}></div>
             
         </SwiperSlide>

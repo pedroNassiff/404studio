@@ -2,10 +2,8 @@
 
 .wrap {
   position: relative;
-  // height: 700px;
   width: 100%;
   margin-bottom: 40px;
-  padding-top: 10px;
 
   &:hover .background {
     transition: 300ms linear;
@@ -13,6 +11,9 @@
     filter: drop-shadow(0 4px 4px 0);
     background-color: rgba(black, $alpha: 0.6);
     color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
   }
 
   &:hover .icon {
@@ -30,7 +31,7 @@
 
 .border--left {
   left: -10px;
-  top: 10px;
+  top: -10px;
 }
 
 .border--right {
@@ -43,18 +44,6 @@
   width: 100%;
   object-fit: cover;
   z-index: 10;
-}
-
-.wrap:nth-child(1) {
-  grid-column-start: span 2;
-}
-
-.wrap:nth-child(7) {
-  grid-column-start: span 2;
-}
-
-.wrap:nth-child(11) {
-  grid-column-start: span 2;
 }
 
 .background {
@@ -77,10 +66,11 @@
 .text {
   margin: 40px;
   font-family: $font_1;
-  font-size: 25px;
+  font-size: 120px;
   font-weight: 400;
-  line-height: 36px;
-  max-width: 600px;
+  line-height: 150px;
+  max-width: 500px;
+  text-align: left;
 }
 
 .arrow {

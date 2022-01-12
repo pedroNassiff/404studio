@@ -2,12 +2,14 @@
 
 .container {
   width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   margin-top: 150px;
 }
 
 .container_two {
-  width: 1800px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   margin-top: 40px;
@@ -49,6 +51,8 @@
 }
 
 .subtitle {
+  width: 100%;
+
   font-family: $font_1;
   font-size: 80px;
   font-weight: 800;
@@ -58,6 +62,8 @@
 }
 
 .subtitle {
+  width: 100%;
+
   font-size: 72px;
   background: linear-gradient(to left top, #0d3e5b, #752e50);
   background-clip: text;
@@ -65,6 +71,8 @@
 }
 
 .description {
+  width: 100%;
+
   font-family: $font_2;
   font-size: 25px;
   font-weight: 400;
@@ -76,6 +84,6 @@
   position: relative;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 10;
 }
