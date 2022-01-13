@@ -1,0 +1,52 @@
+@import "./../../../../styles/utils";
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.line {
+  height: 2px;
+  width: 20%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 200px;
+  margin-bottom: 30px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.item {
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.be {
+  font-size: 21px;
+  color: white;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.img {
+  color: white;
+}

@@ -1,0 +1,84 @@
+@import "./../../../../styles/utils";
+
+.images {
+  width: 100%;
+  height: 700px;
+}
+
+.section_two {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.image__two {
+  width: 27%;
+  height: 100%;
+}
+
+.image__three {
+  width: 53%;
+  height: 100%;
+}
+
+.section_three {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 150px;
+}
+
+.image__four {
+  width: 55%;
+  height: 100%;
+}
+
+.section_four {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.image__five {
+  width: 100%;
+  height: 100%;
+}
+
+.section_five {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+
+.image__six {
+  width: 53%;
+  height: 100%;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next_proyect {
+  text-align: center;
+}
+
+.next_proyect__link {
+  font-family: $font_3;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}

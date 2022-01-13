@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 80px;
+  color: white;
+  text-align: right;
+}
+
+.container__proyects {
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+// --------------------
+
+.my_masonry_grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -40px; /* gutter size offset */
+  width: auto;
+}
+.my_masonry_grid_column {
+  padding-left: 40px; /* gutter size */
+  // padding-left: 10px; /* responsive */
+
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my_masonry_grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: transparent;
+  margin-bottom: 30px;
+  // margin-bottom: 10px; /* responsiv */
+}

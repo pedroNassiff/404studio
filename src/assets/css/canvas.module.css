@@ -1,0 +1,16 @@
+.clasen1 {
+    width: 30px;
+    margin-top: 10px;
+/*     position: float;
+ */}
+canvas {
+ width: 1200px;
+ height: 700px;
+    background-color: transparent;
+/*  border: 1px solid #ccc;
+ */  border-radius: 4px;
+ position: absolute;
+ margin-top: -50px;
+ z-index: -1;
+  }
+  

@@ -1,0 +1,89 @@
+@import "./../../../../styles/utils";
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.container_two {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.right {
+  position: relative;
+  height: 100%;
+  max-width: 650px;
+  width: 100%;
+}
+
+.border {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  right: -10px;
+  border: 2px solid white;
+}
+
+.title {
+  font-weight: 400;
+  line-height: 34px;
+  font-size: 80px;
+  text-align: right;
+  margin-bottom: 130px;
+  width: 100%;
+}
+
+.subtitle {
+  width: 100%;
+
+  font-family: $font_1;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 34px;
+  margin: 0;
+  padding: 14px 0;
+}
+
+.subtitle {
+  width: 100%;
+
+  font-size: 72px;
+  background: linear-gradient(to left top, #0d3e5b, #752e50);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  width: 100%;
+
+  font-family: $font_2;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: 10;
+}

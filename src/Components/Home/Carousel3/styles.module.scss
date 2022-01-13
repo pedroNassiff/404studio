@@ -1,0 +1,17 @@
+.img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  object-fit: cover;
+  object-position: 100% 10%;
+}
+
+.borde {
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  border: 2px solid white;
+  height: 100%;
+  width: 81%;
+}
