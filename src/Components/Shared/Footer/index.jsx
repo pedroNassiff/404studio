@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss"
-import Link from "next/Link"
+import Link from "next/link"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';

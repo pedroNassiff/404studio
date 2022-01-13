@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Link from "next/Link"
+import Link from "next/link"
 
 const index = (props) => {
   return (
