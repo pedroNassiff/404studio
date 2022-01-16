@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 
 const index = () => {
   return (
-    <div className={styles.container} > 
+    <div className={`${styles.container} custom_container custom_container--xxxl`} > 
       <div className={styles.content}>
         <div className={styles.wrap}>
           <div className={styles.border}></div>

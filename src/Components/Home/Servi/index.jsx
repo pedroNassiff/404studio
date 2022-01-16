@@ -6,15 +6,15 @@ import styles from "./styles.module.scss"
 
 export default function Index() {
   return (
-    <div>
+    <>
       <div className={`${styles["container"]}`}>
         <h2 className={styles.title}>Our service.</h2>
       </div>
-      <div className={styles.contain}>
+      <div className={`${styles.contain} custom_container custom_container--xxxl`}>
       {/* <Carousel /> */}
       {/* <Carousel2/> */}
       <Carousel3/>
       </div>
-    </div>
+    </>
   )
 }

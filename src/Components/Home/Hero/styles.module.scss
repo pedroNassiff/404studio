@@ -1,0 +1,143 @@
+@import "./../../../../styles/utils";
+
+.hero__container {
+}
+
+.hero_top {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  @include breakpoint(md) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  @include breakpoint(xl) {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+.hero_top__title {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(sm) {
+    font-size: 48px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 64px;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 112px;
+  }
+}
+
+.hero_top__title--modify {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.hero_bottom {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.hero_bottom__container {
+  position: relative;
+  max-width: 300px;
+
+  @include breakpoint(md) {
+    max-width: 600px;
+  }
+
+  @include breakpoint(xl) {
+    max-width: 900px;
+  }
+
+  @include breakpoint(xxl) {
+    max-width: 1200px;
+  }
+}
+
+.hero_bottom__frame {
+  position: absolute;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+
+  @include breakpoint(md) {
+    border: 4px solid white;
+  }
+}
+
+.hero_bottom__frame--one {
+  top: -10px;
+  left: -10px;
+
+  @include breakpoint(md) {
+    top: -15px;
+    left: -15px;
+  }
+
+  @include breakpoint(xl) {
+    top: -15px;
+    left: -15px;
+  }
+
+  @include breakpoint(xxl) {
+    top: -20px;
+    left: -20px;
+  }
+}
+
+.hero_bottom__frame--two {
+  top: -20px;
+  left: -20px;
+
+  @include breakpoint(md) {
+    top: -30px;
+    left: -30px;
+  }
+
+  @include breakpoint(xl) {
+    top: -30px;
+    left: -30px;
+  }
+
+  @include breakpoint(xxl) {
+    top: -40px;
+    left: -40px;
+  }
+}
+
+.hero_bottom__frame--three {
+  border: 4px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_bottom__icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.hero_video__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}

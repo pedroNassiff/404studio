@@ -10,7 +10,7 @@ import {faBehance} from '@fortawesome/free-brands-svg-icons'
 
 const index = () => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} custom_container custom_container--xxxl`}>
         <div className={styles.line}></div>
       <div className={styles.wrap}>
         <nav>
@@ -40,7 +40,12 @@ const index = () => {
               <Link href={'/'}>
                 <a  className={styles.link} target="_blank">
                 <FontAwesomeIcon icon={faBehance} className={`${styles['icon']} ${styles['be']}`} />          
-                  Behance</a>              
+                  <span>
+
+                  hance
+                  </span>
+                  
+                  </a>              
               </Link>
             </li>
           </ul>

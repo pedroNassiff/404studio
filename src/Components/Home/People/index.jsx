@@ -3,7 +3,7 @@ import Card from "../Card"
 
 const index = () => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} custom_container custom_container--xxxl`}>
       <Card 
         left={true}
         title="AKA EL INGENIERO" 

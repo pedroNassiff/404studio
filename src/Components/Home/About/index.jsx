@@ -2,16 +2,17 @@ import styles from "./styles.module.scss";
 
 const index = () => {
   return (
-    <div className={styles.container}>
+    <>
       <h2 className={styles.title}>About us</h2>
-      <div className={styles.container_two}>
-
-        <div>
-          <div className={styles.right}>
-            <div className={styles["border"]}></div>
-            <video src="/about_v.mov" className={styles.video} autoPlay muted loop></video>
+      <div className={`${styles.container_two} custom_container custom_container--xxxl`}>       
+          <div className={`${styles.right} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`${styles["border"]} `}></div>
+            <div className={`aspect_ratio__item object_fit_cover `}>
+            <video src="/about_v.mov" className={`${styles.video}`} autoPlay muted loop>
+              <source src="/about_v.mov" type="video/mov" ></source>
+            </video>
+            </div>
           </div>
-        </div>
 
         <div className={styles.left}>
           <div></div>
@@ -21,7 +22,7 @@ const index = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

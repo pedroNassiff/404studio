@@ -2,16 +2,12 @@ import styles from "./styles.module.scss";
 import Link from "next/Link"
 import {proyects} from "../../../../const"
 
-
-
-
 const index = (props) => {
-const linkId = props.props.id 
-const NextProyect = linkId + 1
+  const linkId = props.props.id 
 
-const MaxProyects = proyects.length 
-
-  console.log(linkId,MaxProyects)
+  const NextProyect = linkId + 1
+  
+  const MaxProyects = proyects.length 
 
   return (
     <div>
