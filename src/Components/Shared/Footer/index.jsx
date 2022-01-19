@@ -10,47 +10,47 @@ import {faBehance} from '@fortawesome/free-brands-svg-icons'
 
 const index = () => {
   return (
-    <div className={`${styles.container} custom_container custom_container--xxxl`}>
-        <div className={styles.line}></div>
-      <div className={styles.wrap}>
-        <nav>
-          <ul className={styles.list}>
-            <li className={styles.item} >
-              <Link href={'/'}>
-                <a  className={styles.link} target="_blank" >
-                <InstagramIcon className={`${styles['icon']}`} />                  
-                  Instagram</a>
-              </Link>
-            </li>
-            <li className={styles.item}>
-              <Link href={'/'} >
-                <a  className={styles.link} target="_blank">
-                  <LocalPhoneIcon className={`${styles['icon']}`}/>                  
-                  Telefono</a>
-              </Link>
-            </li>
-            <li className={styles.item}>
-              <Link href={'/'} >
-                <a  className={styles.link} target="_blank">
-                  <MailOutlineIcon className={`${styles['icon']}`} />                  
-                  Gmail</a>              
-              </Link>
-            </li>
-            <li className={styles.item}>
-              <Link href={'/'}>
-                <a  className={styles.link} target="_blank">
-                <FontAwesomeIcon icon={faBehance} className={`${styles['icon']} ${styles['be']}`} />          
-                  <span>
+    <div className={styles["footer"]}>
 
-                  hance
-                  </span>
-                  
+      <div className={`${styles["footer__container"]} custom_container custom_container--xxxl`}>
+
+          <div className={styles["footer__line"]}></div>
+          
+          <nav className={styles["social"]}>
+            
+            <ul className={styles["social__list"]}>
+              <li className={styles["social__item"]} >
+                <Link href={'/'}>
+                  <a  className={styles["social__link"]} target="_blank" >
+                  <InstagramIcon className={`${styles['icon']}`} />                  
+                    Instagram</a>
+                </Link>
+              </li>
+              <li className={styles["social__item"]}>
+                <Link href={'/'} >
+                  <a  className={styles["social__link"]} target="_blank">
+                    <LocalPhoneIcon className={`${styles['icon']}`}/>                  
+                    Telefono</a>
+                </Link>
+              </li>
+              <li className={styles["social__item"]}>
+                <Link href={'/'} >
+                  <a  className={styles["social__link"]} target="_blank">
+                    <MailOutlineIcon className={`${styles['icon']}`} />                  
+                    Gmail</a>              
+                </Link>
+              </li>
+              <li className={styles["social__item"]}>
+                <Link href={'/'}>
+                  <a  className={styles["social__link"]} target="_blank">
+                  <FontAwesomeIcon icon={faBehance} className={`${styles['icon']} ${styles['be']}`} />          
+                    <span>hance</span>                    
                   </a>              
-              </Link>
-            </li>
-          </ul>
-        </nav>    
-      </div>      
+                </Link>
+              </li>
+            </ul>
+          </nav>       
+      </div>
     </div>
   );
 }

@@ -1,44 +1,37 @@
 @import "./../../../../styles/utils";
 
 .proyect_list__title {
-  font-size: 16px;
-  font-weight: 400;
-  color: white;
   text-align: right;
-  display: flex;
   justify-content: flex-end;
   margin-right: 15px;
-  max-width: 2000px;
-
-  @include breakpoint() {
-  }
-  @include breakpoint() {
-  }
-  @include breakpoint() {
-  }
-  @include breakpoint() {
-  }
-  @include breakpoint(xxl) {
-    font-size: 80px;
-  }
+  @include Title;
 }
 
 .my_masonry_grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -40px;
   width: auto;
-}
-.my_masonry_grid_column {
-  padding-left: 40px; /* gutter size */
-  // padding-left: 10px; /* responsive */
 
+  @include breakpoint(md) {
+    margin-left: -40px;
+  }
+}
+
+.my_masonry_grid_column {
+  padding-left: 15px;
   background-clip: padding-box;
+
+  @include breakpoint(md) {
+    padding-left: 40px;
+  }
 }
 
 .my_masonry_grid_column > div {
   background: transparent;
-  margin-bottom: 30px;
-  // margin-bottom: 10px; /* responsiv */
+  margin-bottom: 15px;
+
+  @include breakpoint(md) {
+    margin-bottom: 30px;
+  }
 }

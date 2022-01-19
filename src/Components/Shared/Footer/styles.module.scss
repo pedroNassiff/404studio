@@ -1,17 +1,6 @@
 @import "./../../../../styles/utils";
 
-.container {
-  // width: 100%;
-  // max-width: 1600px;
-  // margin: 0 auto;
-}
-.wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.line {
+.footer__line {
   height: 2px;
   width: 20%;
   margin: 0 auto;
@@ -19,19 +8,41 @@
   border-radius: 200px;
   margin-bottom: 30px;
 }
-.list {
+
+.social {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
 }
-.item {
+.social__item {
   cursor: pointer;
   display: inline-block;
   align-items: center;
-  margin: 0 50px;
+  margin: 5px 0;
+  @include breakpoint(md) {
+    margin: 0 20px;
+  }
+
+  @include breakpoint(lg) {
+    margin: 0 50px;
+  }
 }
 
-.link {
+.social__link {
   display: flex;
   align-items: center;
   font-family: $font_2;

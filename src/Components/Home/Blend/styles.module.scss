@@ -1,25 +1,47 @@
 @import "./../../../../styles/utils";
 
-.container {
-  // max-width: 1600px;
-  // width: 100%;
-  // margin: 0 auto;
-  // display: flex;
+.blend__container {
   margin-top: 50px;
-}
-
-.content {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  @include breakpoint(md) {
+    margin-top: 80px;
+  }
+
+  @include breakpoint(xl) {
+    margin-top: 100px;
+  }
+
+  @include breakpoint(xxl) {
+    margin-top: 150px;
+  }
 }
 
-.wrap {
+.blend__wrap {
   position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @include breakpoint(md) {
+    max-width: 500px;
+    margin: 0;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 900px;
+  }
+
+  @include breakpoint(xxl) {
+    max-width: 1300px;
+  }
 }
 
-.border {
+.blend__frame {
   border: 2px solid white;
   position: absolute;
   top: -10px;
@@ -28,19 +50,18 @@
   height: 100%;
 }
 
-.video {
+.blend__video {
+  position: relative;
   width: 100%;
   height: 100%;
-  max-height: 150px;
-  position: relative;
   z-index: 12px;
 
-  @include breakpoint(sm) {
-    max-height: 400px;
-  }
+  // @include breakpoint(sm) {
+  //   max-height: 400px;
+  // }
 
-  @include breakpoint(xl) {
-    max-height: 650px;
-    height: 650px;
-  }
+  // @include breakpoint(xl) {
+  //   max-height: 650px;
+  //   height: 650px;
+  // }
 }

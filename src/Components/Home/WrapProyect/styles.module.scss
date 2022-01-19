@@ -1,6 +1,6 @@
 @import "./../../../../styles/utils";
 
-.wrap {
+.wrap_proyects {
   position: relative;
   width: 100%;
   margin-bottom: 40px;
@@ -15,31 +15,38 @@
     width: 100%;
     top: 0;
   }
-
-  &:hover .icon {
-    transition: 300ms linear;
-    color: white;
-  }
 }
 
-.border {
+.wrap_proyects__frame {
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 2px solid white;
+  border: 1px solid white;
+
+  @include breakpoint(md) {
+    border: 2px solid white;
+  }
 }
 
-.border--left {
-  left: -10px;
-  top: -10px;
+.wrap_proyects__frame--left {
+  left: -5px;
+  top: -5px;
+  @include breakpoint(md) {
+    left: -10px;
+    top: -10px;
+  }
 }
 
-.border--right {
-  right: -10px;
-  top: -10px;
+.wrap_proyects__frame--right {
+  right: -5px;
+  top: -5px;
+  @include breakpoint(md) {
+    right: -10px;
+    top: -10px;
+  }
 }
 
-.image {
+.wrap_proyects__images {
   position: relative;
   width: 100%;
   object-fit: cover;
@@ -64,26 +71,37 @@
 }
 
 .text {
-  margin: 40px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: $font_1;
-  font-size: 40px;
   font-weight: 400;
-  line-height: 50px;
-  max-width: 500px;
   text-align: left;
+  max-width: 300px;
+
+  @include breakpoint(md) {
+    margin: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 500px;
+  }
+
+  @include breakpoint(lg) {
+    margin: 40px;
+    line-height: 48px;
+    font-size: 40px;
+    max-width: 500px;
+  }
 }
 
-.arrow {
-  display: none;
-  font-size: 50px;
-  cursor: pointer;
-}
+// .sm {
+//   @include breakpoint(md) {
+//     font-size: 90px;
+//   }
+// }
 
-.sm {
-  font-size: 90px;
-}
-
-.lg {
-  font-size: 100px;
-  line-height: 120px;
-}
+// .lg {
+//   @include breakpoint(md) {
+//     font-size: 100px;
+//     line-height: 120px;
+//   }
+// }

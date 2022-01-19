@@ -1,22 +1,11 @@
 @import "./../../../../styles/utils";
 
-.container {
-  // max-width: 1600px;
-  // margin: 0 auto;
-}
-.contain {
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  height: 900px;
-}
-
-.title {
-  font-weight: 400;
-  font-size: 80px;
-  color: $color-secondary;
-  display: flex;
+.servi__title {
   justify-content: flex-start;
   margin-left: 15px;
-  max-width: 2000px;
+  @include Title;
+}
+
+.servi__wrap {
+  height: 400px;
 }

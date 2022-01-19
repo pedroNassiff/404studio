@@ -61,7 +61,21 @@ export default function App() {
       <Swiper 
       effect={'coverflow'}  
       centeredSlides={true} 
-      slidesPerView={3} 
+      slidesPerView= {1}
+
+      // breakpoints={{
+      //   // when window width is >= 640px
+      //   100: {
+      //     width: 100,
+      //     slidesPerView: 1,
+      //   },
+      //   // when window width is >= 768px
+      //   768: {
+      //     width: 768,
+      //     slidesPerView: 1,
+      //   },
+      // }}
+      
       coverflowEffect={{
         "rotate": 0,
         "stretch": 0,
