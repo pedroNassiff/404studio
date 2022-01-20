@@ -7,5 +7,18 @@
 }
 
 .servi__wrap {
-  height: 400px;
+  height: 500px;
+
+  @include breakpoint(sm) {
+    height: 600px;
+  }
+  @include breakpoint(lg) {
+    height: 700px;
+  }
+  @include breakpoint(xl) {
+    height: 800px;
+  }
+  @include breakpoint(xxl) {
+    height: 900px;
+  }
 }
