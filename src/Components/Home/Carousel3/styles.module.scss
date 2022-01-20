@@ -15,7 +15,7 @@
   }
 
   @include breakpoint(lg) {
-    max-height: 400px;
+    max-height: 550px;
     max-width: none;
     width: 500px;
     margin: 0;
@@ -25,6 +25,9 @@
   @include breakpoint(xl) {
     height: 100%;
     width: 100%;
+  }
+  @include breakpoint(xxl) {
+    max-height: 750px;
   }
 }
 

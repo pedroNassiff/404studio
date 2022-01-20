@@ -47,7 +47,7 @@ export default function App() {
   }
   
   const prepend = () => {
-    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div> ');
   }
   
   const append = () => {
