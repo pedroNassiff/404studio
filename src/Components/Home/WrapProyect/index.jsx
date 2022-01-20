@@ -1,21 +1,24 @@
 import styles from "./styles.module.scss";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 import Link from "next/link"
 
 const index = (props) => {
+
   return (
-    <div className={`${styles["wrap"]}`}>
-      <Link href={`/proyect/${props.id}`}>
-        <a >
-          <img src={`/images/${props.images}`} className={styles.image}/>
-      <div className={ props.left ? `${styles["border"]} ${styles["border--left"]}`: `${styles["border"]} ${styles["border--right"]}` }></div>
+
+    <div className={`${styles["wrap_proyects"]}`}>
+      
+      <Link href={`/proyect/${props.id}`} className={`${styles["wrap_proyects__link"]}`}>        
+        <a>          
+          <img src={`/images/${props.images}`} className={styles["wrap_proyects__images"]}/>
+          
+          <div className={ props.left ? `${styles["wrap_proyects__frame"]} ${styles["wrap_proyects__frame--left"]}`: `${styles["wrap_proyects__frame"]} ${styles["wrap_proyects__frame--right"]}` }></div>
 
           <div className={styles["background"]}>
-            <p className={styles["text"]} 
+            <p className={`${styles[props.sm]} ${styles["text"]}`} 
             dangerouslySetInnerHTML={{__html: props.description}}            
             ></p>
 
-            <ArrowForwardIosIcon className={styles.arrow}></ArrowForwardIosIcon>
           </div>
         </a>
       </Link>

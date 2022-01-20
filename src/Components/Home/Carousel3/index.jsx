@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,87 +22,116 @@ import SwiperCore, {
 // install Swiper modules
 SwiperCore.use([EffectCoverflow,Pagination,Navigation]);
 
+// -----------------------------------
+
+// ---------------------------------
 
 export default function App() {  
-  const [swiperRef, setSwiperRef] = useState(null);
 
+  // ---------------------------------------------
+
+  
+  // ------------------------------------------
+  
+  
+  const [swiperRef, setSwiperRef] = useState(null);
+  
   let appendNumber = 4;
   let prependNumber = 1;
-
+  
   const prepend2 = () => {
     swiperRef.prependSlide([
       '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
       '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
     ]);
   }
-
+  
   const prepend = () => {
-    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>');
+    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + (--prependNumber) + '</div> ');
   }
-
+  
   const append = () => {
     swiperRef.appendSlide('<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>');
   }
-
+  
   const append2 = () => {
     swiperRef.appendSlide([
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
     ]);
   }
-
-  const breakpoints ={
-    default:3,
-    940:2
-  }
-
-
+  
+ 
   return (
     <>
       <Swiper 
       effect={'coverflow'}  
       centeredSlides={true} 
-      slidesPerView={3} 
+
+      breakpoints={{
+        400: {
+          slidesPerView: 1,
+        },
+        770: {
+          slidesPerView: 3,
+        },
+      }}
+      
       coverflowEffect={{
         "rotate": 0,
         "stretch": 0,
         "depth": 0,
-        "modifier": 1,
-        "slideShadows": true
+        // "modifier": 1,
+        // "slideShadows": true
       }} 
       pagination={{
         "type": "fraction"
       }} 
       navigation={true} 
-      loop={true}>
+      loop={true}
+      >
         <SwiperSlide>
-        <img src='/imagenes/web 404 desarrollo web -07.png' className={styles.img} />
+          <div className={styles.container}>
+
+        <img src='/gray_2.jpg' className={styles.img} />
             <div className={styles.borde}></div>
+          </div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/web 404 estragtegia de comunicación -07-07.png' className={styles.img} />
+        <div className={styles.container}>
+
+        <img src='/gray_2.jpg' className={styles.img} />
             <div className={styles.borde}></div>
+          </div>
            
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/web 404 estragtegia de comunicación -07-07-07.png' className={styles.img} />
+        <div className={styles.container}>
+        <img src='/gray_2.jpg' className={styles.img} />
             <div className={styles.borde}></div>
+            
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className={styles.container}>
+        <img src='/gray_2.jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+          </div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/web 404 Generación de contenidos -07-07.png' className={styles.img} />
+        <div className={styles.container}>
+        <img src='/gray_2.jpg' className={styles.img} />
             <div className={styles.borde}></div>
+          </div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <img src='/imagenes/web 404 Identidad de marca -07-07.png' className={styles.img} />
+        <div className={styles.container}>
+        <img src='/gray_2.jpg' className={styles.img} />
             <div className={styles.borde}></div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src='/imagenes/web 404 Maketing digital -07.png' className={styles.img} />
-            <div className={styles.borde}></div>
+          </div>
             
         </SwiperSlide>
         

@@ -1,18 +1,24 @@
 @import "./../../../../styles/utils";
 
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-.contain {
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  height: 900px;
+.servi__title {
+  justify-content: flex-start;
+  margin-left: 15px;
+  @include Title;
 }
 
-.title {
-  font-weight: 400;
-  font-size: 80px;
-  color: $color-secondary;
+.servi__wrap {
+  height: 500px;
+
+  @include breakpoint(sm) {
+    height: 600px;
+  }
+  @include breakpoint(lg) {
+    height: 700px;
+  }
+  @include breakpoint(xl) {
+    height: 800px;
+  }
+  @include breakpoint(xxl) {
+    height: 900px;
+  }
 }

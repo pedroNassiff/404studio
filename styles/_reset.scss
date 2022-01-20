@@ -45,24 +45,54 @@ a {
 }
 
 // ---------------------- swiper3 ----------------
+.swiper-container.swiper-container.swiper-container {
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container.swiper-container.swiper-container {
+    width: 640px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container.swiper-container.swiper-container {
+    width: 770px !important;
+  }
+}
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 55px !important;
+  bottom: 65px !important;
   font-size: 60px !important;
+
+  @include breakpoint(xl) {
+    bottom: -14px !important;
+    font-size: 60px !important;
+  }
+
+  @include breakpoint(xxl) {
+    bottom: 55px !important;
+    font-size: 60px !important;
+  }
 }
 
 .swiper-slide.swiper-slide.swiper-slide {
-  margin-top: 30px;
-  //
+  display: flex !important;
+  justify-content: center !important;
   height: 100% !important;
-  //
-  max-height: 550px !important;
-  //
   padding: 0 50px;
   background-color: transparent !important;
   opacity: 1 !important;
+
+  margin-top: 50px;
+  max-height: 500px;
+
+  @include breakpoint(xxl) {
+    margin-top: 50px;
+    max-height: 700px;
+  }
 }
 
 .swiper-3d .swiper-slide-shadow-left {
@@ -82,28 +112,27 @@ a {
 }
 
 .swiper-button-next {
-  right: 80% !important;
-  top: 90% !important;
   color: white !important;
   z-index: 100 !important;
 }
 
 .swiper-button-prev {
-  left: 80% !important;
-  top: 90% !important;
   color: white !important;
   z-index: 100 !important;
 }
 
 .swiper-slide-active.swiper-slide-active.swiper-slide-active {
   height: 100% !important;
-  //
-  max-height: 600px !important;
-  //
-  margin-top: 10px !important;
-
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center !important;
+
+  max-height: 850px;
+  margin-top: 25px;
+
+  @include breakpoint(xxl) {
+    max-height: 750px;
+    margin-top: 25px;
+  }
 }
 
 .swiper-3d,
@@ -113,7 +142,19 @@ a {
 }
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  left: 670px !important;
+  left: 270px;
+  top: 85%;
+
+  @include breakpoint(xl) {
+    left: 470px;
+    top: 97%;
+  }
+
+  @include breakpoint(xxl) {
+    left: 570px;
+    top: 90%;
+  }
+
   &::before {
     content: "";
     left: 0;
@@ -127,7 +168,18 @@ a {
 }
 
 .swiper-button-next.swiper-button-next.swiper-button-next {
-  right: 670px !important;
+  right: 270px;
+  top: 85%;
+
+  @include breakpoint(xl) {
+    right: 470px;
+    top: 97%;
+  }
+
+  @include breakpoint(xxl) {
+    right: 570px;
+    top: 90%;
+  }
   &::before {
     content: "";
     right: 0;

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../src/Components/Home/Header";
+import Hero from "../src/Components/Home/Hero";
 import ProyectList from "../src/Components/Home/ProyectList";
 import Services from "../src/Components/Home/Servi";
 import About from "../src/Components/Home/About";
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Header />
+        <Hero />
         <ProyectList />
         <Services />
         <About />

@@ -2,3 +2,23 @@
 @import "./../node_modules/crumb-scss/src/helpers";
 
 // ----------- Mixins ------------------
+
+@mixin Title {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  max-width: 2000px;
+
+  @include breakpoint(md) {
+    font-size: 64px;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 80px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 96px;
+  }
+}
