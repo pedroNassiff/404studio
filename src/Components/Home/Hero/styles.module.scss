@@ -22,10 +22,12 @@
   font-weight: 400;
   color: white;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
 
   @include breakpoint(sm) {
     font-size: 48px;
+    margin-left: -15px;
   }
 
   @include breakpoint(md) {
@@ -33,6 +35,7 @@
   }
 
   @include breakpoint(lg) {
+    margin: 0;
     font-size: 112px;
   }
 }
@@ -54,7 +57,7 @@
   max-width: 300px;
 
   @include breakpoint(md) {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   @include breakpoint(xl) {

@@ -67,15 +67,16 @@ export default function App() {
       <Swiper 
       effect={'coverflow'}  
       centeredSlides={true} 
+      slidesPerView={3}
 
-      breakpoints={{
-        400: {
-          slidesPerView: 1,
-        },
-        770: {
-          slidesPerView: 3,
-        },
-      }}
+      // breakpoints={{
+      //   400: {
+      //     slidesPerView: 3,
+      //   },
+      //   770: {
+      //     slidesPerView: 3,
+      //   },
+      // }}
       
       coverflowEffect={{
         "rotate": 0,
@@ -91,46 +92,55 @@ export default function App() {
       loop={true}
       >
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
+          </div>            
+        </SwiperSlide>
 
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
-          </div>
-            
-        </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.container}>
+        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
+          </div>           
+        </SwiperSlide>
 
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
+        <SwiperSlide>
+          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
           </div>
-           
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
+          </div>    
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
+        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
+          </div>
             
-          </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
-          </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
-          </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
+        <div className={`${styles.container} aspect_ratio aspect_ratio--16by9`}>
+            <div className={`aspect_ratio__item object_fit_cover`}>
+              <img src='/gray_2.jpg' className={styles.img} />
+              <div className={styles.borde}></div>
+            </div>
           </div>
             
         </SwiperSlide>

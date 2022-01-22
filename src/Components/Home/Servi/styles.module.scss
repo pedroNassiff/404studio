@@ -10,13 +10,13 @@
   height: 500px;
 
   @include breakpoint(sm) {
-    height: 600px;
+    height: 440px;
   }
   @include breakpoint(lg) {
-    height: 700px;
+    height: 400px;
   }
   @include breakpoint(xl) {
-    height: 800px;
+    height: 600px;
   }
   @include breakpoint(xxl) {
     height: 900px;
