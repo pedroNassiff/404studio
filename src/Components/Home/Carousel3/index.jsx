@@ -67,15 +67,7 @@ export default function App() {
       <Swiper 
       effect={'coverflow'}  
       centeredSlides={true} 
-
-      breakpoints={{
-        400: {
-          slidesPerView: 1,
-        },
-        770: {
-          slidesPerView: 3,
-        },
-      }}
+      slidesPerView= {3}
       
       coverflowEffect={{
         "rotate": 0,
