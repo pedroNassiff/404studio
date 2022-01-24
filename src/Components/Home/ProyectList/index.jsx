@@ -20,29 +20,29 @@ export default function ProyectList() {
           className={styles["my_masonry_grid"]}
           columnClassName={styles["my_masonry_grid_column"]}>
 
-            <WrapProyect left={true} images='anima3.jpeg' description='Anima' id={1} sm="lg" />
+            <WrapProyect left={true} images='anima3.jpeg' description='Anima' id={1} sm="one" />
             
-            <WrapProyect left={true} images='topm5.JPG' description='Top<br/>Me<br/>ga' id={2} sm="lg" />
+            <WrapProyect left={true} images='topm5.JPG' description='Top<br/>Me<br/>ga' id={2} sm="two" />
             
-            <WrapProyect left={false} images='harlemsport1.jpg' description='Har<br/>lem<br/> Sports<br/>we<br/>ar' id={3}  />
+            <WrapProyect left={false} images='harlemsport1.jpg' description='Har<br/>lem<br/> Spor<br/>ts<br/>we<br/>ar' id={3} sm="three" />
             
-            <WrapProyect left={false} images='rom1.jpg' description='La<br/> Romeria<br/> de<br/> las<br/> rosas' id={4} />
+            <WrapProyect left={false} images='rom1.jpg' description='Ro<br/>mer<br/>ia<br/> de<br/> las<br/> ro<br/>sas' id={4} sm="four" />
             
-            <WrapProyect left={true} images='harlem3.jpg' description='Har<br/>lem<br/> Bar' id={5} />
+            <WrapProyect left={true} images='harlem3.jpg' description='Ha<br/>rlem<br/> Ba<br/>r' id={5} sm="five"/>
             
-            <WrapProyect left={false} images='aljibe3.png' description='El aljibe<br/> de Mendez' id={6} />
+            <WrapProyect left={false} images='aljibe3.png' description='El aljibe<br/> de Mendez' id={6} sm="six" />
             
-            <WrapProyect left={true} images='ranchov2.jpeg' description='Ran<br/>cho<br/> Vie<br/>jo' id={7} />
+            <WrapProyect left={true} images='ranchov2.jpeg' description='Ran<br/>cho<br/> Vie<br/>jo' id={7} sm="seven" />
             
-            <WrapProyect left={false} images='marren2.jpg' description='Ma<br/>rren' id={8} />
+            <WrapProyect left={false} images='marren2.jpg' description='Ma<br/>rren' id={8} sm="eight" />
             
-            <WrapProyect left={true} images='moda2.jpg' description='Mo<br/>da<br/> 1' id={9} />
+            <WrapProyect left={true} images='moda2.jpg' description='Mo<br/>da<br/> 1' id={9} sm="nine"/>
             
-            <WrapProyect left={true} images='somosc1.jpg' description='So<br/>mos<br/> Cho<br/>la' id={10} />
+            <WrapProyect left={true} images='somosc1.jpg' description='So<br/>mos<br/> Cho<br/>la' id={10} sm="ten"/>
             
-            <WrapProyect left={false} images='WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg' description='Paprika' id={11} />
+            <WrapProyect left={false} images='WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg' description='Paprika' id={11} sm="eleven" />
             
-            <WrapProyect left={true} images='mirasoles1.jpg' description='NUT<br/> Mira<br/>soles' id={12} />
+            <WrapProyect left={true} images='mirasoles1.jpg' description='NUT<br/> Mira<br/>soles' id={12} sm="twelve" />
         </Masonry>
       </div>
     </div>

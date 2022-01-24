@@ -1,7 +1,13 @@
 @import "./../../../../styles/utils";
 
 .about {
-  margin-top: 150px;
+  margin-top: 10px;
+  @include breakpoint(md) {
+    margin-top: -40px;
+  }
+  @include breakpoint(lg) {
+    margin-top: 150px;
+  }
 }
 
 .about__title {

@@ -52,8 +52,9 @@ a {
   background-color: transparent;
   opacity: 1;
 
-  margin-top: 75px;
-  max-height: 270px;
+  margin-top: 55px;
+  max-height: 150px;
+
   @include breakpoint(sm) {
     margin-top: 75px;
     max-height: 270px;
@@ -73,10 +74,10 @@ a {
   }
 }
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
-  margin-right: 25px;
-  margin-top: 75px;
-  max-width: 150px;
-  max-height: 270px;
+  margin-right: 10px;
+  margin-top: 55px;
+  max-width: 80px;
+  max-height: 190px;
   @include breakpoint(sm) {
     margin-right: 25px;
     margin-top: 75px;
@@ -98,10 +99,12 @@ a {
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
-  margin-left: 25px;
-  max-width: 150px;
-  margin-top: 75px;
-  max-height: 270px;
+  margin-left: 10px;
+  max-width: 80px;
+  margin-top: 55px;
+  max-height: 190px;
+  background-image: linear-gradient(to left, rgb(255, 0, 0), rgb(255, 0, 0)) !important;
+
   @include breakpoint(sm) {
     margin-left: 25px;
     max-width: 150px;
@@ -129,25 +132,47 @@ a {
   max-height: 500px;
   margin-top: 25px;
 
-  max-height: 380px;
-  margin: 0 45px;
+  max-height: 300px;
+  margin: 0 30px;
   margin-top: 25px;
   @include breakpoint(sm) {
     max-height: 380px;
-    margin: 0 45px;
+    margin: 0 38px;
     margin-top: 25px;
   }
 
   @include breakpoint(lg) {
     max-height: 580px;
-    margin: 0 55px;
+    margin: 0 45px;
     margin-top: 25px;
   }
 
   @include breakpoint(xxxl) {
     max-height: 780px;
-    margin: 0 75px;
+    margin: 0 70px;
     margin-top: 25px;
+  }
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 25px !important;
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+  @include breakpoint(xl) {
+    font-size: 40px !important;
+  }
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 25px !important;
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+  @include breakpoint(xl) {
+    font-size: 40px !important;
   }
 }
 
@@ -156,34 +181,53 @@ a {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 65px !important;
-  font-size: 60px !important;
+  font-size: 20px !important;
+
+  @include breakpoint(md) {
+    bottom: 90px !important;
+    font-size: 40px !important;
+  }
 
   @include breakpoint(xl) {
-    bottom: -14px !important;
-    font-size: 60px !important;
+    bottom: -10px !important;
+    font-size: 50px !important;
   }
 
   @include breakpoint(xxl) {
-    bottom: 55px !important;
+    bottom: 15px !important;
     font-size: 60px !important;
   }
 }
 
-// .swiper-3d .swiper-slide-shadow-left {
-//   background-image: linear-gradient(
-//     to left,
-//     rgba(0, 0, 0, 0.75),
-//     rgba(0, 0, 0, 0.75)
-//   ) !important;
-// }
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  @include breakpoint(sm) {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.705),
+      rgba(0, 0, 0, 0.705)
+    ) !important;
+  }
+}
 
-// .swiper-3d .swiper-slide-shadow-right {
-//   background-image: linear-gradient(
-//     to left,
-//     rgba(0, 0, 0, 0.75),
-//     rgba(0, 0, 0, 0.75)
-//   ) !important;
-// }
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  @include breakpoint(sm) {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.705),
+      rgba(0, 0, 0, 0.705)
+    ) !important;
+  }
+}
 
 .swiper-button-next {
   color: white !important;
@@ -202,52 +246,123 @@ a {
 }
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  left: 270px;
-  top: 85%;
-
-  @include breakpoint(xl) {
-    left: 470px;
-    top: 97%;
-  }
-
-  @include breakpoint(xxl) {
-    left: 570px;
-    top: 90%;
-  }
-
+  left: 90px;
+  top: 83%;
   &::before {
     content: "";
     left: 0;
     position: absolute;
-    width: 50px;
-    height: 3px;
+    width: 25px;
+    height: 1px;
     background-color: white;
     border-radius: 200px;
-    margin-left: 4px;
+    margin-left: 8px;
   }
-}
 
-.swiper-button-next.swiper-button-next.swiper-button-next {
-  right: 270px;
-  top: 85%;
+  @include breakpoint(md) {
+    left: 210px;
+    top: 80%;
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      border-radius: 200px;
+      margin-left: 8px;
+    }
+  }
 
   @include breakpoint(xl) {
-    right: 470px;
+    left: 420px;
     top: 97%;
+    &::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      border-radius: 200px;
+      margin-left: 4px;
+    }
   }
 
   @include breakpoint(xxl) {
-    right: 570px;
-    top: 90%;
+    left: 590px;
+    top: 94%;
   }
+
+  // &::before {
+  //   content: "";
+  //   left: 0;
+  //   position: absolute;
+  //   width: 50px;
+  //   height: 3px;
+  //   background-color: white;
+  //   border-radius: 200px;
+  //   margin-left: 4px;
+  // }
+}
+
+.swiper-button-next.swiper-button-next.swiper-button-next {
+  font-size: 20px;
+  right: 90px;
+  top: 83%;
   &::before {
     content: "";
     right: 0;
     position: absolute;
-    width: 50px;
-    height: 3px;
+    width: 25px;
+    height: 1px;
     background-color: white;
     border-radius: 200px;
-    margin-right: 4px;
+    margin-right: 8px;
   }
+
+  @include breakpoint(md) {
+    right: 210px;
+    top: 80%;
+    &::before {
+      content: "";
+      right: 0;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: white;
+      border-radius: 200px;
+      margin-right: 8px;
+    }
+  }
+
+  @include breakpoint(xl) {
+    right: 420px;
+    top: 97%;
+    &::before {
+      content: "";
+      right: 0;
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      border-radius: 200px;
+      margin-right: 4px;
+    }
+  }
+
+  @include breakpoint(xxl) {
+    right: 590px;
+    top: 94%;
+  }
+  // &::before {
+  //   content: "";
+  //   right: 0;
+  //   position: absolute;
+  //   width: 50px;
+  //   height: 3px;
+  //   background-color: white;
+  //   border-radius: 200px;
+  //   margin-right: 4px;
+  // }
 }
