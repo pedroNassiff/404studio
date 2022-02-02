@@ -5,58 +5,321 @@
   height: 700px;
 }
 
-.section_two {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 150px;
-}
-
-.image__two {
-  width: 27%;
+.video {
   height: 100%;
-}
-
-.image__three {
-  width: 53%;
-  height: 100%;
-}
-
-.section_three {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 150px;
+  object-fit: cover;
+  object-position: right;
 }
 
-.image__four {
-  width: 55%;
+.img {
   height: 100%;
-}
-
-.section_four {
   width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.image__five {
-  width: 100%;
-  height: 100%;
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50px;
+  row-gap: 80px;
+  @include breakpoint(md) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 80px;
+    row-gap: 80px;
+  }
+
+  @include breakpoint(lg) {
+  }
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 250px;
+    row-gap: 200px;
+  }
+  @include breakpoint(xxxl) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 400px;
+    row-gap: 200px;
+  }
 }
 
-.section_five {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 150px;
+.section {
+  grid-column-start: span 4;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: span 6;
+    grid-row-start: span 3;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: span 8;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(xxl) {
+    grid-column-start: span 8;
+    grid-row-start: span 2;
+  }
 }
 
-.image__six {
-  width: 53%;
-  height: 100%;
+.section:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+}
+
+.section:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(7) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+  }
+}
+
+.section:nth-child(8) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(10) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(11) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 16;
+  }
+}
+
+.section:nth-child(12) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(14) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(15) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 23;
+  }
+}
+
+.section:nth-child(16) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(18) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(19) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 30;
+  }
+}
+
+.section:nth-child(20) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: span 2;
+  }
 }
 
 .btn {
@@ -77,8 +340,17 @@
 
 .next_proyect__link {
   font-family: $font_3;
-  font-size: 50px;
+  font-size: 32px;
   cursor: pointer;
   text-align: center;
   color: white;
+  @include breakpoint(md) {
+    font-size: 48px;
+  }
+  @include breakpoint(lg) {
+    font-size: 64px;
+  }
+  @include breakpoint(xl) {
+    font-size: 64px;
+  }
 }

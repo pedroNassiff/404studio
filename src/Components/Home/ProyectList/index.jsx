@@ -1,6 +1,9 @@
 import styles from "./styles.module.scss"
 import WrapProyect from "../WrapProyect"
 import Masonry from 'react-masonry-css'
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 
 export default function ProyectList() {
 
@@ -10,8 +13,13 @@ export default function ProyectList() {
   }
   return (
     <div className={`${styles["proyect_list"]} `}>
-
-      <h2 className={`${styles["proyect_list__title"]}`}>Our Proyects.</h2>
+      
+      <div className={`${styles["cont"]}`}>
+        <Slide bottom text delay={1000}>
+          {/* <h2 className={`${styles["proyect_list__title"]}`}>Our Proyects.</h2> */}
+          <h2 className={`${styles["proyect_list__title"]}`}>Our Proyects.</h2>
+        </Slide>
+      </div>
       
       <div className={`${styles["proyect_list__my_mansory"]} custom_container custom_container--xxxl`}>
         
@@ -34,7 +42,7 @@ export default function ProyectList() {
             
             <WrapProyect left={true} images='ranchov2.jpeg' description='Ran<br/>cho<br/> Vie<br/>jo' id={7} sm="seven" />
             
-            <WrapProyect left={false} images='marren2.jpg' description='Ma<br/>rren' id={8} sm="eight" />
+            <WrapProyect left={false} images='marren2.jpg' description='Ma<br/>rr<br/>en' id={8} sm="eight" />
             
             <WrapProyect left={true} images='moda2.jpg' description='Mo<br/>da<br/> 1' id={9} sm="nine"/>
             
@@ -42,7 +50,7 @@ export default function ProyectList() {
             
             <WrapProyect left={false} images='WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg' description='Paprika' id={11} sm="eleven" />
             
-            <WrapProyect left={true} images='mirasoles1.jpg' description='NUT<br/> Mira<br/>soles' id={12} sm="twelve" />
+            <WrapProyect left={true} images='mirasoles1.jpg' description='NUT<br/> Mira<br/>so<br/>les' id={12} sm="twelve" />
         </Masonry>
       </div>
     </div>

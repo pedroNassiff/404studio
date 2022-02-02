@@ -85,7 +85,7 @@ export default function App() {
         <SwiperSlide>
           <div className={styles.container}>
 
-        <img src='/gray_2.jpg' className={styles.img} />
+        <img src='/imagenes/Desarrollo web .jpg' className={styles.img} />
             <div className={styles.borde}></div>
           </div>
             
@@ -93,35 +93,28 @@ export default function App() {
         <SwiperSlide>
         <div className={styles.container}>
 
-        <img src='/gray_2.jpg' className={styles.img} />
+        <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
             <div className={styles.borde}></div>
           </div>
            
         </SwiperSlide>
         <SwiperSlide>
         <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
+        <img src='/imagenes/Generación de contenidos.jpg' className={`${styles["img"]} ${styles["img--3"]}`}/>
             <div className={styles.borde}></div>
             
           </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
+        <img src='/imagenes/identidad de marca -07.jpg' className={styles.img} />
             <div className={styles.borde}></div>
           </div>
             
         </SwiperSlide>
         <SwiperSlide>
         <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
-            <div className={styles.borde}></div>
-          </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/gray_2.jpg' className={styles.img} />
+        <img src='/imagenes/Marketing digital -07.jpg' className={styles.img} />
             <div className={styles.borde}></div>
           </div>
             

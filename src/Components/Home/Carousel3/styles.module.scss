@@ -6,6 +6,7 @@
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
+  background-color: transparent !important;
 
   @include breakpoint(md) {
     // max-height: 300px;
@@ -38,7 +39,7 @@
   // max-height: 300px;
   z-index: 10;
   object-fit: cover;
-  object-position: center;
+  object-position: 0% 20%;
 
   @include breakpoint(md) {
     object-fit: cover;
@@ -47,6 +48,14 @@
   @include breakpoint(xl) {
     object-fit: cover;
   }
+}
+
+.img--2 {
+  object-position: center;
+}
+
+.img--3 {
+  object-position: -10px -35px;
 }
 
 .borde {

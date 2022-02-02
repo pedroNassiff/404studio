@@ -1,7 +1,14 @@
 @import "./../../../../styles/utils";
 
+.conten {
+  overflow: hidden;
+  @include cont;
+}
+
 .servi__title {
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   margin-left: 15px;
   @include Title;
 }

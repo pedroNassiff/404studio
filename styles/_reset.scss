@@ -53,7 +53,7 @@ a {
   opacity: 1;
 
   margin-top: 55px;
-  max-height: 150px;
+  max-height: 140px;
 
   @include breakpoint(sm) {
     margin-top: 75px;
@@ -77,7 +77,9 @@ a {
   margin-right: 10px;
   margin-top: 55px;
   max-width: 80px;
-  max-height: 190px;
+  max-height: 140px;
+  background-color: transparent;
+
   @include breakpoint(sm) {
     margin-right: 25px;
     margin-top: 75px;
@@ -102,8 +104,8 @@ a {
   margin-left: 10px;
   max-width: 80px;
   margin-top: 55px;
-  max-height: 190px;
-  background-image: linear-gradient(to left, rgb(255, 0, 0), rgb(255, 0, 0)) !important;
+  max-height: 140px;
+  background-color: transparent;
 
   @include breakpoint(sm) {
     margin-left: 25px;
@@ -132,7 +134,7 @@ a {
   max-height: 500px;
   margin-top: 25px;
 
-  max-height: 300px;
+  max-height: 198px;
   margin: 0 30px;
   margin-top: 25px;
   @include breakpoint(sm) {
@@ -205,6 +207,7 @@ a {
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0)
   ) !important;
+
   @include breakpoint(sm) {
     background-image: linear-gradient(
       to left,
@@ -220,6 +223,7 @@ a {
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0)
   ) !important;
+
   @include breakpoint(sm) {
     background-image: linear-gradient(
       to left,

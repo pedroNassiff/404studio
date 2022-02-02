@@ -109,13 +109,13 @@
   }
 }
 .two {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 50px;
   width: 120px;
 
   @include breakpoint(md) {
-    font-size: 90px;
-    line-height: 100px;
+    font-size: 85px;
+    line-height: 95px;
     width: 250px;
   }
 
@@ -126,8 +126,8 @@
   }
 
   @include breakpoint(xxxl) {
-    font-size: 120px;
-    line-height: 140px;
+    font-size: 150px;
+    line-height: 170px;
     width: 450px;
   }
 }
