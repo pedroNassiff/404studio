@@ -93,15 +93,271 @@
   }
 }
 
-// .sm {
-//   @include breakpoint(md) {
-//     font-size: 90px;
-//   }
-// }
+.one {
+  font-size: 30px;
 
-// .lg {
-//   @include breakpoint(md) {
-//     font-size: 100px;
-//     line-height: 120px;
-//   }
-// }
+  @include breakpoint(md) {
+    font-size: 55px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 75px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 100px;
+  }
+}
+.two {
+  font-size: 35px;
+  line-height: 50px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 85px;
+    line-height: 95px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 100px;
+    line-height: 110px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 150px;
+    line-height: 170px;
+    width: 450px;
+  }
+}
+
+.three {
+  font-size: 30px;
+  line-height: 35px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 55px;
+    line-height: 65px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 70px;
+    line-height: 80px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 100px;
+    line-height: 120px;
+    width: 450px;
+  }
+}
+
+.four {
+  font-size: 25px;
+  line-height: 30px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 50px;
+    line-height: 55px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 55px;
+    line-height: 70px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 90px;
+    line-height: 100px;
+    width: 450px;
+  }
+}
+
+.five {
+  font-size: 35px;
+  line-height: 45px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 75px;
+    line-height: 90px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 80px;
+    line-height: 95px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 120px;
+    line-height: 140px;
+    width: 450px;
+  }
+}
+
+.six {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+
+  @include breakpoint(md) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 75px;
+    line-height: 80px;
+  }
+}
+
+.seven {
+  font-size: 45px;
+  line-height: 55px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 90px;
+    line-height: 110px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 100px;
+    line-height: 120px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 140px;
+    line-height: 160px;
+    width: 450px;
+  }
+}
+
+.eight {
+  font-size: 40px;
+  line-height: 50px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 70px;
+    line-height: 90px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 90px;
+    line-height: 110px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 120px;
+    line-height: 140px;
+    width: 450px;
+  }
+}
+
+.nine {
+  font-size: 45px;
+  line-height: 55px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 90px;
+    line-height: 110px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 110px;
+    line-height: 120px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 140px;
+    line-height: 160px;
+    width: 450px;
+  }
+}
+
+.ten {
+  font-size: 35px;
+  line-height: 40px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 70px;
+    line-height: 80px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 80px;
+    line-height: 90px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 120px;
+    line-height: 140px;
+    width: 450px;
+  }
+}
+
+.eleven {
+  font-size: 25px;
+
+  @include breakpoint(md) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 60px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 90px;
+  }
+}
+
+.twelve {
+  font-size: 30px;
+  line-height: 45px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 70px;
+    line-height: 90px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 80px;
+    line-height: 100px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 110px;
+    line-height: 130px;
+    width: 450px;
+  }
+}

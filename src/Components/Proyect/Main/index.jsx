@@ -8,36 +8,37 @@ const index = (props) => {
   const NextProyect = linkId + 1
   
   const MaxProyects = proyects.length 
+  console.log(props.props.description)
+  
 
   return (
     <div>
-      <div>
-        <img src="/gray.jpg" alt="" className={styles.images} /> 
+      <div className={`custom_container custom_container--xxxl`}>
+        <div className={styles.wrap}>
+      {
+        props.props.content.map(item=>(
+          <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>
+            {
+              item.video? (
+                <div className={`aspect_ratio__item`}>
+                  <video src={`/proyects/${props.props.description}/videos/${item.link}`} autoPlay loop muted={true} className={styles.img}>
+                    <source src={`/proyects/${props.props.description}/videos/${item.link}`} type="video/mp4" ></source>
+                  </video>
+                </div>
+              )
+              :
+              (<div className={`aspect_ratio__item`}>
+                <img src={`/proyects/${props.props.description}/photos/${item.link}`} alt="" className={styles.img} />
+              </div>
+              )
+            }
+          </div>
+         ))
+      }
+        </div>
       </div>
 
-      <div className={styles.section_two}>
-        <img src="/gray.jpg" alt="" className={styles.image__two} />
-        <img src="/gray.jpg" alt="" className={styles.image__three} />
-      </div>
       
-      <div className={styles.section_three}>
-        <img src="/gray.jpg" alt="" className={styles.image__four} />
-      </div>  
-      
-      <div className={styles.section_four}>
-        <img src="/gray.jpg" alt="" className={styles.image__five} />
-      </div>  
-      
-      <div className={styles.section_five}>
-        <img src="/gray.jpg" alt="" className={styles.image__six} />
-      </div>  
-      
-      <div className={styles.section_two}>
-        <img src="/gray.jpg" alt="" className={styles.image__two} />
-        <img src="/gray.jpg" alt="" className={styles.image__three} />
-      </div>
-
-
       {
         NextProyect > MaxProyects ?(
           <button disabled className={styles.btn}>

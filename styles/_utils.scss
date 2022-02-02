@@ -22,3 +22,17 @@
     font-size: 96px;
   }
 }
+
+@mixin cont {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include breakpoint(xxxl) {
+    margin-top: 120px;
+    margin-bottom: 90px;
+  }
+  // @include breakpoint() {
+  // }
+  // @include breakpoint() {
+  // }
+}

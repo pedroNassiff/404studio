@@ -24,10 +24,15 @@
   margin: 0;
   margin-left: 10px;
   padding: 0;
+  // margin-left: -5px;
 
   @include breakpoint(sm) {
     font-size: 48px;
+<<<<<<< HEAD
     margin-left: -15px;
+=======
+    // margin-left: -30px;
+>>>>>>> dev-gaston
   }
 
   @include breakpoint(md) {
@@ -35,8 +40,31 @@
   }
 
   @include breakpoint(lg) {
+<<<<<<< HEAD
     margin: 0;
+=======
+    // margin-left: -25px;
+>>>>>>> dev-gaston
     font-size: 112px;
+  }
+  @include breakpoint(xxxl) {
+    margin-left: 0px;
+  }
+}
+
+.cont {
+  overflow: hidden;
+  margin-left: -5px;
+
+  @include breakpoint(sm) {
+    margin-left: -30px;
+  }
+
+  @include breakpoint(lg) {
+    margin-left: -25px;
+  }
+  @include breakpoint(xxxl) {
+    margin-left: 0px;
   }
 }
 

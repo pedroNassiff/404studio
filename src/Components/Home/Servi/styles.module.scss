@@ -1,22 +1,29 @@
 @import "./../../../../styles/utils";
 
+.conten {
+  overflow: hidden;
+  @include cont;
+}
+
 .servi__title {
   justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   margin-left: 15px;
   @include Title;
 }
 
 .servi__wrap {
-  height: 500px;
+  height: 450px;
 
   @include breakpoint(sm) {
     height: 440px;
   }
-  @include breakpoint(lg) {
-    height: 400px;
+  @include breakpoint(md) {
+    height: 550px;
   }
   @include breakpoint(xl) {
-    height: 600px;
+    height: 670px;
   }
   @include breakpoint(xxl) {
     height: 900px;

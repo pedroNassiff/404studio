@@ -67,16 +67,7 @@ export default function App() {
       <Swiper 
       effect={'coverflow'}  
       centeredSlides={true} 
-      slidesPerView={3}
-
-      // breakpoints={{
-      //   400: {
-      //     slidesPerView: 3,
-      //   },
-      //   770: {
-      //     slidesPerView: 3,
-      //   },
-      // }}
+      slidesPerView= {3}
       
       coverflowEffect={{
         "rotate": 0,
@@ -92,55 +83,47 @@ export default function App() {
       loop={true}
       >
         <SwiperSlide>
-          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
-          </div>            
+          <div className={styles.container}>
+
+        <img src='/imagenes/Desarrollo web .jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+          </div>
+            
         </SwiperSlide>
 
         <SwiperSlide>
         <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
-          </div>           
+        <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
+            <div className={styles.borde}></div>
+          </div>
+           
         </SwiperSlide>
 
         <SwiperSlide>
           <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
+        <div className={styles.container}>
+        <img src='/imagenes/Generación de contenidos.jpg' className={`${styles["img"]} ${styles["img--3"]}`}/>
+            <div className={styles.borde}></div>
+            
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
-          </div>    
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
+          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+        <div className={styles.container}>
+        <img src='/imagenes/identidad de marca -07.jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+          </div>
           </div>
             
         </SwiperSlide>
         <SwiperSlide>
-        <div className={`${styles.container} aspect_ratio aspect_ratio--16by9`}>
-            <div className={`aspect_ratio__item object_fit_cover`}>
-              <img src='/gray_2.jpg' className={styles.img} />
-              <div className={styles.borde}></div>
-            </div>
+          <div className={`${styles.container} aspect_ratio aspect_ratio--16by9`}>
+        <div className={styles.container}>
+        <img src='/imagenes/Marketing digital -07.jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+          </div>
           </div>
             
         </SwiperSlide>
