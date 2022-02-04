@@ -28,11 +28,7 @@
 
   @include breakpoint(sm) {
     font-size: 48px;
-<<<<<<< HEAD
-    margin-left: -15px;
-=======
     // margin-left: -30px;
->>>>>>> dev-gaston
   }
 
   @include breakpoint(md) {
@@ -40,11 +36,7 @@
   }
 
   @include breakpoint(lg) {
-<<<<<<< HEAD
-    margin: 0;
-=======
     // margin-left: -25px;
->>>>>>> dev-gaston
     font-size: 112px;
   }
   @include breakpoint(xxxl) {
