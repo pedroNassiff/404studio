@@ -92,7 +92,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
+        <div className={`${styles.container}`}>
         <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
             <div className={styles.borde}></div>
           </div>
@@ -100,30 +100,24 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
         <div className={styles.container}>
         <img src='/imagenes/Generación de contenidos.jpg' className={`${styles["img"]} ${styles["img--3"]}`}/>
             <div className={styles.borde}></div>
             
           </div>
-          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className={`${styles.container} aspect_ratio aspect_ratio--9by16`}>
         <div className={styles.container}>
         <img src='/imagenes/identidad de marca -07.jpg' className={styles.img} />
             <div className={styles.borde}></div>
           </div>
-          </div>
             
         </SwiperSlide>
         <SwiperSlide>
-          <div className={`${styles.container} aspect_ratio aspect_ratio--16by9`}>
         <div className={styles.container}>
         <img src='/imagenes/Marketing digital -07.jpg' className={styles.img} />
             <div className={styles.borde}></div>
-          </div>
           </div>
             
         </SwiperSlide>
