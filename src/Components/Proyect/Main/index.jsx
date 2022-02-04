@@ -35,25 +35,20 @@ const index = (props) => {
          ))
       }
         </div>
-      </div>
-
-      
+      </div>      
       {
         NextProyect > MaxProyects ?(
-          <button disabled className={styles.btn}>
-        <h6 className={styles["next_proyect__link"]}>Next Proyect</h6>
-      </button>
+          <button disabled className={`${styles["btn--disable"]}`}>
+            <h6 className={`${styles["next_proyect__link--disable"]}`}>Next Proyect</h6>
+          </button>
           ):(
-            <button className={styles.btn}>
-          <Link href={`/proyect/${NextProyect}`} className={styles.NextProyect}  >
-            <h6 className={styles["next_proyect__link"]}>Next Proyect</h6>
-          </Link>
-      </button>
-
+          <button className={styles.btn}>
+            <Link href={`/proyect/${NextProyect}`} className={styles.NextProyect}  >
+              <h6 className={`${styles["next_proyect__link"]}`}>Next Proyect</h6>
+            </Link>
+          </button>
           )
-      }
-
-      
+        }      
     </div>
   )
 }
