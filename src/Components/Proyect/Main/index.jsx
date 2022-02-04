@@ -8,7 +8,6 @@ const index = (props) => {
   const NextProyect = linkId + 1
   
   const MaxProyects = proyects.length 
-  console.log(props.props.description)
   
 
   return (
