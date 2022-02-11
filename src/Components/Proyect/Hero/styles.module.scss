@@ -49,10 +49,13 @@
   @include breakpoint(lg) {
   }
   @include breakpoint(xl) {
-    font-size: 166px;
+    font-size: 106px;
     line-height: 200px;
     max-width: 1400px;
     margin: 0;
+  }
+  @include breakpoint(xxxl) {
+    font-size: 166px;
   }
 }
 

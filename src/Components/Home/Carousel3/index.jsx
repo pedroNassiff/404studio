@@ -84,43 +84,60 @@ export default function App() {
       >
         <SwiperSlide>
           <div className={styles.container}>
-
-        <img src='/imagenes/Desarrollo web .jpg' className={styles.img} />
+            <img src='/imagenes/Desarrollo web .jpg' className={styles.img} />
             <div className={styles.borde}></div>
-          </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={styles.container}>
-
-        <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
-            <div className={styles.borde}></div>
-          </div>
-           
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/imagenes/Generación de contenidos.jpg' className={`${styles["img"]} ${styles["img--3"]}`}/>
-            <div className={styles.borde}></div>
-            
+            <div className={styles.hover}>
+              <div className={styles.text}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam architecto accusamus dolorum magni nobis recusandae aliquid impedit voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio rem odit molestias!
+              </div>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/imagenes/identidad de marca -07.jpg' className={styles.img} />
+          <div className={styles.container}>
+            <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
             <div className={styles.borde}></div>
+            <div className={styles.hover}>
+              <div className={styles.text}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam architecto accusamus dolorum magni nobis recusandae aliquid impedit voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio rem odit molestias!
+              </div>
+            </div>
           </div>
-            
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.container}>
-        <img src='/imagenes/Marketing digital -07.jpg' className={styles.img} />
+          <div className={styles.container}>
+            <img src='/imagenes/Generación de contenidos.jpg' className={`${styles["img"]} ${styles["img--3"]}`}/>
             <div className={styles.borde}></div>
+            <div className={styles.hover}>
+              <div className={styles.text}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam architecto accusamus dolorum magni nobis recusandae aliquid impedit voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio rem odit molestias!
+              </div>
+            </div>
           </div>
-            
         </SwiperSlide>
-        
-    </Swiper>
+        <SwiperSlide>
+          <div className={styles.container}>
+            <img src='/imagenes/identidad de marca -07.jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+            <div className={styles.hover}>
+              <div className={styles.text}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam architecto accusamus dolorum magni nobis recusandae aliquid impedit voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio rem odit molestias!
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.container}>
+            <img src='/imagenes/Marketing digital -07.jpg' className={styles.img} />
+            <div className={styles.borde}></div>
+            <div className={styles.hover}>
+              <div className={styles.text}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam architecto accusamus dolorum magni nobis recusandae aliquid impedit voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio rem odit molestias!
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </>
   )
 }

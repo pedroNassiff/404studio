@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import Link from "next/link"
+import Multimedia from "../Multimedia"
 import {proyects} from "../../../../const"
 
 const index = (props) => {
@@ -8,7 +9,6 @@ const index = (props) => {
   const NextProyect = linkId + 1
   
   const MaxProyects = proyects.length 
-  console.log(props.props.description)
   
 
   return (
@@ -17,22 +17,7 @@ const index = (props) => {
         <div className={styles.wrap}>
       {
         props.props.content.map(item=>(
-          <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>
-            {
-              item.video? (
-                <div className={`aspect_ratio__item`}>
-                  <video src={`/proyects/${props.props.description}/videos/${item.link}`} autoPlay loop muted={true} className={styles.img}>
-                    <source src={`/proyects/${props.props.description}/videos/${item.link}`} type="video/mp4" ></source>
-                  </video>
-                </div>
-              )
-              :
-              (<div className={`aspect_ratio__item`}>
-                <img src={`/proyects/${props.props.description}/photos/${item.link}`} alt="" className={styles.img} />
-              </div>
-              )
-            }
-          </div>
+          <Multimedia video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
          ))
       }
         </div>

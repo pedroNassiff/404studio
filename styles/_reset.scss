@@ -43,6 +43,25 @@ a {
 * {
   box-sizing: border-box;
 }
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  transform: scale(1);
+}
+.aspect_ratio__item.active .img {
+  transform: scale(1.1);
+  transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 // ---------------------- swiper3 ----------------
 .swiper-slide.swiper-slide.swiper-slide {
@@ -74,11 +93,11 @@ a {
   }
 }
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
-  margin-right: 10px;
   margin-top: 55px;
   max-width: 80px;
   max-height: 140px;
   background-color: transparent;
+  margin-right: 15px;
 
   @include breakpoint(sm) {
     margin-right: 25px;
@@ -101,11 +120,11 @@ a {
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
-  margin-left: 10px;
   max-width: 80px;
   margin-top: 55px;
   max-height: 140px;
   background-color: transparent;
+  // margin-left: 15px;
 
   @include breakpoint(sm) {
     margin-left: 25px;
@@ -131,15 +150,12 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  max-height: 500px;
-  margin-top: 25px;
-
   max-height: 198px;
-  margin: 0 30px;
+  margin: 0 35px;
   margin-top: 25px;
   @include breakpoint(sm) {
     max-height: 380px;
-    margin: 0 38px;
+    margin: 0 45px;
     margin-top: 25px;
   }
 
