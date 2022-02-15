@@ -5,7 +5,7 @@ import Animation from "../src/Components/Proyect/Animation"
 export default function  () {
   return (
     <div>
-      Animation
+      <Animation/>
     </div>
   )
 }
