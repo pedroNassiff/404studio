@@ -1,4 +1,6 @@
 import Carousel3 from "../Carousel3"
+import Carousel from "../Carousel"
+
 import styles from "./styles.module.scss"
 import Slide from 'react-reveal/Slide';
 
@@ -16,7 +18,8 @@ export default function Index() {
       </div>
 
       <div className={`${styles["servi__wrap"]} custom_container custom_container--xxxl`}>
-        <Carousel3/>        
+        {/* <Carousel3/>     */}
+        <Carousel/>    
       </div>
     </div>
   )

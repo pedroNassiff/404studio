@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import hero from "./styles.module.scss";
 import Menu from "../../Shared/Menu"
 import ReactPlayer from "react-player";
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import Fade from 'react-reveal/Fade';
+<<<<<<< HEAD
 import { animated, useSpring } from "react-spring";
 
+=======
+// --------------------------------
+import gsap from "gsap";
+import SplitText from "../../../utils/Split3.min.js";
+>>>>>>> dev-gaston
 
 export default function Hero() {
   const [state, setstate] = useState(true)
   const [open, set] = useState(true)
 
+<<<<<<< HEAD
   // const move = useSpring({
   //   from: {
   //     transform: `translatey(400 : -400}%)`,
@@ -19,6 +26,22 @@ export default function Hero() {
   //   transform: "translateX(0)",
   //   config: { frequency: 2 },
   // });
+=======
+  useEffect(() => {
+    const split = new SplitText("#header-text", {
+      type: "lines",
+      linesClass: "lineChildren",
+    });
+
+    gsap.to(split.lines, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      stagger: 0.1,
+      ease: "power2",
+    });
+  }, []);
+>>>>>>> dev-gaston
 
 
   return (
@@ -26,6 +49,7 @@ export default function Hero() {
       <div className={`${hero["hero__container"]} custom_container custom_container--xxxl`}>
         <div className={hero["hero_top"]}>
 
+<<<<<<< HEAD
         {/* <animated.div style={move}>
           <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
           <h1 className={hero["hero_top__title"]}>Fuck the Limit</h1>
@@ -33,6 +57,19 @@ export default function Hero() {
        
 
         <Fade bottom cascade delay={1500}>
+=======
+          <div className={hero["header-container"]}>
+        <h1 className={hero["hero_top__title"]} id="header-text">Fuck the Roof</h1>
+
+          </div>
+  
+        <h1 className={hero["hero_top__title"]} id="prueba">Fuck the Limit</h1>
+        <h1 className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `} id="prueba">Fuck Everthing.</h1>
+
+       
+
+        {/* <Fade bottom cascade delay={4000}>
+>>>>>>> dev-gaston
           <div className={hero["cont"]}>
             <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
           </div>        
@@ -42,7 +79,7 @@ export default function Hero() {
           <div className={hero["cont"]}>
             <h1 className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `}>Fuck Everthing.</h1>
           </div>
-        </Fade>
+        </Fade> */}
 
         </div>
         <div className={`${hero["hero_bottom"]} `}>
