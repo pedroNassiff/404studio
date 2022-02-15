@@ -18,8 +18,8 @@ const index = (props) => {
         <div className={styles.wrap}>
       {
         props.props.content.map(item=>(
-          // <Multimedia video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
-          <Animation video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
+          <Multimedia video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
+          // <Animation video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
           ))
       }
         </div>

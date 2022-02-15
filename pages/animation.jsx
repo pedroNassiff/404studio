@@ -1,5 +1,5 @@
 import React from 'react'
-import Animation from "../src/Components/Proyect/Animation"
+// import Animation from "../src/Components/Proyect/Animation"
 
 
 export default function  () {

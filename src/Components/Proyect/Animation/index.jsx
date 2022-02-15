@@ -29,38 +29,38 @@
 // //       </div>
 // //   )
 // // }
-class MyComponent extends React.Component {
-  state = {
-    x: 0,
-    y: 0,
-  };
+// class MyComponent extends React.Component {
+//   state = {
+//     x: 0,
+//     y: 0,
+//   };
 
-  element = React.createRef();
+//   element = React.createRef();
 
-  onWindowResize = () => {
-    if (this.element.current) {
-      const {x, y} = this.element.current.getBoundingClientRect();
-      this.setState({x, y}, () => {
-        console.log(this.state);
-      });
-    }
-  };
+//   onWindowResize = () => {
+//     if (this.element.current) {
+//       const {x, y} = this.element.current.getBoundingClientRect();
+//       this.setState({x, y}, () => {
+//         console.log(this.state);
+//       });
+//     }
+//   };
 
-  componentDidMount() {
-    window.addEventListener('resize', this.onWindowResize);
-  }
+//   componentDidMount() {
+//     window.addEventListener('resize', this.onWindowResize);
+//   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.onWindowResize);
-  }
+//   componentWillUnmount() {
+//     window.removeEventListener('resize', this.onWindowResize);
+//   }
 
-  render() {
-    return (
-      <div ref={this.element}>
-        <button>Hello, World</button>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div ref={this.element}>
+//         <button>Hello, World</button>
+//       </div>
+//     );
+//   }
+// }
 
-export default MyComponent
+// export default MyComponent
