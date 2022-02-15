@@ -162,3 +162,15 @@
   object-fit: cover;
   z-index: 10;
 }
+
+.lineChildren {
+  transform: translate(0, 1000px);
+}
+.lineParent {
+  overflow: hidden;
+}
+
+// ----------------------
+.header-container {
+  position: relative;
+}

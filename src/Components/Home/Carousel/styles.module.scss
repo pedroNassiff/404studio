@@ -1,0 +1,104 @@
+@import "./../../../../styles/utils";
+
+.cont {
+  padding: 0 15px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  @include breakpoint(xxxl) {
+    // padding: 0 70px;
+  }
+  // // height: 400px;
+  // // width: 300px;
+  // margin: 0 auto;
+  // object-fit: cover;
+  // object-position: center;
+  // background-color: transparent !important;
+
+  // @include breakpoint(md) {
+  //   // max-height: 300px;
+  //   // max-width: 500px;
+  //   margin: 0;
+  //   object-fit: cover;
+  // }
+
+  // @include breakpoint(lg) {
+  //   height: 100%;
+  //   width: 100%;
+  //   margin: 0;
+  //   object-fit: cover;
+  // }
+
+  // @include breakpoint(xl) {
+  //   height: 100%;
+  //   width: 100%;
+  // }
+
+  // @include breakpoint(xxxl) {
+  //   max-height: 850px;
+  // }
+
+  // // &:hover .hover {
+  // //   display: block;
+  // // }
+
+  // -----------------
+}
+
+.img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  // // max-height: 300px;
+  z-index: 10;
+  // object-fit: cover;
+  // object-position: 0% 20%;
+
+  // @include breakpoint(md) {
+  //   object-fit: cover;
+  // }
+
+  // @include breakpoint(xl) {
+  //   object-fit: cover;
+  // }
+}
+
+// .img--2 {
+//   object-position: center;
+// }
+
+// .img--3 {
+//   object-position: -10px -35px;
+// }
+
+.borde {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border: 2px solid rgba(255, 255, 255, 0.753);
+  height: 100%;
+  width: 100%;
+}
+
+.hover {
+  // display: none;
+  // overflow: hidden;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  // width: 100%;
+  // z-index: 100;
+  // background-color: rgba(0, 0, 0, 0.623);
+}
+
+.text {
+  // position: absolute;
+  // top: 0px;
+  // left: 0;
+  // line-height: 22px;
+}
