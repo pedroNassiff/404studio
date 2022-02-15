@@ -29,27 +29,38 @@
 // //       </div>
 // //   )
 // // }
-// import React from 'react'
+class MyComponent extends React.Component {
+  state = {
+    x: 0,
+    y: 0,
+  };
 
-// class MyComponent extends React.Component {
-//   state = { x: 0, y: 0 }
+  element = React.createRef();
 
-//   refCallback = (element) => {
-//     if (!element) {
-//       return
-//     }
-//     const { x, y } = element.getBoundingClientRect()
-//     this.setState({ x, y })
-//   }
-  
-//   render() {
-//     console.log('STATE:', this.state.y) // Outputs the correct x and y values.
-//     return (
-//       <div ref={this.refCallback} className={`${styles["img"]}`}>
-//      <img  src="/gray.jpg" alt="" className={this.state.y < 0 ? styles["im"] : styles["im--2"]}  />        
+  onWindowResize = () => {
+    if (this.element.current) {
+      const {x, y} = this.element.current.getBoundingClientRect();
+      this.setState({x, y}, () => {
+        console.log(this.state);
+      });
+    }
+  };
 
-//       </div>
-//     )
-//   }
-// }
-// export default MyComponent
+  componentDidMount() {
+    window.addEventListener('resize', this.onWindowResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onWindowResize);
+  }
+
+  render() {
+    return (
+      <div ref={this.element}>
+        <button>Hello, World</button>
+      </div>
+    );
+  }
+}
+
+export default MyComponent

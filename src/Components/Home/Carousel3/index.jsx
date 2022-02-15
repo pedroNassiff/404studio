@@ -93,16 +93,9 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-<<<<<<< HEAD
-
-        <SwiperSlide>
-        <div className={`${styles.container}`}>
-        <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
-=======
         <SwiperSlide>
           <div className={styles.container}>
             <img src='/imagenes/Estrategia de comunicación .jpg' className={`${styles["img"]} ${styles["img--2"]}`} />
->>>>>>> dev-gaston
             <div className={styles.borde}></div>
             <div className={styles.hover}>
               <div className={styles.text}>

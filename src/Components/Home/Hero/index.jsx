@@ -5,28 +5,14 @@ import ReactPlayer from "react-player";
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import Fade from 'react-reveal/Fade';
-<<<<<<< HEAD
-import { animated, useSpring } from "react-spring";
-
-=======
 // --------------------------------
 import gsap from "gsap";
 import SplitText from "../../../utils/Split3.min.js";
->>>>>>> dev-gaston
 
 export default function Hero() {
   const [state, setstate] = useState(true)
   const [open, set] = useState(true)
 
-<<<<<<< HEAD
-  // const move = useSpring({
-  //   from: {
-  //     transform: `translatey(400 : -400}%)`,
-  //   },
-  //   transform: "translateX(0)",
-  //   config: { frequency: 2 },
-  // });
-=======
   useEffect(() => {
     const split = new SplitText("#header-text", {
       type: "lines",
@@ -41,7 +27,6 @@ export default function Hero() {
       ease: "power2",
     });
   }, []);
->>>>>>> dev-gaston
 
 
   return (
@@ -49,15 +34,6 @@ export default function Hero() {
       <div className={`${hero["hero__container"]} custom_container custom_container--xxxl`}>
         <div className={hero["hero_top"]}>
 
-<<<<<<< HEAD
-        {/* <animated.div style={move}>
-          <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
-          <h1 className={hero["hero_top__title"]}>Fuck the Limit</h1>
-        </animated.div> */}
-       
-
-        <Fade bottom cascade delay={1500}>
-=======
           <div className={hero["header-container"]}>
         <h1 className={hero["hero_top__title"]} id="header-text">Fuck the Roof</h1>
 
@@ -69,7 +45,6 @@ export default function Hero() {
        
 
         {/* <Fade bottom cascade delay={4000}>
->>>>>>> dev-gaston
           <div className={hero["cont"]}>
             <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
           </div>        

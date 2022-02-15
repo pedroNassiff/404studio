@@ -163,47 +163,9 @@ a {
     margin-top: 15px !important;
   }
 
-<<<<<<< HEAD
-  @include breakpoint(xxl) {
-    bottom: 15px !important;
-    font-size: 60px !important;
-  }
-}
-
-.swiper-3d .swiper-slide-shadow-left {
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.507),
-    rgba(0, 0, 0, 0.507)
-  ) !important;
-
-  @include breakpoint(sm) {
-    background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.705),
-      rgba(0, 0, 0, 0.705)
-    ) !important;
-  }
-}
-
-.swiper-3d .swiper-slide-shadow-right {
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.507),
-    rgba(0, 0, 0, 0.507)
-  ) !important;
-
-  @include breakpoint(sm) {
-    background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.705),
-      rgba(0, 0, 0, 0.705)
-    ) !important;
-=======
   @include breakpoint(xxxl) {
     height: 800px;
     width: 34% !important;
->>>>>>> dev-gaston
   }
 }
 
