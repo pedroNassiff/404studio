@@ -1,70 +1,85 @@
-// // import {useEffect,useRef,useState} from 'react'
-// import styles from "./styles.module.scss";
-
-// // export default function index() { 
-// //   const image = useRef();
-// //   useEffect(() => {
-// //     window.addEventListener("scroll", function () {  
-// //       let image = document.querySelector(".aspect_ratio__item");
-// //       let position = image.current.getBoundingClientRect();
-// //       console.log(position)
-// //       // const algo = _ => {
-// //       //   console.log(image.current.getBoundingClientRect());
-// //       // };
-  
-  
-// //       // let screenSize = window.innerHeight / 1.5;
-// //       // if (position < screenSize) {
-// //       //   image.classList.add("transition");
-// //       // }
-// //       // if (window.innerWidth > 768) {
-// //       //   image.classList.remove("transition");
-// //       // }
-// //     });
-// //   }, []);
-
-// //   return (       
-// //        <div className={` aspect_ratio aspect_ratio--16by9`} >
-// //         <img  src="/gray.jpg" alt="" ref={image} />        
-// //       </div>
-// //   )
-// // }
-import React from "react";
+import {useEffect,useRef,useState} from 'react'
 import styles from "./styles.module.scss";
-class MyComponent extends React.Component {
-  state = {
-    x: 0,
-    y: 0,
-  };
 
-  element = React.createRef();
+export default function index() { 
+  const [select,setSelect] = useState(1)
+  const [scale,setScale] = useState(0)
+  const[probar,setProbar]=useState('1.0')
 
-  onWindowResize = () => {
-    if (this.element.current) {
-      const {x, y} = this.element.current.getBoundingClientRect();
-      this.setState({x, y}, () => {
-        console.log(this.state.y);
-      });
+  const handleScale =()=>{
+    if(scale > 130 && scale<1000){
+      setProbar('1.0')
     }
-  };
-
-  componentDidMount() {
-    window.addEventListener('resize', this.onWindowResize);
+    if(scale<=130 && scale > 100){
+      setProbar('1.1')
+    }
+    if(scale<=100 && scale > 50){
+      setProbar('1.2')
+    }
+    if(scale<=50 && scale > -50){
+      setProbar('1.3')
+    }
+    if(scale<=-50 && scale > -150){
+      setProbar('1.4')
+    }
+    if(scale<= -150 && scale > -250){
+      setProbar('1.5')
+    }
+    if(scale<=-250 && scale > -350){
+      setProbar('1.6')
+    }
+    if(scale<=-350 && scale > -450){
+      setProbar('1.7')
+    }
+    if(scale<=-450 && scale > -550){
+      setProbar('1.8')
+    }
+    if(scale<-555 && scale>=-1000){
+      setProbar('1.9')
+    }
   }
+  const ver = parseFloat(probar)
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.onWindowResize);
-  }
+  useEffect(()=>{
+    window.addEventListener("scroll", function () {  
+      let image = document.querySelector(".algo");
+      let position = Math.trunc(image.getBoundingClientRect().top)
+      let screenSize = Math.trunc(window.innerHeight / 3.5);
+      if (position > screenSize && position <1000) {
+        setSelect(1)
+        handleScale()
 
-  render() {
-    console.log(this.state.y);
+      }
+      if (position < screenSize && position > -555) {
+        setSelect(2)
+        setScale(position)
+        handleScale()
+        }
+      if (position < -555) {
+        setSelect(1)
+        handleScale()
+
+
+
+        }
+        console.log('position',position)
+        console.log('scrensize',screenSize)
+        console.log('select',select)
+
+    },[])
     
-    return (
+    // let screenSize = window.innerHeight / 1.5;
+    // if (position < screenSize) {
+      //   image.classList.add("transition");
+      // }
+      });
+      
 
-      <div ref={this.myRef} className={`${styles["img"]}`}>
-        <img  src="/gray.jpg" alt="" className={this.state.y >200 ? styles["im"]:styles["im--2"]} />  
+      return (       
+      <div  className={`algo ${styles["img"]}`}>
+        <div className={styles["cont"]}>
+          <img src="/pexels-евгения-егорова-9595891.jpg" alt=""className={select === 2 ? styles["im--2"] : styles["im"]} style={{ transform : `scale(${ver})`}}  />        
+        </div>
       </div>
-    );
-  }
+  )
 }
-export default MyComponent

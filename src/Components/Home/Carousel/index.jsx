@@ -56,22 +56,22 @@ export default function App() {
         // spaceBetween={200}
         breakpoints={{
           370: {
-            spaceBetween:40,
+            spaceBetween:25,
           },
           640: {
             spaceBetween: 50,
           },
           768: {
-            spaceBetween: 80,
+            spaceBetween: 37,
           },
           1024: {
             spaceBetween: 80,
           },
           1279: {
-            spaceBetween:155
+            spaceBetween:65,
           },
           1601: {
-            spaceBetween:130
+            spaceBetween:80,
           },
 
         }}

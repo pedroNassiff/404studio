@@ -2,14 +2,29 @@
 
 .img {
   margin-top: 120vh;
-  margin-bottom: 100vh;
+  margin-bottom: 2000px;
+  // border: 1px solid green;
+}
+
+.cont {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  max-height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid red;
 }
 
 .im {
-  border: 2px solid red;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
 }
 .im--2 {
-  border: 4px solid rgb(0, 47, 255);
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
 }
 // .images {
 //   width: 100%;

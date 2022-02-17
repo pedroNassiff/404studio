@@ -64,48 +64,34 @@ a {
 }
 
 // ---------------------- swiper3 ----------------
-// .swiper-slide-duplicate-next {
-//   height: 600px;
-//   max-width: 100% !important;
-//   margin-top: 100px !important;
-//   border: 1px solid rgb(0, 217, 255);
-// }
-// .swiper-slide-duplicate-prev {
-//   height: 600px;
-//   max-width: 100% !important;
-//   margin-top: 100px !important;
-//   border: 1px solid rgb(0, 255, 55);
-// }
-// .swiper-slide-duplicate {
-//   height: 600px;
-//   max-width: 100% !important;
-//   margin-top: 100px !important;
-//   border: 1px solid red;
-// }
+
 .swiper-slide.swiper-slide.swiper-slide {
   height: 120px;
-  max-width: 29%;
-  margin-top: 10px !important;
+  margin: 2px;
+  margin-top: 30px !important;
   @include breakpoint(md) {
+    margin: 5px;
+
     height: 220px;
     margin-top: 50px !important;
   }
   @include breakpoint(xl) {
-    height: 350px;
+    height: 400px;
+    margin: 5px;
     margin-top: 80px !important;
   }
 
   @include breakpoint(xxxl) {
     height: 600px;
     margin: 10px;
-    margin-top: 100px !important;
+    margin-top: 70px !important;
   }
 }
 
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
   height: 120px;
-  max-width: 22%;
-  margin-top: 10px !important;
+  max-width: 23%;
+  margin-top: 30px !important;
   @include breakpoint(md) {
     height: 220px;
     max-width: 22%;
@@ -113,44 +99,43 @@ a {
   }
 
   @include breakpoint(xl) {
-    height: 350px;
-    max-width: 22%;
+    height: 400px;
+    max-width: 25%;
     margin-top: 80px !important;
   }
 
   @include breakpoint(xxxl) {
     height: 600px;
-    max-width: 24%;
-    margin-top: 100px !important;
+    max-width: 26%;
+    margin-top: 70px !important;
   }
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
   height: 120px;
-  max-width: 22%;
-  margin-top: 10px !important;
+  max-width: 23%;
+  margin-top: 30px !important;
   @include breakpoint(md) {
     height: 220px;
     max-width: 22%;
     margin-top: 50px !important;
   }
   @include breakpoint(xl) {
-    height: 350px;
-    max-width: 22%;
+    height: 400px;
+    max-width: 25%;
     margin-top: 80px !important;
   }
 
   @include breakpoint(xxxl) {
-    // max-width: 25%;
     height: 600px;
-    max-width: 24%;
-    margin-top: 100px !important;
+    max-width: 26%;
+    margin-top: 70px !important;
   }
 }
 
 .swiper-slide-active.swiper-slide-active.swiper-slide-active {
   height: 150px;
-  width: 30% !important;
+  width: 31% !important;
   margin-top: 15px !important;
   @include breakpoint(md) {
     height: 350px;
@@ -158,8 +143,8 @@ a {
     margin-top: 15px !important;
   }
   @include breakpoint(xl) {
-    height: 500px;
-    width: 38% !important;
+    height: 550px;
+    width: 33% !important;
     margin-top: 15px !important;
   }
 
@@ -182,7 +167,7 @@ a {
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev {
   left: 90px;
-  top: 83%;
+  top: 91%;
   &::before {
     content: "";
     left: 0;
@@ -195,8 +180,8 @@ a {
   }
 
   @include breakpoint(md) {
-    left: 210px;
-    top: 80%;
+    left: 200px;
+    top: 93%;
     &::before {
       content: "";
       left: 0;
@@ -211,7 +196,7 @@ a {
 
   @include breakpoint(xl) {
     left: 420px;
-    top: 97%;
+    top: 95%;
     &::before {
       content: "";
       left: 0;
@@ -228,23 +213,19 @@ a {
     left: 590px;
     top: 94%;
   }
+}
 
-  // &::before {
-  //   content: "";
-  //   left: 0;
-  //   position: absolute;
-  //   width: 50px;
-  //   height: 3px;
-  //   background-color: white;
-  //   border-radius: 200px;
-  //   margin-left: 4px;
-  // }
+.swiper.swiper.swiper {
+  padding: 70px 0;
+  @include breakpoint(md) {
+    padding: 100px 0;
+  }
 }
 
 .swiper-button-next.swiper-button-next.swiper-button-next {
   font-size: 20px;
   right: 90px;
-  top: 83%;
+  top: 91%;
   &::before {
     content: "";
     right: 0;
@@ -257,8 +238,8 @@ a {
   }
 
   @include breakpoint(md) {
-    right: 210px;
-    top: 80%;
+    right: 200px;
+    top: 93%;
     &::before {
       content: "";
       right: 0;
@@ -273,7 +254,7 @@ a {
 
   @include breakpoint(xl) {
     right: 420px;
-    top: 97%;
+    top: 95%;
     &::before {
       content: "";
       right: 0;
@@ -290,14 +271,12 @@ a {
     right: 590px;
     top: 94%;
   }
-  // &::before {
-  //   content: "";
-  //   right: 0;
-  //   position: absolute;
-  //   width: 50px;
-  //   height: 3px;
-  //   background-color: white;
-  //   border-radius: 200px;
-  //   margin-right: 4px;
-  // }
+}
+
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+  font-size: 30px !important;
+
+  @include breakpoint(md) {
+    font-size: 50px !important;
+  }
 }

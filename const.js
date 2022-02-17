@@ -26,6 +26,8 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "Anima Vuelta.mp4",
+        object_fit: "contain",
+        object_position: "top",
       },
       { id: 3, video: false, link: "Anima16.50.05.jpeg", object_fit: "contain" },
     ],

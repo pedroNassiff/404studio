@@ -77,11 +77,15 @@
 
 .borde {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
   border: 2px solid rgba(255, 255, 255, 0.753);
   height: 100%;
   width: 100%;
+  @include breakpoint(md) {
+    top: -10px;
+    left: -10px;
+  }
 }
 
 .hover {
