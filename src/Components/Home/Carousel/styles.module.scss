@@ -4,9 +4,18 @@
   padding: 0 15px;
 }
 
+.wrap {
+  overflow: hidden;
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   height: 100%;
   width: 100%;
+  position: relative;
   @include breakpoint(xxxl) {
     // padding: 0 70px;
   }
@@ -40,65 +49,66 @@
   //   max-height: 850px;
   // }
 
-  // // &:hover .hover {
-  // //   display: block;
-  // // }
+  &:hover .hover {
+    top: 0;
+    transition: 1s linear;
+  }
 
   // -----------------
 }
 
 .img {
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: top;
-  // // max-height: 300px;
-  z-index: 10;
-  // object-fit: cover;
-  // object-position: 0% 20%;
-
-  // @include breakpoint(md) {
-  //   object-fit: cover;
-  // }
-
-  // @include breakpoint(xl) {
-  //   object-fit: cover;
-  // }
 }
 
-// .img--2 {
-//   object-position: center;
-// }
+.img--2 {
+  object-position: center;
+}
 
-// .img--3 {
-//   object-position: -10px -35px;
-// }
+.img--3 {
+  object-position: 0px -35px;
+}
 
 .borde {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: -5px;
+  left: -5px;
   border: 2px solid rgba(255, 255, 255, 0.753);
   height: 100%;
   width: 100%;
+  z-index: -2;
+  @include breakpoint(md) {
+    top: -10px;
+    left: -10px;
+  }
 }
 
 .hover {
-  // display: none;
-  // overflow: hidden;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // height: 100%;
-  // width: 100%;
-  // z-index: 100;
-  // background-color: rgba(0, 0, 0, 0.623);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.623);
+  transition: 1s linear;
 }
 
 .text {
-  // position: absolute;
-  // top: 0px;
-  // left: 0;
-  // line-height: 22px;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 25px;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

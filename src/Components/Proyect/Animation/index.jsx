@@ -1,66 +1,88 @@
-// // import {useEffect,useRef,useState} from 'react'
-// import styles from "./styles.module.scss";
+import { useEffect, useRef, useState } from "react";
+import styles from "./styles.module.scss";
 
-// // export default function index() { 
-// //   const image = useRef();
-// //   useEffect(() => {
-// //     window.addEventListener("scroll", function () {  
-// //       let image = document.querySelector(".aspect_ratio__item");
-// //       let position = image.current.getBoundingClientRect();
-// //       console.log(position)
-// //       // const algo = _ => {
-// //       //   console.log(image.current.getBoundingClientRect());
-// //       // };
-  
-  
-// //       // let screenSize = window.innerHeight / 1.5;
-// //       // if (position < screenSize) {
-// //       //   image.classList.add("transition");
-// //       // }
-// //       // if (window.innerWidth > 768) {
-// //       //   image.classList.remove("transition");
-// //       // }
-// //     });
-// //   }, []);
+export default function index() {
+  const [select, setSelect] = useState(1);
+  const [scale, setScale] = useState(0);
+  const [probar, setProbar] = useState("1.0");
 
-// //   return (       
-// //        <div className={` aspect_ratio aspect_ratio--16by9`} >
-// //         <img  src="/gray.jpg" alt="" ref={image} />        
-// //       </div>
-// //   )
-// // }
-// class MyComponent extends React.Component {
-//   state = {
-//     x: 0,
-//     y: 0,
-//   };
+  const [position, setPosition] = useState(null);
+  const [screenSize, setScreenSize] = useState(null);
 
-//   element = React.createRef();
+  const handleScale = () => {
+    if (scale > 130 && scale < 1000) {
+      setProbar("1.05");
+    }
+    if (scale <= 130 && scale > 100) {
+      setProbar("1.10");
+    }
+    //   if (scale <= 100 && scale > 50) {
+    //     setProbar("1.15");
+    //   }
+    //   if (scale <= 50 && scale > -50) {
+    //     setProbar("1.20");
+    //   }
+    //   if (scale <= -50 && scale > -150) {
+    //     setProbar("1.25");
+    //   }
+    //   if (scale <= -150 && scale > -250) {
+    //     setProbar("1.30");
+    //   }
+    //   if (scale <= -250 && scale > -350) {
+    //     setProbar("1.35");
+    //   }
+    //   if (scale <= -350 && scale > -450) {
+    //     setProbar("1.40");
+    //   }
+    //   if (scale <= -450 && scale > -550) {
+    //     setProbar("1.45");
+    //   }
+    //   if (scale < -555 && scale >= -1000) {
+    //     setProbar("1.50");
+    //   }
+  };
+  const ver = parseFloat(probar);
+  const Probar = () => {
+    let image = document.querySelector(".algo");
+    let position = Math.trunc(image.getBoundingClientRect().top);
+    setPosition(position);
+    let screenSize = Math.trunc(window.innerHeight / 3.5);
+    setScreenSize(screenSize);
+  };
 
-//   onWindowResize = () => {
-//     if (this.element.current) {
-//       const {x, y} = this.element.current.getBoundingClientRect();
-//       this.setState({x, y}, () => {
-//         console.log(this.state);
-//       });
-//     }
-//   };
+  useEffect(() => {
+    if (position > screenSize && position < 1000) {
+      setSelect(1);
+      handleScale();
+    }
+    if (position < screenSize && position > -555) {
+      setSelect(2);
+      setScale(position);
+      handleScale();
+    }
+    if (position < -555) {
+      setSelect(1);
+      handleScale();
+    }
+  }, [position, screenSize]);
 
-//   componentDidMount() {
-//     window.addEventListener('resize', this.onWindowResize);
-//   }
+  useEffect(() => {
+    window.addEventListener("scroll", Probar);
+    return () => {
+      window.removeEventListener("scroll", Probar);
+    };
+  }, []);
 
-//   componentWillUnmount() {
-//     window.removeEventListener('resize', this.onWindowResize);
-//   }
-
-//   render() {
-//     return (
-//       <div ref={this.element}>
-//         <button>Hello, World</button>
-//       </div>
-//     );
-//   }
-// }
-
-// export default MyComponent
+  return (
+    <div className={`algo ${styles["img"]}`}>
+      <div className={styles["cont"]}>
+        <img
+          src="/pexels-евгения-егорова-9595891.jpg"
+          alt=""
+          className={styles["imageScroll"]}
+          style={{ transform: `scale(${ver})` }}
+        />
+      </div>
+    </div>
+  );
+}

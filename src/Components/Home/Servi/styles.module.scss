@@ -14,18 +14,7 @@
 }
 
 .servi__wrap {
-  // height: 450px;
-
-  // @include breakpoint(sm) {
-  //   height: 600px;
-  // }
-  // @include breakpoint(md) {
-  //   height: 550px;
-  // }
-  // @include breakpoint(xl) {
-  //   height: 670px;
-  // }
-  // @include breakpoint(xxl) {
-  //   height: 1000px;
-  // }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
