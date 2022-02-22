@@ -20,6 +20,8 @@
 
   @include breakpoint(xl) {
     font-size: 96px;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 }
 
@@ -28,8 +30,8 @@
   margin-bottom: 40px;
 
   @include breakpoint(xxxl) {
-    margin-top: 120px;
-    margin-bottom: 90px;
+    margin-top: 150px;
+    margin-bottom: 190px;
   }
   // @include breakpoint() {
   // }

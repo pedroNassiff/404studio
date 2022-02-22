@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import { animated, useSpring } from "react-spring";
 
-export default function index(){
+export default function index() {
   return (
     <div className={styles["about"]}>
       <h2 className={styles["about__title"]}>About us</h2>
@@ -41,6 +41,4 @@ export default function index(){
       </div>
     </div>
   );
-};
-
-export default index;
+}
