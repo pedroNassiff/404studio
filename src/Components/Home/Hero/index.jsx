@@ -20,12 +20,17 @@ export default function Hero() {
       linesClass: "lineChildren",
     });
 
+    const splitParent = new SplitText("#header-text", {
+      type: "lines",
+      linesClass: "lineParent",
+    });
+
     gsap.to(split.lines, {
       duration: 1,
-      y: 0,
+      y: -400,
       opacity: 1,
-      stagger: 0.1,
-      ease: "power2",
+      stagger: 0.02,
+      ease: "circ.out",
     });
   }, []);
 
@@ -34,35 +39,23 @@ export default function Hero() {
       <div
         className={`${hero["hero__container"]} custom_container custom_container--xxxl`}
       >
-        <div className={hero["hero_top"]}>
-          <div className={hero["header-container"]}>
-            <h1 className={hero["hero_top__title"]} id="header-text">
-              Fuck the Roof
-            </h1>
-          </div>
-
-          <h1 className={hero["hero_top__title"]} id="prueba">
-            Fuck the Limit
-          </h1>
-          <h1
-            className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `}
-            id="prueba"
-          >
-            Fuck Everthing.
-          </h1>
-
-          {/* <Fade bottom cascade delay={4000}>
-          <div className={hero["cont"]}>
-            <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
-          </div>        
-          <div className={hero["cont"]}>
-            <h1 className={hero["hero_top__title"]}>Fuck the Limit</h1>
-          </div>        
-          <div className={hero["cont"]}>
-            <h1 className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `}>Fuck Everthing.</h1>
-          </div>
-        </Fade> */}
-        </div>
+        <section className={hero["hero_top"]}>
+          <Fade bottom cascade>
+            <div className={hero["cont"]}>
+              <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
+            </div>
+            <div className={hero["cont"]}>
+              <h1 className={hero["hero_top__title"]}>Fuck the Limit</h1>
+            </div>
+            <div className={hero["cont"]}>
+              <h1
+                className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `}
+              >
+                Fuck Everthing.
+              </h1>
+            </div>
+          </Fade>
+        </section>
         <div className={`${hero["hero_bottom"]} `}>
           <div
             className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}

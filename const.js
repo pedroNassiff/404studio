@@ -157,18 +157,18 @@ const proyects = [
         link: "116796928_970204506829246_7716625089534911811_n.mp4",
       },
       {
+        id: 3,
+        video: false,
+        link: "DSC_0635.jpg",
+        object_fit: "contain",
+      },
+      {
         id: 2,
         video: true,
         format: "mp4",
         link: "117295766_3000103843432634_7448684303335657078_n.mp4",
         object_fit: "contain",
         object_position: "top",
-      },
-      {
-        id: 3,
-        video: false,
-        link: "DSC_0635.jpg",
-        object_fit: "contain",
       },
       {
         id: 4,
@@ -396,11 +396,12 @@ const proyects = [
     description: "Marren",
     content: [
       {
-        id: 1,
+        id: 9,
         video: true,
         format: "mp4",
-        link: "Video burger.mp4",
+        link: "Video trago.mp4",
       },
+
       {
         id: 2,
         video: true,
@@ -449,11 +450,12 @@ const proyects = [
         object_fit: "contain",
       },
       {
-        id: 9,
+        id: 1,
         video: true,
         format: "mp4",
-        link: "Video trago.mp4",
+        link: "Video burger.mp4",
       },
+
       {
         id: 10,
         video: false,
@@ -482,16 +484,16 @@ const proyects = [
     description: "Moda 1",
     content: [
       {
-        id: 1,
+        id: 4,
         video: false,
-        link: "DSC_0209.jpg",
+        link: "moda1.jpg",
         object_fit: "contain",
         object_position: "top",
       },
       {
-        id: 2,
+        id: 5,
         video: false,
-        link: "DSC_0215.jpg",
+        link: "moda2.jpg",
         object_fit: "contain",
         object_position: "top",
       },
@@ -503,16 +505,16 @@ const proyects = [
         object_position: "top",
       },
       {
-        id: 4,
+        id: 1,
         video: false,
-        link: "moda1.jpg",
+        link: "DSC_0209.jpg",
         object_fit: "contain",
         object_position: "top",
       },
       {
-        id: 5,
+        id: 2,
         video: false,
-        link: "moda2.jpg",
+        link: "DSC_0215.jpg",
         object_fit: "contain",
         object_position: "top",
       },

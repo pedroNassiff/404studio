@@ -19,7 +19,10 @@ export default function index({
   const [screenSize, setScreenSize] = useState(null);
 
   const handleScale = () => {
-    if (scale > 130 && scale < 1000) {
+    // if (scale > 1000) {
+    //   setProbar("1.0");
+    // }
+    if (scale < 1000 && scale > 130) {
       setProbar("1.01");
     }
     if (scale <= 130 && scale > 100) {
@@ -46,9 +49,12 @@ export default function index({
     if (scale <= -450 && scale > -550) {
       setProbar("1.13");
     }
-    if (scale < -555 && scale >= -1000) {
+    if (scale <= -555 && scale > -1000) {
       setProbar("1.15");
     }
+    // if (scale < -1000) {
+    //   setProbar("1.16");
+    // }
   };
   const ver = parseFloat(probar);
   const Probar = () => {
@@ -113,6 +119,7 @@ export default function index({
           style={{ transform: `scale(${ver})` }}
         >
           <img
+            loading="lazy"
             src={`/proyects/${description}/photos/${link}`}
             alt=""
             className={`${styles["img"]}`}
