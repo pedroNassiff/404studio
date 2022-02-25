@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
 import Menu from "../../Shared/Menu";
 import ReactPlayer from "react-player";
@@ -13,6 +13,29 @@ import SplitText from "../../../utils/Split3.min.js";
 export default function Hero() {
   const [state, setstate] = useState(true);
   const [open, set] = useState(true);
+
+  const ref = useRef();
+
+  // useEffect(() => {
+  //   const setPlay = () => {
+  //     window.onload = function () {
+  //       ref.current.play();
+  //     };
+  //     return setPlay();
+  //   };
+  // }, []);
+  // let hasPlayed = false;
+  // function handleFirstPlay(event) {
+  //   if (hasPlayed === false) {
+  //     hasPlayed = true;
+
+  //     let vid = event.target;
+
+  //     vid.onplay = null;
+
+  //     // Start whatever you need to do after first playback has started
+  //   }
+  // }
 
   useEffect(() => {
     const split = new SplitText("#header-text", {
@@ -69,14 +92,14 @@ export default function Hero() {
 
             {state ? (
               <div
-                onClick={() => setstate(!state)}
+                onClick={() => setstate(true)}
                 className={`${hero["hero_bottom__icon"]}`}
               >
                 <VolumeOffIcon className={hero["icon__muted"]}></VolumeOffIcon>
               </div>
             ) : (
               <div
-                onClick={() => setstate(!state)}
+                onClick={() => setstate(true)}
                 className={`${hero["hero_bottom__icon"]}`}
               >
                 <VolumeUpIcon className={hero["icon__unmuted"]}></VolumeUpIcon>
@@ -100,8 +123,7 @@ export default function Hero() {
                 src="/header1.mp4"
                 className={hero["hero_video__container"]}
                 autoPlay
-                loop
-                muted={state}
+                // onplay={handleFirstPlay(event)}
               >
                 <source src="/header1.mp4" type="video/mp4"></source>
               </video>

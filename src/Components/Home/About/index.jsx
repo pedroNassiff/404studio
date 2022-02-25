@@ -1,14 +1,21 @@
 import styles from "./styles.module.scss";
+import Slide from "react-reveal/Slide";
+import AnimationZoom from "../../Shared/AnimationZoom";
 
 const index = () => {
   return (
     <div className={styles["about"]}>
-      <h2 className={styles["about__title"]}>About us</h2>
+      <div className={`${styles["cont"]}`}>
+        <Slide bottom text delay={1000}>
+          <h2 className={`${styles["about__title"]}`}>About us</h2>
+        </Slide>
+      </div>
 
       <div
         className={`${styles["about__container"]} custom_container custom_container--xxxl`}
       >
-        <div className={`${styles["about_right"]} aspect_ratio aspect_ratio--9by16`}>
+        <AnimationZoom link={"/about_v.mov"} id={1} item={false} ratio={"9by16"} />
+        {/* <div className={`${styles["about_right"]} aspect_ratio aspect_ratio--9by16`}>
           <div className={`${styles["about_right__frame"]} `}></div>
 
           <div className={`aspect_ratio__item object_fit_cover `}>
@@ -22,7 +29,7 @@ const index = () => {
               <source src="/about_v.mov" type="video/mov"></source>
             </video>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles["about_left"]}>
           <div></div>

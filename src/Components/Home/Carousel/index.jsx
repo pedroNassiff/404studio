@@ -54,13 +54,13 @@ export default function App() {
         // spaceBetween={200}
         breakpoints={{
           370: {
-            spaceBetween: 25,
+            spaceBetween: 20,
           },
           640: {
             spaceBetween: 50,
           },
           768: {
-            spaceBetween: 37,
+            spaceBetween: 54,
           },
           1024: {
             spaceBetween: 80,
@@ -90,10 +90,12 @@ export default function App() {
               />
               <div className={`${styles["hover"]} `}>
                 <div className={`${styles["text"]} `}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
-                  quibusdam architecto accusamus dolorum magni nobis recusandae aliquid
-                  impedit voluptatem. Incidunt quidem perferendis placeat sint ullam
-                  atque! Optio rem odit molestias!
+                  Planificación y creación de sitios web enfocados en la necesidad
+                  estratégica, comerciales y comunicacionales de cada cliente. Buscamos
+                  brindar una buena experiencia de navegación para los usuarios,
+                  transmitiendo de manera dinámica y practica el servicio, producto o
+                  mensaje deseado y a su vez, convertir el mismo en un recurso valioso
+                  para la marca.
                 </div>
               </div>
             </div>
@@ -109,10 +111,13 @@ export default function App() {
               />
               <div className={styles.hover}>
                 <div className={styles.text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
-                  quibusdam architecto accusamus dolorum magni nobis recusandae aliquid
-                  impedit voluptatem. Incidunt quidem perferendis placeat sint ullam
-                  atque! Optio rem odit molestias!
+                  Para lograr una comunicación efectiva es imprescindible que la misma se
+                  desarrolle en base a una correcta planificación. Esto permite optimizar
+                  los recursos, llegar al publico deseado con el mensaje que mejor se
+                  adapte al mismo. Brindamos análisis e investigación de la situación
+                  actual, definición de objetivos y publico objetivo, viabilidad del
+                  proyecto, determinación del mensaje y los canales que lo optimizarían,
+                  ejecución y evaluación de los resultados de la estrategia.
                 </div>
               </div>
             </div>
@@ -128,10 +133,10 @@ export default function App() {
               />
               <div className={styles.hover}>
                 <div className={styles.text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
-                  quibusdam architecto accusamus dolorum magni nobis recusandae aliquid
-                  impedit voluptatem. Incidunt quidem perferendis placeat sint ullam
-                  atque! Optio rem odit molestias!
+                  Desarrollamos un análisis competitivo del entorno digital para crear y
+                  ejecutar una estrategia de contenido. Creación y difusión de los
+                  distintos formatos audiovisuales, enfocados en generar y realzar la
+                  imagen y los valores de la marca.
                 </div>
               </div>
             </div>
@@ -144,10 +149,11 @@ export default function App() {
               <img src="/imagenes/identidad de marca -07.jpg" className={styles.img} />
               <div className={styles.hover}>
                 <div className={styles.text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
-                  quibusdam architecto accusamus dolorum magni nobis recusandae aliquid
-                  impedit voluptatem. Incidunt quidem perferendis placeat sint ullam
-                  atque! Optio rem odit molestias!
+                  Indagar en la esencia de cada cliente, aquello que lo hace único y
+                  reconocible ante la competencia y como es percibido por sus publicos.
+                  Buscamos destacar los valores, objetivos, la misión y el propósito de
+                  cada organización en pos de realzar el camino recorrido, de donde vienen
+                  y a donde van y usarlo como diferencial.
                 </div>
               </div>
             </div>
@@ -160,10 +166,11 @@ export default function App() {
               <img src="/imagenes/Marketing digital -07.jpg" className={styles.img} />
               <div className={styles.hover}>
                 <div className={styles.text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero,
-                  quibusdam architecto accusamus dolorum magni nobis recusandae aliquid
-                  impedit voluptatem. Incidunt quidem perferendis placeat sint ullam
-                  atque! Optio rem odit molestias!
+                  Planificación estratégica, ejecución y análisis posterior en los
+                  distintos medios y canales digitales. Tenemos como objetivo construir,
+                  transformar la comercialización de los productos y/o servicios brindado
+                  por cada cliente seleccionando las herramientas y medios más efectivos
+                  para tener el alcance deseado.
                 </div>
               </div>
             </div>

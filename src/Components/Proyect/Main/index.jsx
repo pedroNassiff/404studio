@@ -3,6 +3,9 @@ import Link from "next/link";
 import Multimedia from "../Multimedia";
 import Animation from "../Animation";
 import Animationfn from "../Animationfn";
+import Plantilla2 from "../Plantilla2";
+import Plantilla3 from "../Plantilla3";
+import Plantilla4 from "../Plantilla4";
 
 import { proyects } from "../../../../const";
 
@@ -20,14 +23,48 @@ const index = (props) => {
           {props.props.content.map((item) => (
             // <Multimedia video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
             // <Animation video={item.video} description={props.props.description} link={item.link} object_fit={item.object_fit} object_position={item.object_position} id={item.id}/>
-            <Animationfn
-              video={item.video}
-              description={props.props.description}
-              link={item.link}
-              object_fit={item.object_fit}
-              object_position={item.object_position}
-              id={item.id}
-            />
+            <>
+              {props.props.plantilla === 1 && (
+                <Animationfn
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+              {props.props.plantilla === 2 && (
+                <Plantilla2
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+              {props.props.plantilla === 3 && (
+                <Plantilla3
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+              {props.props.plantilla === 4 && (
+                <Plantilla4
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+            </>
           ))}
         </div>
       </div>

@@ -66,7 +66,6 @@ export default function index({
   };
   const ver = parseFloat(probar);
   const Probar = () => {
-    // let image = document.querySelector(`#aspect_ratio__item${id}`);
     if (!ref.current) return;
     const example = ref.current.getBoundingClientRect().top;
     let position = Math.trunc(example);
@@ -100,7 +99,7 @@ export default function index({
   console.log(scale);
 
   return (
-    <div className={`${styles["section"]}  aspect_ratio aspect_ratio--16by9`}>
+    <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>
       {video ? (
         <div
           className={`aspect_ratio__item`}

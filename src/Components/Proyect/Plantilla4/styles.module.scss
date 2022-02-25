@@ -175,11 +175,11 @@
 
 .section:nth-child(11) {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 6;
   grid-row-start: span 2;
   @include breakpoint(md) {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 8;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {
@@ -187,8 +187,9 @@
 
   @include breakpoint(xl) {
     grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 15;
+    grid-column-end: 10;
+    grid-row-start: 17;
+    grid-row-end: 19;
   }
 }
 
