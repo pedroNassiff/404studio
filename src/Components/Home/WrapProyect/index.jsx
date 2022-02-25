@@ -10,7 +10,7 @@ const index = (props) => {
           <img
             src={`/images/${props.images}`}
             className={styles["wrap_proyects__images"]}
-            loading="lazy"
+            loading={"lazy"}
           />
 
           <div

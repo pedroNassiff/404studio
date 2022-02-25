@@ -51,7 +51,7 @@
 
   &:hover .hover {
     top: 0;
-    transition: 1s linear;
+    transition: 500ms linear;
   }
 
   // -----------------
@@ -64,14 +64,30 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
+  @include breakpoint(xxxl) {
+    object-fit: cover;
+  }
 }
 
 .img--2 {
   object-position: center;
+  @include breakpoint(md) {
+    object-position: 0px -25px;
+  }
+
+  @include breakpoint(xxxl) {
+    object-position: center;
+  }
 }
 
 .img--3 {
-  object-position: 0px -35px;
+  @include breakpoint(md) {
+    object-position: 0px -15px;
+  }
+
+  @include breakpoint(xxxl) {
+    object-position: 0px -35px;
+  }
 }
 
 .borde {
@@ -95,16 +111,17 @@
   top: -100vh;
   left: 0;
   background-color: rgba(0, 0, 0, 0.623);
-  transition: 1s linear;
+  transition: 500ms linear;
 }
 
 .text {
+  font-family: $font_2;
   padding: 10px;
   position: absolute;
   top: 0px;
   left: 0;
-  font-size: 25px;
-  line-height: 40px;
+  // font-size: 35px;
+  // line-height: 30px;
   height: 100%;
   width: 100%;
   display: flex;

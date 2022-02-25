@@ -4,12 +4,14 @@ const proyects = [
     left: true,
     images: "anima3.jpeg",
     description: "Anima",
+    plantilla: 2,
     content: [
       {
         id: 2,
         video: true,
         format: "mp4",
         link: "147079746_477523560301451_6973711631565693795_n.mp4",
+        object_position: "right",
       },
       {
         id: 4,
@@ -17,6 +19,7 @@ const proyects = [
         format: "mp4",
         link: "VÃ­deo salto.mp4",
         object_fit: "contain",
+        object_position: "right",
       },
       { id: 6, video: false, link: "Anima16.50.07.jpeg", object_fit: "contain" },
       { id: 7, video: false, link: "Anima16.50.13.jpeg", object_fit: "contain" },
@@ -27,7 +30,7 @@ const proyects = [
         format: "mp4",
         link: "Anima Vuelta.mp4",
         object_fit: "contain",
-        object_position: "top",
+        object_position: "right bottom",
       },
       { id: 3, video: false, link: "Anima16.50.05.jpeg", object_fit: "contain" },
     ],
@@ -37,6 +40,7 @@ const proyects = [
     left: true,
     images: "topm5.JPG",
     description: "Top Mega",
+    plantilla: 1,
     content: [
       {
         id: 1,
@@ -44,6 +48,7 @@ const proyects = [
         format: "mp4",
         link: "1 - Movilidad elÃ©ctrica.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 6,
@@ -51,20 +56,49 @@ const proyects = [
         format: "mp4",
         link: "78463527_221328479002878_7196983808310319985_n.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
 
-      { id: 3, video: true, format: "mp4", link: "Congelada.mp4", object_fit: "contain" },
-      { id: 2, video: true, format: "mp4", link: "aparicion.mp4", object_fit: "contain" },
-      { id: 7, video: true, format: "mp4", link: "Verano Topmega.mp4" },
+      {
+        id: 3,
+        video: true,
+        format: "mp4",
+        link: "Congelada.mp4",
+        object_fit: "cover",
+        object_position: "0 55%",
+      },
+      {
+        id: 2,
+        video: true,
+        format: "mp4",
+        link: "aparicion.mp4",
+        object_fit: "contain",
+        object_position: "right",
+      },
+      {
+        id: 7,
+        video: true,
+        format: "mp4",
+        link: "Verano Topmega.mp4",
+        object_position: "right",
+      },
       {
         id: 5,
         video: true,
         format: "mp4",
         link: "Hombre  foto 3D.mp4",
         object_fit: "contain",
+        object_position: "right",
       },
       { id: 9, video: false, link: "66443326_674771302998598_9113180442907453266_n.jpg" },
-      { id: 4, video: true, format: "mp4", link: "DSC_0083.mp4", object_fit: "contain" },
+      {
+        id: 4,
+        video: true,
+        format: "mp4",
+        link: "DSC_0083.mp4",
+        object_fit: "contain",
+        object_position: "right",
+      },
       {
         id: 8,
         video: false,
@@ -84,6 +118,7 @@ const proyects = [
     left: false,
     images: "harlemsport1.jpg",
     description: "Harlem Sportswear",
+    plantilla: 1,
     content: [
       {
         id: 1,
@@ -148,6 +183,7 @@ const proyects = [
     id: 4,
     left: false,
     images: "rom1.jpg",
+    plantilla: 2,
     description: "La Romeria de las rosas",
     content: [
       {
@@ -168,7 +204,7 @@ const proyects = [
         format: "mp4",
         link: "117295766_3000103843432634_7448684303335657078_n.mp4",
         object_fit: "contain",
-        object_position: "top",
+        object_position: "right bottom",
       },
       {
         id: 4,
@@ -176,6 +212,7 @@ const proyects = [
         format: "mp4",
         link: "Trago 3.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 5,
@@ -211,6 +248,7 @@ const proyects = [
     left: true,
     images: "harlem3.jpg",
     description: "Harlem Bar",
+    plantilla: 2,
     content: [
       {
         id: 1,
@@ -263,6 +301,7 @@ const proyects = [
     left: false,
     images: "aljibe3.png",
     description: "El aljibe de Mendez",
+    plantilla: 1,
     content: [
       {
         id: 1,
@@ -298,7 +337,7 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "Video birra2.mp4",
-        object_fit: "contain",
+        object_fit: "cover",
       },
       {
         id: 7,
@@ -317,6 +356,7 @@ const proyects = [
         format: "mp4",
         link: "Trago.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 10,
@@ -356,6 +396,7 @@ const proyects = [
         format: "mp4",
         link: "Fruta Final 2.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 17,
@@ -381,6 +422,8 @@ const proyects = [
     left: true,
     images: "ranchov2.jpeg",
     description: "Rancho Viejo",
+    plantilla: 1,
+
     content: [
       {
         id: 1,
@@ -394,6 +437,7 @@ const proyects = [
     left: false,
     images: "marren2.jpg",
     description: "Marren",
+    plantilla: 3,
     content: [
       {
         id: 9,
@@ -408,13 +452,13 @@ const proyects = [
         format: "mp4",
         link: "posteo.mp4",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 3,
         video: false,
         link: "Captura de Pantalla 2021-11-13 a la(s) 16.51.04.png",
         object_fit: "contain",
-        object_position: "top",
       },
       {
         id: 4,
@@ -422,7 +466,7 @@ const proyects = [
         format: "mp4",
         link: "70600938_2284377938482312_4932871126581630255_n.mp4",
         object_fit: "contain",
-        object_position: "top",
+        object_position: "right bottom",
       },
       {
         id: 5,
@@ -441,7 +485,6 @@ const proyects = [
         video: false,
         link: "DSC_0340.jpg",
         object_fit: "contain",
-        object_position: "top",
       },
       {
         id: 8,
@@ -461,14 +504,12 @@ const proyects = [
         video: false,
         link: "marren2.jpg",
         object_fit: "contain",
-        object_position: "top",
       },
       {
         id: 11,
         video: false,
         link: "DSC_0348.jpg",
         object_fit: "contain",
-        object_position: "top",
       },
       {
         id: 12,
@@ -482,6 +523,7 @@ const proyects = [
     left: true,
     images: "moda2.jpg",
     description: "Moda 1",
+    plantilla: 1,
     content: [
       {
         id: 4,
@@ -560,6 +602,7 @@ const proyects = [
     left: true,
     images: "somosc1.jpg",
     description: "Somos Chola",
+    plantilla: 1,
     content: [
       {
         id: 1,
@@ -597,6 +640,7 @@ const proyects = [
     id: 11,
     left: false,
     images: "WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg",
+    plantilla: 2,
     description: "Paprika",
     content: [
       {
@@ -641,6 +685,7 @@ const proyects = [
     left: true,
     images: "mirasoles1.jpg",
     description: "NUT Mirasoles",
+    plantilla: 4,
     content: [
       {
         id: 1,
