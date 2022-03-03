@@ -12,49 +12,42 @@ export default function index({ link, id, item, ratio }) {
   const [screenSize, setScreenSize] = useState(null);
 
   const handleScale = () => {
-    // if (scale > 1000) {
-    //   setProbar("1.0");
-    // }
-    if (scale < 1000 && scale > 130) {
+    if (scale < 300 && scale > 275) {
+      setProbar("1.0");
+    }
+    if (scale <= 275 && scale > 250) {
       setProbar("1.01");
     }
-    if (scale <= 130 && scale > 100) {
+    if (scale <= 250 && scale > 225) {
       setProbar("1.02");
     }
-    if (scale <= 100 && scale > 50) {
+    if (scale <= 225 && scale > 200) {
       setProbar("1.04");
     }
-    if (scale <= 50 && scale > -50) {
+    if (scale <= 200 && scale > 175) {
       setProbar("1.06");
     }
-    if (scale <= -50 && scale > -150) {
+    if (scale <= 175 && scale > 150) {
       setProbar("1.08");
     }
-    if (scale <= -150 && scale > -250) {
+    if (scale <= 150 && scale > 125) {
       setProbar("1.09");
     }
-    if (scale <= -250 && scale > -350) {
+    if (scale <= 125 && scale > 100) {
       setProbar("1.10");
     }
-    if (scale <= -350 && scale > -450) {
+    if (scale <= 100 && scale > 75) {
       setProbar("1.11");
     }
-    if (scale <= -450 && scale > -550) {
+    if (scale <= 75 && scale > 50) {
       setProbar("1.13");
     }
-    if (scale <= -555 && scale > -1000) {
-      setProbar("1.15");
-    }
-    // if (scale < -1000) {
-    //   setProbar("1.16");
-    // }
   };
   const ver = parseFloat(probar);
   const Probar = () => {
     // let image = document.querySelector(`#aspect_ratio__item${id}`);
     if (!ref.current) return;
     const example = ref.current.getBoundingClientRect().top;
-    console.log(example);
     let position = Math.trunc(example);
     setPosition(position);
     let screenSize = Math.trunc(window.innerHeight / 3.5);

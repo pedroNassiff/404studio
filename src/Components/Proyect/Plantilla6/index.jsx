@@ -57,11 +57,12 @@ export default function index({
   };
   const ver = parseFloat(probar);
   const Probar = () => {
+    // let image = document.querySelector(`#aspect_ratio__item${id}`);
     if (!ref.current) return;
     const example = ref.current.getBoundingClientRect().top;
     let position = Math.trunc(example);
     setPosition(position);
-    let screenSize = Math.trunc(window.innerHeight / 3.5);
+    let screenSize = Math.trunc(window.innerHeight / 2);
     setScreenSize(screenSize);
   };
 
@@ -87,13 +88,12 @@ export default function index({
       window.removeEventListener("scroll", Probar);
     };
   }, []);
-  console.log(scale);
 
   return (
-    <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>
+    <div className={`${styles["section"]}  aspect_ratio aspect_ratio--16by9`}>
       {video ? (
         <div
-          className={`aspect_ratio__item`}
+          className={` aspect_ratio__item`}
           ref={ref}
           id={`aspect_ratio__item${id}`}
           style={{ transform: `scale(${ver})` }}
@@ -101,22 +101,22 @@ export default function index({
           {state ? (
             <div
               onClick={() => setstate(!state)}
-              className={
-                object_position === "right bottom"
-                  ? `${styles["hero_bottom__icon__right"]}`
-                  : `${styles["hero_bottom__icon__left"]}`
-              }
+              className={`${styles["hero_bottom__icon"]}`}
+              style={{
+                objectFit: `${object_fit}`,
+                objectPosition: `${object_position}`,
+              }}
             >
               <VolumeOffIcon className={styles["icon__muted"]}></VolumeOffIcon>
             </div>
           ) : (
             <div
               onClick={() => setstate(!state)}
-              className={
-                object_position === "right bottom"
-                  ? `${styles["hero_bottom__icon__right"]}`
-                  : `${styles["hero_bottom__icon__left"]}`
-              }
+              className={`${styles["hero_bottom__icon"]}`}
+              style={{
+                objectFit: `${object_fit}`,
+                objectPosition: `${object_position}`,
+              }}
             >
               <VolumeUpIcon className={styles["icon__unmuted"]}></VolumeUpIcon>
             </div>
@@ -126,7 +126,7 @@ export default function index({
             autoPlay
             loop
             muted={state}
-            className={`${styles["img"]}`}
+            className={` ${styles["img"]}`}
             style={{ objectFit: `${object_fit}`, objectPosition: `${object_position}` }}
           >
             <source
@@ -137,7 +137,7 @@ export default function index({
         </div>
       ) : (
         <div
-          className={`aspect_ratio__item`}
+          className={` aspect_ratio__item`}
           ref={ref}
           id={`aspect_ratio__item${id}`}
           style={{ transform: `scale(${ver})` }}
@@ -146,7 +146,7 @@ export default function index({
             loading="lazy"
             src={`/proyects/${description}/photos/${link}`}
             alt=""
-            className={`${styles["img"]}`}
+            className={` ${styles["img"]}`}
             style={{ objectFit: `${object_fit}`, objectPosition: `${object_position}` }}
           />
         </div>
