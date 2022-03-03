@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 
 import Link from "next/link";
 
-const index = (props) => {
+const Index = (props) => {
   return (
     <div className={`${styles["wrap_proyects"]}`}>
       <Link href={`/proyect/${props.id}`} className={`${styles["wrap_proyects__link"]}`}>
@@ -33,4 +33,4 @@ const index = (props) => {
   );
 };
 
-export default index;
+export default Index;

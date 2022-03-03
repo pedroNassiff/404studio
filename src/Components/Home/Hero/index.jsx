@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
-import Menu from "../../Shared/Menu";
+import Menu from "../../Shared/Menu/Index";
 import ReactPlayer from "react-player";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";

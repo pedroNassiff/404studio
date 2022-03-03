@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 
-export default function index({
+export default function Index({
   video,
   description,
   link,

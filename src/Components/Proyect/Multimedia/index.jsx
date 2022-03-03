@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 
-export default function index({
+export default function Index({
   video,
   description,
   link,

@@ -12,7 +12,6 @@ export default function Proyect() {
 
   useEffect(() => {
     const { id } = router.query;
-    // const productFounded = productsPopulated.find((item) => item.id === parseInt(id));
     const select = proyects.find((item) => item.id === parseInt(id));
     setstate(select);
   }, [router.query]);

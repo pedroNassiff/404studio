@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 
-export default function index({
+export default function Index({
   video,
   description,
   link,
@@ -13,8 +13,6 @@ export default function index({
   plantilla,
 }) {
   const [state, setstate] = useState(true);
-
-  const [select, setSelect] = useState(1);
   const [scale, setScale] = useState(0);
   const [probar, setProbar] = useState("1.0");
 
@@ -68,16 +66,13 @@ export default function index({
 
   useEffect(() => {
     if (position > screenSize && position < 300) {
-      setSelect(1);
       handleScale();
     }
     if (position < screenSize && position > 50) {
-      setSelect(2);
       setScale(position);
       handleScale();
     }
     if (position < 50) {
-      setSelect(1);
       handleScale();
     }
   }, [position, screenSize]);

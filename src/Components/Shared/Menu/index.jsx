@@ -1,15 +1,15 @@
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
 
-const index = () => {
+const Index = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.menu}>
         <div className={styles.menu__linear}></div>
         <div className={styles.menu__linear}></div>
-        <div className={styles.menu__linear}></div>      
+        <div className={styles.menu__linear}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default Index;

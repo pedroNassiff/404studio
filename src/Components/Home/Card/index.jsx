@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-const index = (props) => {
+const Index = (props) => {
   return (
     <div className={styles["card"]}>
       <div className={styles["card__container"]}>
@@ -51,4 +51,4 @@ const index = (props) => {
   );
 };
 
-export default index;
+export default Index;

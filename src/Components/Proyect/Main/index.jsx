@@ -11,7 +11,7 @@ import Plantilla6 from "../Plantilla6";
 
 import { proyects } from "../../../../const";
 
-const index = (props) => {
+const Index = (props) => {
   const linkId = props.props.id;
 
   const NextProyect = linkId + 1;
@@ -97,7 +97,7 @@ const index = (props) => {
         </button>
       ) : (
         <button className={styles.btn}>
-          <Link href={`/proyect/${NextProyect}`} className={styles.NextProyect}>
+          <Link href={`/proyect/${NextProyect}`} passHref className={styles.NextProyect}>
             <h6 className={styles["next_proyect__link"]}>Next Proyect</h6>
           </Link>
         </button>
@@ -106,4 +106,4 @@ const index = (props) => {
   );
 };
 
-export default index;
+export default Index;
