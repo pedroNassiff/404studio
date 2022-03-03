@@ -87,6 +87,7 @@ export default function App() {
               <img
                 src="/imagenes/Desarrollo web .jpg"
                 className={`${styles["img"]} ${styles["img--3"]}`}
+                alt="image"
               />
               <div className={`${styles["hover"]} `}>
                 <div className={`${styles["text"]} `}>
@@ -108,6 +109,7 @@ export default function App() {
               <img
                 src="/imagenes/Estrategia de comunicación .jpg"
                 className={`${styles["img"]} ${styles["img--2"]}`}
+                alt="image1"
               />
               <div className={styles.hover}>
                 <div className={styles.text}>
@@ -130,6 +132,7 @@ export default function App() {
               <img
                 src="/imagenes/Generación de contenidos.jpg"
                 className={`${styles["img"]} ${styles["img--3"]}`}
+                alt="image2"
               />
               <div className={styles.hover}>
                 <div className={styles.text}>
@@ -146,7 +149,11 @@ export default function App() {
           <div className={styles.container}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
-              <img src="/imagenes/identidad de marca -07.jpg" className={styles.img} />
+              <img
+                src="/imagenes/identidad de marca -07.jpg"
+                className={styles.img}
+                alt="image3"
+              />
               <div className={styles.hover}>
                 <div className={styles.text}>
                   Indagar en la esencia de cada cliente, aquello que lo hace único y
@@ -163,7 +170,11 @@ export default function App() {
           <div className={styles.container}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
-              <img src="/imagenes/Marketing digital -07.jpg" className={styles.img} />
+              <img
+                src="/imagenes/Marketing digital -07.jpg"
+                className={styles.img}
+                alt="image4"
+              />
               <div className={styles.hover}>
                 <div className={styles.text}>
                   Planificación estratégica, ejecución y análisis posterior en los

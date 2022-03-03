@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 
-export default function index({ link, id, item, ratio }) {
+export default function Index({ link, id, item, ratio }) {
   const [select, setSelect] = useState(1);
   const [scale, setScale] = useState(0);
   const [probar, setProbar] = useState("1.0");

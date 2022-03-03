@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import Card from "../Card";
 
-const index = () => {
+const Index = () => {
   return (
     <div
       className={`${styles["people__container"]} custom_container custom_container--xxxl`}
@@ -41,4 +41,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

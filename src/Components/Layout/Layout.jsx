@@ -1,19 +1,15 @@
-import Footer from "./../Shared/Footer"
+import Footer from "../Shared/Footer";
 
-export default function Layout ({children}) {
+export default function Layout({ children }) {
   return (
     <div>
-      <nav>
-        {/* navbar */}
-      </nav>
+      <nav>{/* navbar */}</nav>
 
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import AnimationZoom from "../../Shared/AnimationZoom";
 
-const index = () => {
+const Index = () => {
   return (
     <div
       className={`${styles["blend__container"]} custom_container custom_container--xxxl`}
@@ -21,4 +21,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
