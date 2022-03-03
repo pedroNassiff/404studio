@@ -2,11 +2,7 @@ import styles from "./styles.module.scss";
 import Slide from "react-reveal/Slide";
 import AnimationZoom from "../../Shared/AnimationZoom";
 
-<<<<<<< HEAD
-export default function index() {
-=======
 const Index = () => {
->>>>>>> dev-gaston
   return (
     <div className={styles["about"]}>
       <div className={`${styles["cont"]}`}>
