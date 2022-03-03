@@ -11,7 +11,7 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "147079746_477523560301451_6973711631565693795_n.mp4",
-        object_position: "right",
+        object_position: "right bottom",
       },
       {
         id: 4,
@@ -19,16 +19,22 @@ const proyects = [
         format: "mp4",
         link: "VÃ­deo salto.mp4",
         object_fit: "contain",
-        object_position: "right",
+        object_position: "right bottom",
       },
       { id: 6, video: false, link: "Anima16.50.07.jpeg", object_fit: "contain" },
-      { id: 7, video: false, link: "Anima16.50.13.jpeg", object_fit: "contain" },
-      { id: 5, video: false, link: "Anima16.50.06.jpeg" },
       {
         id: 1,
         video: true,
         format: "mp4",
         link: "Anima Vuelta.mp4",
+        object_fit: "contain",
+        object_position: "right bottom",
+      },
+      { id: 5, video: false, link: "Anima16.50.06.jpeg" },
+      {
+        id: 7,
+        video: false,
+        link: "Anima16.50.13.jpeg",
         object_fit: "contain",
         object_position: "right bottom",
       },
@@ -40,7 +46,7 @@ const proyects = [
     left: true,
     images: "topm5.JPG",
     description: "Top Mega",
-    plantilla: 1,
+    plantilla: 5,
     content: [
       {
         id: 1,
@@ -64,8 +70,8 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "Congelada.mp4",
-        object_fit: "cover",
-        object_position: "0 55%",
+        object_fit: "contain",
+        object_position: "left bottom",
       },
       {
         id: 2,
@@ -73,14 +79,14 @@ const proyects = [
         format: "mp4",
         link: "aparicion.mp4",
         object_fit: "contain",
-        object_position: "right",
+        object_position: "right bottom",
       },
       {
         id: 7,
         video: true,
         format: "mp4",
         link: "Verano Topmega.mp4",
-        object_position: "right",
+        object_position: "right bottom",
       },
       {
         id: 5,
@@ -88,7 +94,7 @@ const proyects = [
         format: "mp4",
         link: "Hombre  foto 3D.mp4",
         object_fit: "contain",
-        object_position: "right",
+        object_position: "right bottom",
       },
       { id: 9, video: false, link: "66443326_674771302998598_9113180442907453266_n.jpg" },
       {
@@ -97,7 +103,7 @@ const proyects = [
         format: "mp4",
         link: "DSC_0083.mp4",
         object_fit: "contain",
-        object_position: "right",
+        object_position: "left bottom",
       },
       {
         id: 8,
@@ -191,12 +197,14 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "116796928_970204506829246_7716625089534911811_n.mp4",
+        object_position: "right bottom",
       },
       {
         id: 3,
         video: false,
         link: "DSC_0635.jpg",
         object_fit: "contain",
+        object_position: "right bottom",
       },
       {
         id: 2,
@@ -204,7 +212,7 @@ const proyects = [
         format: "mp4",
         link: "117295766_3000103843432634_7448684303335657078_n.mp4",
         object_fit: "contain",
-        object_position: "right bottom",
+        object_position: "left bottom",
       },
       {
         id: 4,
@@ -301,7 +309,7 @@ const proyects = [
     left: false,
     images: "aljibe3.png",
     description: "El aljibe de Mendez",
-    plantilla: 1,
+    plantilla: 6,
     content: [
       {
         id: 1,
@@ -337,7 +345,7 @@ const proyects = [
         video: true,
         format: "mp4",
         link: "Video birra2.mp4",
-        object_fit: "cover",
+        // object_fit: "cover",
       },
       {
         id: 7,

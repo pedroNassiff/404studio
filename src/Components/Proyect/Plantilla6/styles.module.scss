@@ -1,20 +1,9 @@
 @import "./../../../../styles/utils";
 
-.hero_bottom__icon__right {
+.hero_bottom__icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  z-index: 1000;
-  width: 30px;
-  height: 30px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-.hero_bottom__icon__left {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   z-index: 1000;
   width: 30px;
   height: 30px;
@@ -126,28 +115,6 @@
 }
 
 .section:nth-child(4n + 3) {
-  // --
-  grid-column-start: span 4;
-  // --
-  grid-row-start: span 2;
-  @include breakpoint(md) {
-    grid-column-start: span 6;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(lg) {
-  }
-
-  @include breakpoint(xl) {
-    grid-column-start: span 8;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(xxl) {
-    grid-column-start: span 8;
-    grid-row-start: span 3;
-  }
-}
-
-.section:nth-child(4n + 4) {
   grid-column-start: 2;
   grid-column-end: -1;
   grid-row-start: span 2;
@@ -166,81 +133,100 @@
   }
 }
 
-.section:nth-child(7) {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.section:nth-child(4n + 4) {
+  grid-column-start: 2;
+  grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: -1;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {
   }
 
   @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 12;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
   }
 }
 
-.section:nth-child(11) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: span 2;
-  @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(lg) {
-  }
+// .section:nth-child(7) {
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+//   grid-row-start: span 2;
+//   @include breakpoint(md) {
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: span 3;
+//   }
+//   @include breakpoint(lg) {
+//   }
 
-  @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 15;
-  }
-}
+//   @include breakpoint(xl) {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     grid-row-start: 11;
+//   }
+// }
 
-.section:nth-child(15) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: span 2;
-  @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(lg) {
-  }
+// .section:nth-child(11) {
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+//   grid-row-start: span 2;
+//   @include breakpoint(md) {
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: span 3;
+//   }
+//   @include breakpoint(lg) {
+//   }
 
-  @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 21;
-  }
-}
+//   @include breakpoint(xl) {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     grid-row-start: 15;
+//   }
+// }
 
-.section:nth-child(19) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: span 2;
-  @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(lg) {
-  }
+// .section:nth-child(15) {
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+//   grid-row-start: span 2;
+//   @include breakpoint(md) {
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: span 3;
+//   }
+//   @include breakpoint(lg) {
+//   }
 
-  @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 27;
-  }
-}
+//   @include breakpoint(xl) {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     grid-row-start: 21;
+//   }
+// }
+
+// .section:nth-child(19) {
+//   grid-column-start: 1;
+//   grid-column-end: 3;
+//   grid-row-start: span 2;
+//   @include breakpoint(md) {
+//     grid-column-start: 1;
+//     grid-column-end: 5;
+//     grid-row-start: span 3;
+//   }
+//   @include breakpoint(lg) {
+//   }
+
+//   @include breakpoint(xl) {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     grid-row-start: 27;
+//   }
+// }
 
 .btn {
   margin: 0;

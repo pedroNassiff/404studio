@@ -4,11 +4,8 @@ import Menu from "../../Shared/Menu";
 import ReactPlayer from "react-player";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 // --------------------------------
-import gsap from "gsap";
-import SplitText from "../../../utils/Split3.min.js";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
@@ -16,46 +13,13 @@ export default function Hero() {
 
   const ref = useRef();
 
+  // const Play = () => {
+  //   setstate(false);
+  // };
+
   // useEffect(() => {
-  //   const setPlay = () => {
-  //     window.onload = function () {
-  //       ref.current.play();
-  //     };
-  //     return setPlay();
-  //   };
+  //   window.addEventListener("mouseover", Play());
   // }, []);
-  // let hasPlayed = false;
-  // function handleFirstPlay(event) {
-  //   if (hasPlayed === false) {
-  //     hasPlayed = true;
-
-  //     let vid = event.target;
-
-  //     vid.onplay = null;
-
-  //     // Start whatever you need to do after first playback has started
-  //   }
-  // }
-
-  useEffect(() => {
-    const split = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineChildren",
-    });
-
-    const splitParent = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineParent",
-    });
-
-    gsap.to(split.lines, {
-      duration: 1,
-      y: -400,
-      opacity: 1,
-      stagger: 0.02,
-      ease: "circ.out",
-    });
-  }, []);
 
   return (
     <div className={`${hero["hero"]}`}>
@@ -123,6 +87,7 @@ export default function Hero() {
                 src="/header1.mp4"
                 className={hero["hero_video__container"]}
                 autoPlay
+                ref={ref}
                 // onplay={handleFirstPlay(event)}
               >
                 <source src="/header1.mp4" type="video/mp4"></source>

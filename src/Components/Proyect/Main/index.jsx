@@ -6,6 +6,8 @@ import Animationfn from "../Animationfn";
 import Plantilla2 from "../Plantilla2";
 import Plantilla3 from "../Plantilla3";
 import Plantilla4 from "../Plantilla4";
+import Plantilla5 from "../Plantilla5";
+import Plantilla6 from "../Plantilla6";
 
 import { proyects } from "../../../../const";
 
@@ -56,6 +58,26 @@ const index = (props) => {
               )}
               {props.props.plantilla === 4 && (
                 <Plantilla4
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+              {props.props.plantilla === 5 && (
+                <Plantilla5
+                  video={item.video}
+                  description={props.props.description}
+                  link={item.link}
+                  object_fit={item.object_fit}
+                  object_position={item.object_position}
+                  id={item.id}
+                />
+              )}
+              {props.props.plantilla === 6 && (
+                <Plantilla6
                   video={item.video}
                   description={props.props.description}
                   link={item.link}
