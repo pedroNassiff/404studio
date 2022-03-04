@@ -1,7 +1,5 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
-import Multimedia from "../Multimedia";
-import Animation from "../Animation";
 import Animationfn from "../Animationfn";
 import Plantilla2 from "../Plantilla2";
 import Plantilla3 from "../Plantilla3";
