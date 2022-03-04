@@ -146,12 +146,12 @@
   }
 }
 .section:nth-child(3) {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
-    grid-column-start: 4;
-    grid-column-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {

@@ -95,7 +95,6 @@ export default function Index({
         <div
           className={`aspect_ratio__item`}
           ref={ref}
-          id={`aspect_ratio__item${id}`}
           style={{ transform: `scale(${ver})` }}
         >
           {state ? (
@@ -126,7 +125,7 @@ export default function Index({
             autoPlay
             loop
             muted={state}
-            className={`${styles["img"]}`}
+            className={`${styles["img"]} aspect_ratio__item`}
             style={{ objectFit: `${object_fit}`, objectPosition: `${object_position}` }}
           >
             <source
