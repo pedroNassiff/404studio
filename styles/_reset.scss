@@ -46,57 +46,72 @@ a {
 
 // ---------------------- swiper3 ----------------
 
-// .swiper-slide.swiper-slide.swiper-slide {
-//   height: 190px;
-//   // margin: 2px;
-//   margin-top: 30px !important;
-//   @include breakpoint(md) {
-//     // margin: 10px;
-//     height: 220px;
-//     margin-top: 50px !important;
-//   }
-//   @include breakpoint(xl) {
-//     height: 400px;
-//     margin: 5px;
-//     margin-top: 80px !important;
-//   }
-
-//   @include breakpoint(xxxl) {
-//     height: 600px;
-//     margin: 4px;
-//     margin-top: 70px !important;
-//   }
-// }
+.swiper-slide.swiper-slide.swiper-slide {
+  padding-top: 60px;
+  height: 170px;
+  @include breakpoint(s) {
+    padding-top: 50px;
+    height: 160px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 60px;
+    height: 235px;
+  }
+  @include breakpoint(md) {
+    padding-top: 60px;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 100px;
+    height: 350px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 100px;
+    height: 450px;
+  }
+  @include breakpoint(xxl) {
+    padding-top: 100px;
+    height: 550px;
+  }
+  @include breakpoint(xxxl) {
+    padding-top: 150px;
+    height: 700px;
+  }
+}
 
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
-  font-size: 4px;
-  line-height: 6px;
+  font-size: 3px;
+  line-height: 5px;
   opacity: 0.5;
   object-fit: cover;
   padding-top: 60px;
   padding-right: 30px;
   height: 170px;
   @include breakpoint(s) {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-right: 40px;
-    height: 250px;
+    height: 160px;
   }
   @include breakpoint(sm) {
     padding-top: 60px;
     padding-right: 40px;
-    height: 250px;
+    height: 235px;
   }
   @include breakpoint(md) {
+    font-size: 8px;
+    line-height: 12px;
     padding-top: 60px;
     padding-right: 40px;
     height: 300px;
   }
   @include breakpoint(lg) {
     padding-top: 100px;
-    padding-right: 80px;
-    height: 400px;
+    padding-right: 55px;
+    height: 350px;
   }
   @include breakpoint(xl) {
+    font-size: 16px;
+    line-height: 18px;
     padding-top: 100px;
     padding-right: 80px;
     height: 450px;
@@ -107,41 +122,47 @@ a {
     height: 550px;
   }
   @include breakpoint(xxxl) {
-    padding-top: 150px;
-    padding-right: 160px;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 170px;
+    padding-right: 130px;
     height: 700px;
   }
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
-  font-size: 4px;
-  line-height: 6px;
+  font-size: 3px;
+  line-height: 5px;
   opacity: 0.5;
   object-fit: cover;
   padding-top: 60px;
   padding-left: 30px;
   height: 170px;
   @include breakpoint(s) {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: 40px;
-    height: 250px;
+    height: 160px;
   }
   @include breakpoint(sm) {
     padding-top: 60px;
     padding-left: 40px;
-    height: 250px;
+    height: 235px;
   }
   @include breakpoint(md) {
+    font-size: 8px;
+    line-height: 12px;
     padding-top: 60px;
     padding-left: 40px;
     height: 300px;
   }
   @include breakpoint(lg) {
     padding-top: 100px;
-    padding-left: 80px;
-    height: 400px;
+    padding-left: 55px;
+    height: 350px;
   }
   @include breakpoint(xl) {
+    font-size: 16px;
+    line-height: 18px;
     padding-top: 100px;
     padding-left: 80px;
     height: 450px;
@@ -152,53 +173,53 @@ a {
     height: 550px;
   }
   @include breakpoint(xxxl) {
-    padding-top: 150px;
-    padding-left: 160px;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 170px;
+    padding-left: 130px;
     height: 700px;
   }
 }
 
 .swiper-slide-active.swiper-slide-active.swiper-slide-active {
-  font-size: 4px;
-  line-height: 6px;
+  font-size: 6px;
+  line-height: 8px;
   object-fit: contain;
-  margin-top: 30px;
-  margin: 40px 0;
-  height: 150px;
+  margin-top: -30px;
+  height: 230px;
   @include breakpoint(s) {
-    margin-top: 30px;
-    margin: 40px 0;
-    height: 250px;
+    margin-top: -30px;
+    height: 220px;
   }
   @include breakpoint(sm) {
-    margin-top: 30px;
-    margin: 40px 0;
-    height: 250px;
-  }
-  @include breakpoint(md) {
-    margin-top: 30px;
-    margin: 40px 0;
+    margin-top: -30px;
     height: 300px;
   }
+  @include breakpoint(md) {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -30px;
+    height: 370px;
+  }
   @include breakpoint(lg) {
-    margin-top: 30px;
-    margin: 40px 0;
-    height: 450px;
+    margin-top: -30px;
+    height: 460px;
   }
   @include breakpoint(xl) {
-    margin-top: 30px;
-    margin: 40px 0;
-    height: 500px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: -30px;
+    height: 580px;
   }
   @include breakpoint(xxl) {
-    margin-top: 30px;
-    margin: 40px 0;
+    margin-top: -30px;
     height: 650px;
   }
   @include breakpoint(xxxl) {
-    margin-top: 30px;
-    margin: 40px 0;
-    height: 750px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: -30px;
+    height: 850px;
   }
 }
 
@@ -228,17 +249,32 @@ a {
   }
   @include breakpoint(sm) {
     left: 30%;
-    top: 95%;
+    top: 91%;
+  }
+  @include breakpoint(md) {
+    left: 35%;
+    top: 92%;
+  }
+  @include breakpoint(lg) {
+    left: 35%;
+    top: 93%;
+  }
+  @include breakpoint(xl) {
+    left: 35%;
+    top: 94%;
   }
   @include breakpoint(xxxl) {
-    left: 35%;
-    top: 95%;
+    left: 40%;
+    top: 96%;
   }
 }
 
 .swiper.swiper.swiper {
-  padding-bottom: 40px;
+  padding-bottom: 65px;
   @include breakpoint(md) {
+    padding-bottom: 90px;
+  }
+  @include breakpoint(lg) {
     padding-bottom: 100px;
   }
 }
@@ -258,18 +294,32 @@ a {
   }
   @include breakpoint(sm) {
     right: 30%;
-    top: 95%;
+    top: 91%;
+  }
+  @include breakpoint(md) {
+    right: 35%;
+    top: 92%;
+  }
+  @include breakpoint(lg) {
+    right: 35%;
+    top: 93%;
+  }
+  @include breakpoint(xl) {
+    right: 35%;
+    top: 94%;
   }
   @include breakpoint(xxxl) {
-    right: 35%;
-    top: 95%;
+    right: 40%;
+    top: 96%;
   }
 }
 
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-  font-size: 30px !important;
-
+  font-size: 35px !important;
   @include breakpoint(md) {
+    font-size: 40px !important;
+  }
+  @include breakpoint(lg) {
     font-size: 50px !important;
   }
 }

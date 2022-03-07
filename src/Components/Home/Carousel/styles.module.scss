@@ -1,9 +1,9 @@
 @import "./../../../../styles/utils";
 
 .carousel__container {
-  padding-bottom: 200px;
-  height: 100%;
-  width: 100%;
+  padding-bottom: 100px;
+  // height: 100%;
+  // width: 100%;
 }
 
 .wrap {
@@ -29,32 +29,8 @@
   position: relative;
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: top;
-  @include breakpoint(xxxl) {
-    object-fit: cover;
-  }
-}
-
-.img--2 {
-  object-position: center;
-  @include breakpoint(md) {
-    object-position: 0px -25px;
-  }
-
-  @include breakpoint(xxxl) {
-    object-position: center;
-  }
-}
-
-.img--3 {
-  @include breakpoint(md) {
-    object-position: 0px -15px;
-  }
-
-  @include breakpoint(xxxl) {
-    object-position: 0px -35px;
-  }
+  // object-fit: cover;
+  // object-position: top;
 }
 
 .borde {

@@ -51,25 +51,28 @@ export default function App() {
       <Swiper
         slidesPerView={3}
         centeredSlides={true}
-        // spaceBetween={200}
+        // spaceBetween={90}
         breakpoints={{
-          370: {
+          0: {
             spaceBetween: 20,
           },
-          640: {
-            spaceBetween: 50,
+          375: {
+            spaceBetween: 15,
+          },
+          380: {
+            spaceBetween: 30,
           },
           768: {
-            spaceBetween: 54,
+            spaceBetween: 50,
           },
           1024: {
-            spaceBetween: 80,
+            spaceBetween: 70,
           },
-          1279: {
-            spaceBetween: 65,
+          1536: {
+            spaceBetween: 90,
           },
-          1601: {
-            spaceBetween: 80,
+          1792: {
+            spaceBetween: 90,
           },
         }}
         modules={[Pagination]}
