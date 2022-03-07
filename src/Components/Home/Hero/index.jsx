@@ -66,6 +66,7 @@ export default function Hero() {
                 src="/header1.mp4"
                 className={hero["hero_video__container"]}
                 autoPlay
+                muted={state}
                 ref={ref}
               >
                 <source src="/header1.mp4" type="video/mp4"></source>

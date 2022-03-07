@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,25 +5,19 @@ import styles from "./styles.module.scss";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import required modules
+import { Pagination, Navigation } from "swiper";
+import "swiper/css/effect-coverflow";
 
 // import Swiper core and required modules
-import SwiperCore, { EffectCoverflow, Pagination, Navigation } from "swiper";
+import SwiperCore, { EffectCoverflow } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
-
-// -----------------------------------
-
-// ---------------------------------
+SwiperCore.use([Pagination, Navigation]);
 
 export default function App() {
-  // ---------------------------------------------
-
-  // ------------------------------------------
-
   const [swiperRef, setSwiperRef] = useState(null);
 
   let appendNumber = 4;
@@ -53,112 +46,146 @@ export default function App() {
       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
     ]);
   };
-
   return (
     <>
       <Swiper
-        effect={"coverflow"}
-        centeredSlides={true}
         slidesPerView={3}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 0,
-          // "modifier": 1,
-          // "slideShadows": true
+        centeredSlides={true}
+        // spaceBetween={90}
+        breakpoints={{
+          0: {
+            spaceBetween: 20,
+          },
+          375: {
+            spaceBetween: 20,
+          },
+          380: {
+            spaceBetween: 30,
+          },
+          768: {
+            spaceBetween: 50,
+          },
+          1024: {
+            spaceBetween: 90,
+          },
+          1536: {
+            spaceBetween: 90,
+          },
+          1792: {
+            spaceBetween: 90,
+          },
         }}
+        modules={[Pagination]}
+        navigation={true}
         pagination={{
           type: "fraction",
         }}
-        navigation={true}
         loop={true}
+        className={styles["carousel__container"]}
       >
         <SwiperSlide>
           <div className={styles.container}>
-            <img
-              src="/imagenes/Desarrollo web .jpg"
-              className={styles.img}
-              alt="image5"
-            />
             <div className={styles.borde}></div>
-            <div className={styles.hover}>
-              <div className={styles.text}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam
-                architecto accusamus dolorum magni nobis recusandae aliquid impedit
-                voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio
-                rem odit molestias!
+            <div className={`${styles["wrap"]} `}>
+              <img
+                src="/imagenes/Desarrollo web .jpg"
+                className={`${styles["img"]} ${styles["img--3"]}`}
+                alt="image"
+              />
+              <div className={`${styles["hover"]} `}>
+                <div className={`${styles["text"]} `}>
+                  Planificación y creación de sitios web enfocados en la necesidad
+                  estratégica, comerciales y comunicacionales de cada cliente. Buscamos
+                  brindar una buena experiencia de navegación para los usuarios,
+                  transmitiendo de manera dinámica y practica el servicio, producto o
+                  mensaje deseado y a su vez, convertir el mismo en un recurso valioso
+                  para la marca.
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.container}>
-            <img
-              src="/imagenes/Estrategia de comunicación .jpg"
-              className={`${styles["img"]} ${styles["img--2"]}`}
-              alt="image6"
-            />
             <div className={styles.borde}></div>
-            <div className={styles.hover}>
-              <div className={styles.text}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam
-                architecto accusamus dolorum magni nobis recusandae aliquid impedit
-                voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio
-                rem odit molestias!
+            <div className={`${styles["wrap"]} `}>
+              <img
+                src="/imagenes/Estrategia de comunicación .jpg"
+                className={`${styles["img"]} ${styles["img--2"]}`}
+                alt="image1"
+              />
+              <div className={styles.hover}>
+                <div className={styles.text}>
+                  Para lograr una comunicación efectiva es imprescindible que la misma se
+                  desarrolle en base a una correcta planificación. Esto permite optimizar
+                  los recursos, llegar al publico deseado con el mensaje que mejor se
+                  adapte al mismo. Brindamos análisis e investigación de la situación
+                  actual, definición de objetivos y publico objetivo, viabilidad del
+                  proyecto, determinación del mensaje y los canales que lo optimizarían,
+                  ejecución y evaluación de los resultados de la estrategia.
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.container}>
-            <img
-              src="/imagenes/Generación de contenidos.jpg"
-              className={`${styles["img"]} ${styles["img--3"]}`}
-              alt="image7"
-            />
             <div className={styles.borde}></div>
-            <div className={styles.hover}>
-              <div className={styles.text}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam
-                architecto accusamus dolorum magni nobis recusandae aliquid impedit
-                voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio
-                rem odit molestias!
+            <div className={`${styles["wrap"]} `}>
+              <img
+                src="/imagenes/Generación de contenidos.jpg"
+                className={`${styles["img"]} ${styles["img--3"]}`}
+                alt="image2"
+              />
+              <div className={styles.hover}>
+                <div className={styles.text}>
+                  Desarrollamos un análisis competitivo del entorno digital para crear y
+                  ejecutar una estrategia de contenido. Creación y difusión de los
+                  distintos formatos audiovisuales, enfocados en generar y realzar la
+                  imagen y los valores de la marca.
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.container}>
-            <img
-              src="/imagenes/identidad de marca -07.jpg"
-              className={styles.img}
-              alt="image8"
-            />
             <div className={styles.borde}></div>
-            <div className={styles.hover}>
-              <div className={styles.text}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam
-                architecto accusamus dolorum magni nobis recusandae aliquid impedit
-                voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio
-                rem odit molestias!
+            <div className={`${styles["wrap"]} `}>
+              <img
+                src="/imagenes/identidad de marca -07.jpg"
+                className={styles.img}
+                alt="image3"
+              />
+              <div className={styles.hover}>
+                <div className={styles.text}>
+                  Indagar en la esencia de cada cliente, aquello que lo hace único y
+                  reconocible ante la competencia y como es percibido por sus publicos.
+                  Buscamos destacar los valores, objetivos, la misión y el propósito de
+                  cada organización en pos de realzar el camino recorrido, de donde vienen
+                  y a donde van y usarlo como diferencial.
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.container}>
-            <img
-              src="/imagenes/Marketing digital -07.jpg"
-              className={styles.img}
-              alt="image9"
-            />
             <div className={styles.borde}></div>
-            <div className={styles.hover}>
-              <div className={styles.text}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quibusdam
-                architecto accusamus dolorum magni nobis recusandae aliquid impedit
-                voluptatem. Incidunt quidem perferendis placeat sint ullam atque! Optio
-                rem odit molestias!
+            <div className={`${styles["wrap"]} `}>
+              <img
+                src="/imagenes/Marketing digital -07.jpg"
+                className={styles.img}
+                alt="image4"
+              />
+              <div className={styles.hover}>
+                <div className={styles.text}>
+                  Planificación estratégica, ejecución y análisis posterior en los
+                  distintos medios y canales digitales. Tenemos como objetivo construir,
+                  transformar la comercialización de los productos y/o servicios brindado
+                  por cada cliente seleccionando las herramientas y medios más efectivos
+                  para tener el alcance deseado.
+                </div>
               </div>
             </div>
           </div>

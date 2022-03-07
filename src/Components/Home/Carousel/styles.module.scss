@@ -1,13 +1,14 @@
 @import "./../../../../styles/utils";
 
-.cont {
-  padding: 0 15px;
+.carousel__container {
+  padding-bottom: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 .wrap {
   overflow: hidden;
   position: relative;
-
   height: 100%;
   width: 100%;
 }
@@ -16,45 +17,11 @@
   height: 100%;
   width: 100%;
   position: relative;
-  @include breakpoint(xxxl) {
-    // padding: 0 70px;
-  }
-  // // height: 400px;
-  // // width: 300px;
-  // margin: 0 auto;
-  // object-fit: cover;
-  // object-position: center;
-  // background-color: transparent !important;
-
-  // @include breakpoint(md) {
-  //   // max-height: 300px;
-  //   // max-width: 500px;
-  //   margin: 0;
-  //   object-fit: cover;
-  // }
-
-  // @include breakpoint(lg) {
-  //   height: 100%;
-  //   width: 100%;
-  //   margin: 0;
-  //   object-fit: cover;
-  // }
-
-  // @include breakpoint(xl) {
-  //   height: 100%;
-  //   width: 100%;
-  // }
-
-  // @include breakpoint(xxxl) {
-  //   max-height: 850px;
-  // }
 
   &:hover .hover {
     top: 0;
     transition: 500ms linear;
   }
-
-  // -----------------
 }
 
 .img {

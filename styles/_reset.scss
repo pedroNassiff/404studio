@@ -43,147 +43,179 @@ a {
 * {
   box-sizing: border-box;
 }
-// .img {
-//   transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
-// }
-
-// .aspect_ratio__item.active .img {
-//   transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
-// }
 
 // ---------------------- swiper3 ----------------
 
-.swiper-slide.swiper-slide.swiper-slide {
-  height: 120px;
-  // margin: 2px;
-  margin-top: 30px !important;
-  @include breakpoint(md) {
-    // margin: 10px;
-    height: 220px;
-    margin-top: 50px !important;
-  }
-  @include breakpoint(xl) {
-    height: 400px;
-    margin: 5px;
-    margin-top: 80px !important;
-  }
+// .swiper-slide.swiper-slide.swiper-slide {
+//   height: 190px;
+//   // margin: 2px;
+//   margin-top: 30px !important;
+//   @include breakpoint(md) {
+//     // margin: 10px;
+//     height: 220px;
+//     margin-top: 50px !important;
+//   }
+//   @include breakpoint(xl) {
+//     height: 400px;
+//     margin: 5px;
+//     margin-top: 80px !important;
+//   }
 
-  @include breakpoint(xxxl) {
-    height: 600px;
-    margin: 4px;
-    margin-top: 70px !important;
-  }
-}
+//   @include breakpoint(xxxl) {
+//     height: 600px;
+//     margin: 4px;
+//     margin-top: 70px !important;
+//   }
+// }
 
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
   font-size: 4px;
   line-height: 6px;
   opacity: 0.5;
-  height: 125px;
-  width: 100%;
-  max-width: 26%;
-  margin-top: 30px !important;
+  object-fit: cover;
+  padding-top: 60px;
+  padding-right: 30px;
+  height: 170px;
+  @include breakpoint(s) {
+    padding-top: 60px;
+    padding-right: 40px;
+    height: 250px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 60px;
+    padding-right: 40px;
+    height: 250px;
+  }
   @include breakpoint(md) {
-    font-size: 8px;
-    line-height: 12px;
-    height: 220px;
-    max-width: 22%;
-    margin-top: 50px !important;
+    padding-top: 60px;
+    padding-right: 40px;
+    height: 300px;
   }
-
-  @include breakpoint(xl) {
-    font-size: 18px;
-    line-height: 22px;
+  @include breakpoint(lg) {
+    padding-top: 100px;
+    padding-right: 80px;
     height: 400px;
-    max-width: 25%;
-    margin-top: 80px !important;
   }
-
+  @include breakpoint(xl) {
+    padding-top: 100px;
+    padding-right: 80px;
+    height: 450px;
+  }
+  @include breakpoint(xxl) {
+    padding-top: 100px;
+    padding-right: 90px;
+    height: 550px;
+  }
   @include breakpoint(xxxl) {
-    font-size: 32px;
-    line-height: 32px;
-    height: 600px;
-    max-width: 26%;
-    margin-top: 70px !important;
+    padding-top: 150px;
+    padding-right: 160px;
+    height: 700px;
   }
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
   font-size: 4px;
   line-height: 6px;
-
   opacity: 0.5;
-  height: 125px;
-  width: 100%;
-  max-width: 26%;
-  margin-top: 30px !important;
+  object-fit: cover;
+  padding-top: 60px;
+  padding-left: 30px;
+  height: 170px;
+  @include breakpoint(s) {
+    padding-top: 60px;
+    padding-left: 40px;
+    height: 250px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 60px;
+    padding-left: 40px;
+    height: 250px;
+  }
   @include breakpoint(md) {
-    font-size: 8px;
-    line-height: 12px;
-    height: 220px;
-    max-width: 22%;
-    margin-top: 50px !important;
+    padding-top: 60px;
+    padding-left: 40px;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 100px;
+    padding-left: 80px;
+    height: 400px;
   }
   @include breakpoint(xl) {
-    font-size: 18px;
-    line-height: 22px;
-    height: 400px;
-    max-width: 25%;
-    margin-top: 80px !important;
+    padding-top: 100px;
+    padding-left: 80px;
+    height: 450px;
   }
-
+  @include breakpoint(xxl) {
+    padding-top: 100px;
+    padding-left: 90px;
+    height: 550px;
+  }
   @include breakpoint(xxxl) {
-    font-size: 32px;
-    line-height: 32px;
-    height: 600px;
-    max-width: 26%;
-    margin-top: 70px !important;
+    padding-top: 150px;
+    padding-left: 160px;
+    height: 700px;
   }
 }
 
 .swiper-slide-active.swiper-slide-active.swiper-slide-active {
-  font-size: 6px;
-  line-height: 8px;
-  height: 155px;
-  width: 35% !important;
-  margin-top: 15px !important;
+  font-size: 4px;
+  line-height: 6px;
+  object-fit: contain;
+  margin-top: 30px;
+  margin: 40px 0;
+  height: 150px;
+  @include breakpoint(s) {
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 250px;
+  }
+  @include breakpoint(sm) {
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 250px;
+  }
   @include breakpoint(md) {
-    font-size: 14px;
-    line-height: 18px;
-    height: 340px;
-    width: 36% !important;
-    margin-top: 15px !important;
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 300px;
+  }
+  @include breakpoint(lg) {
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 450px;
   }
   @include breakpoint(xl) {
-    font-size: 25px;
-    line-height: 30px;
-    height: 550px;
-    width: 33% !important;
-    margin-top: 15px !important;
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 500px;
   }
-
+  @include breakpoint(xxl) {
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 650px;
+  }
   @include breakpoint(xxxl) {
-    font-size: 40px;
-    line-height: 48px;
-    height: 800px;
-    width: 34% !important;
+    margin-top: 30px;
+    margin: 40px 0;
+    height: 750px;
   }
 }
 
-// ----------------------------------
-.swiper-button-next {
-  color: white !important;
-  z-index: 100 !important;
-}
-
-.swiper-button-prev {
-  color: white !important;
-  z-index: 100 !important;
+// // ----------------------------------
+.swiper-button-next.swiper-button-next.swiper-button-next {
+  color: white;
+  z-index: 100;
 }
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev {
-  left: 90px;
-  top: 89%;
+  color: white;
+  z-index: 100;
+}
+
+.swiper-button-prev.swiper-button-prev.swiper-button-prev {
+  left: 25%;
+  top: 90%;
   &::before {
     content: "";
     left: 0;
@@ -194,54 +226,26 @@ a {
     border-radius: 200px;
     margin-left: 5px;
   }
-
-  @include breakpoint(md) {
-    left: 200px;
-    top: 91.5%;
-    &::before {
-      content: "";
-      left: 0;
-      position: absolute;
-      width: 25px;
-      height: 2px;
-      background-color: white;
-      border-radius: 200px;
-      margin-left: 8px;
-    }
-  }
-
-  @include breakpoint(xl) {
-    left: 420px;
+  @include breakpoint(sm) {
+    left: 30%;
     top: 95%;
-    &::before {
-      content: "";
-      left: 0;
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background-color: white;
-      border-radius: 200px;
-      margin-left: 4px;
-    }
   }
-
-  @include breakpoint(xxl) {
-    left: 590px;
-    top: 94%;
+  @include breakpoint(xxxl) {
+    left: 35%;
+    top: 95%;
   }
 }
 
 .swiper.swiper.swiper {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   @include breakpoint(md) {
     padding-bottom: 100px;
   }
 }
 
 .swiper-button-next.swiper-button-next.swiper-button-next {
-  font-size: 20px;
-  right: 90px;
-  top: 89%;
+  right: 25%;
+  top: 90%;
   &::before {
     content: "";
     right: 0;
@@ -252,40 +256,13 @@ a {
     border-radius: 200px;
     margin-right: 5px;
   }
-
-  @include breakpoint(md) {
-    right: 200px;
-    top: 91.5%;
-    &::before {
-      content: "";
-      right: 0;
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      background-color: white;
-      border-radius: 200px;
-      margin-right: 8px;
-    }
-  }
-
-  @include breakpoint(xl) {
-    right: 420px;
+  @include breakpoint(sm) {
+    right: 30%;
     top: 95%;
-    &::before {
-      content: "";
-      right: 0;
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background-color: white;
-      border-radius: 200px;
-      margin-right: 4px;
-    }
   }
-
-  @include breakpoint(xxl) {
-    right: 590px;
-    top: 94%;
+  @include breakpoint(xxxl) {
+    right: 35%;
+    top: 95%;
   }
 }
 

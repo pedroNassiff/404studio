@@ -78,7 +78,7 @@ export default function App() {
           type: "fraction",
         }}
         loop={true}
-        className={styles.cont}
+        className={styles["carousel__container"]}
       >
         <SwiperSlide>
           <div className={styles.container}>
