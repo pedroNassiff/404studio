@@ -1,9 +1,7 @@
 import styles from "./styles.module.scss";
 
 const Index = (props) => {
-  console.log(props.props);
   const { id, description } = props.props;
-  console.log(description.length);
   return (
     <div className={`${styles["container"]} custom_container custom_container--xxxl `}>
       <h2

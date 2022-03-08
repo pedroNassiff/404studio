@@ -13,8 +13,6 @@ export default function Index({
   plantilla,
 }) {
   const [state, setstate] = useState(true);
-
-  const [select, setSelect] = useState(1);
   const [scale, setScale] = useState(0);
   const [probar, setProbar] = useState("1.0");
 
@@ -68,16 +66,13 @@ export default function Index({
 
   useEffect(() => {
     if (position > screenSize && position < 300) {
-      setSelect(1);
       handleScale();
     }
     if (position < screenSize && position > 50) {
-      setSelect(2);
       setScale(position);
       handleScale();
     }
     if (position < 50) {
-      setSelect(1);
       handleScale();
     }
   }, [position, screenSize]);

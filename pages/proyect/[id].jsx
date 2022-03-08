@@ -12,18 +12,21 @@ export default function Proyect() {
 
   useEffect(() => {
     const { id } = router.query;
-    const select = proyects.find((item) => item.id === parseInt(id));
-    setstate(select);
+    if (id > 12) {
+      setstate(false);
+    } else {
+      const select = proyects.find((item) => item.id === parseInt(id));
+      setstate(select);
+    }
+    console.log(select);
   }, [router.query]);
 
   return state ? (
     <div className={styles.container}>
       <Hero props={state} />
       <Main props={state} />
-      {/* <p>{state.id}</p>
-        <img src={`/images/${state.images}`} className={styles.images}></img> */}
     </div>
   ) : (
-    <div> No encontrado </div>
+    <>{state === false ? <div>No encontrado</div> : <div>Cargando</div>}</>
   );
 }

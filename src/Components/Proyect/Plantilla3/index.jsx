@@ -65,16 +65,13 @@ export default function Index({
 
   useEffect(() => {
     if (position > screenSize && position < 300) {
-      setSelect(1);
       handleScale();
     }
     if (position < screenSize && position > 50) {
-      setSelect(2);
       setScale(position);
       handleScale();
     }
     if (position < 50) {
-      setSelect(1);
       handleScale();
     }
   }, [position, screenSize]);
@@ -85,7 +82,6 @@ export default function Index({
       window.removeEventListener("scroll", Probar);
     };
   }, []);
-  console.log(scale);
 
   return (
     <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>

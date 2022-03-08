@@ -430,13 +430,56 @@ const proyects = [
     left: true,
     images: "ranchov2.jpeg",
     description: "Rancho Viejo",
-    plantilla: 1,
+    plantilla: 6,
 
     content: [
       {
+        id: 5,
+        video: false,
+        link: "WhatsApp Image 2021-01-19 at 16.15.37.jpeg",
+        object_fit: "contain",
+      },
+      {
         id: 1,
         video: false,
-        link: "",
+        link: "139471267_2735009120145991_1222171169005844531_n.jpg",
+        object_fit: "contain",
+        object_position: "right bottom",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "140207054_261690828632437_6582086430152144192_n.jpg",
+        object_fit: "contain",
+        object_position: "left bottom",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "140726097_313815780070751_5727450565897206193_n.jpg",
+        object_fit: "contain",
+        object_position: "right bottom",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "146459218_257852812406906_2295490923611997037_n.jpg",
+        object_fit: "contain",
+        object_position: "left bottom",
+      },
+      {
+        id: 6,
+        video: false,
+        link: "WhatsApp Image 2021-01-19 at 16.15.37-2.jpeg",
+        object_fit: "contain",
+        object_position: "right bottom",
+      },
+      {
+        id: 7,
+        video: false,
+        link: "WhatsApp Image 2021-01-19 at 16.16.33.jpeg",
+        object_fit: "contain",
+        object_position: "left bottom",
       },
     ],
   },
@@ -534,12 +577,13 @@ const proyects = [
     plantilla: 1,
     content: [
       {
-        id: 4,
+        id: 11,
         video: false,
-        link: "moda1.jpg",
+        link: "DSC_0246.jpg",
         object_fit: "contain",
-        object_position: "top",
+        object_position: "bottom",
       },
+
       {
         id: 5,
         video: false,
@@ -603,6 +647,13 @@ const proyects = [
         object_fit: "contain",
         object_position: "top",
       },
+      {
+        id: 4,
+        video: false,
+        link: "moda1.jpg",
+        object_fit: "contain",
+        object_position: "top",
+      },
     ],
   },
   {
@@ -613,11 +664,12 @@ const proyects = [
     plantilla: 1,
     content: [
       {
-        id: 1,
+        id: 6,
         video: false,
-        link: "61482136_127057681836568_3119390946019517170_n.jpg",
+        link: "Captura de Pantalla 2022-03-04 a la(s) 17.47.30.png",
         object_fit: "contain",
       },
+
       {
         id: 2,
         video: false,
@@ -640,6 +692,12 @@ const proyects = [
         id: 5,
         video: false,
         link: "somosc1.jpg",
+        object_fit: "contain",
+      },
+      {
+        id: 1,
+        video: false,
+        link: "61482136_127057681836568_3119390946019517170_n.jpg",
         object_fit: "contain",
       },
     ],
