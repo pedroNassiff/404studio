@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
-import Menu from "../../Shared/Menu/Index";
-import ReactPlayer from "react-player";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import Fade from "react-reveal/Fade";
@@ -9,17 +7,8 @@ import Fade from "react-reveal/Fade";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
-  const [open, set] = useState(true);
 
   const ref = useRef();
-
-  // const Play = () => {
-  //   setstate(false);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("mouseover", Play());
-  // }, []);
 
   return (
     <div className={`${hero["hero"]}`}>
@@ -73,22 +62,11 @@ export default function Hero() {
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover`}
             >
-              {/* <div className={hero.video}>
-                <ReactPlayer            
-                url='/header1.mp4'
-                width='100%'
-                height='100%'
-                playing
-                loop       
-                />
-              </div> */}
-
               <video
                 src="/header1.mp4"
                 className={hero["hero_video__container"]}
                 autoPlay
                 ref={ref}
-                // onplay={handleFirstPlay(event)}
               >
                 <source src="/header1.mp4" type="video/mp4"></source>
               </video>
@@ -98,8 +76,4 @@ export default function Hero() {
       </div>
     </div>
   );
-}
-
-{
-  /* <Menu/> */
 }
