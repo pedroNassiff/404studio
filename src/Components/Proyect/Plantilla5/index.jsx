@@ -11,6 +11,7 @@ export default function Index({
   object_position,
   id,
   plantilla,
+  btn,
 }) {
   const [state, setstate] = useState(true);
   const [scale, setScale] = useState(0);
@@ -96,22 +97,14 @@ export default function Index({
           {state ? (
             <div
               onClick={() => setstate(!state)}
-              className={
-                object_position === "right bottom"
-                  ? `${styles["hero_bottom__icon__right"]}`
-                  : `${styles["hero_bottom__icon__left"]}`
-              }
+              className={`${styles["hero_bottom__icon__right"]} ${styles[`${btn}`]}`}
             >
               <VolumeOffIcon className={styles["icon__muted"]}></VolumeOffIcon>
             </div>
           ) : (
             <div
               onClick={() => setstate(!state)}
-              className={
-                object_position === "right bottom"
-                  ? `${styles["hero_bottom__icon__right"]}`
-                  : `${styles["hero_bottom__icon__left"]}`
-              }
+              className={`${styles["hero_bottom__icon__right"]}`}
             >
               <VolumeUpIcon className={styles["icon__unmuted"]}></VolumeUpIcon>
             </div>

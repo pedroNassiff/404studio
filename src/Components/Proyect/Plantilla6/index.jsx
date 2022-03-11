@@ -96,22 +96,22 @@ export default function Index({
           {state ? (
             <div
               onClick={() => setstate(!state)}
-              className={`${styles["hero_bottom__icon"]}`}
-              style={{
-                objectFit: `${object_fit}`,
-                objectPosition: `${object_position}`,
-              }}
+              className={
+                object_position === "right bottom"
+                  ? `${styles["hero_bottom__icon__right"]}`
+                  : `${styles["hero_bottom__icon__left"]}`
+              }
             >
               <VolumeOffIcon className={styles["icon__muted"]}></VolumeOffIcon>
             </div>
           ) : (
             <div
               onClick={() => setstate(!state)}
-              className={`${styles["hero_bottom__icon"]}`}
-              style={{
-                objectFit: `${object_fit}`,
-                objectPosition: `${object_position}`,
-              }}
+              className={
+                object_position === "right bottom"
+                  ? `${styles["hero_bottom__icon__right"]}`
+                  : `${styles["hero_bottom__icon__left"]}`
+              }
             >
               <VolumeUpIcon className={styles["icon__unmuted"]}></VolumeUpIcon>
             </div>

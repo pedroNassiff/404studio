@@ -48,12 +48,14 @@ a {
 
 .swiper-slide.swiper-slide.swiper-slide {
   padding-top: 60px;
-  height: 170px;
+  height: 250px;
+
   @include breakpoint(s) {
-    padding-top: 50px;
+    padding-top: 75px;
     height: 160px;
   }
   @include breakpoint(sm) {
+    margin: 0;
     padding-top: 60px;
     height: 235px;
   }
@@ -85,14 +87,20 @@ a {
   opacity: 0.5;
   object-fit: cover;
   padding-top: 60px;
-  padding-right: 30px;
-  height: 170px;
+  padding-right: -30px;
+  min-width: 100px;
+  margin-right: -30px;
+  height: 230px;
   @include breakpoint(s) {
-    padding-top: 50px;
+    min-width: 150px;
+    margin-right: -30px;
+    padding-top: 75px;
     padding-right: 40px;
-    height: 160px;
+    height: 250px;
   }
   @include breakpoint(sm) {
+    margin: 0;
+    min-width: none;
     padding-top: 60px;
     padding-right: 40px;
     height: 235px;
@@ -101,7 +109,7 @@ a {
     font-size: 8px;
     line-height: 12px;
     padding-top: 60px;
-    padding-right: 40px;
+    padding-right: 25px;
     height: 300px;
   }
   @include breakpoint(lg) {
@@ -136,14 +144,19 @@ a {
   opacity: 0.5;
   object-fit: cover;
   padding-top: 60px;
-  padding-left: 30px;
-  height: 170px;
+  margin-left: -50px;
+  min-width: 100px;
+  height: 230px;
   @include breakpoint(s) {
-    padding-top: 50px;
+    margin-left: -55px;
+    min-width: 150px;
+    height: 250px;
+    padding-top: 75px;
     padding-left: 40px;
-    height: 160px;
   }
   @include breakpoint(sm) {
+    margin: 0;
+    min-width: none;
     padding-top: 60px;
     padding-left: 40px;
     height: 235px;
@@ -152,7 +165,7 @@ a {
     font-size: 8px;
     line-height: 12px;
     padding-top: 60px;
-    padding-left: 40px;
+    padding-left: 25px;
     height: 300px;
   }
   @include breakpoint(lg) {
@@ -186,12 +199,15 @@ a {
   line-height: 8px;
   object-fit: contain;
   margin-top: -30px;
-  height: 230px;
+  height: 295px;
+  min-width: 150px;
   @include breakpoint(s) {
+    min-width: 200px;
     margin-top: -30px;
-    height: 220px;
+    height: 310px;
   }
   @include breakpoint(sm) {
+    min-width: none;
     margin-top: -30px;
     height: 300px;
   }
@@ -236,16 +252,16 @@ a {
 
 .swiper-button-prev.swiper-button-prev.swiper-button-prev {
   left: 25%;
-  top: 90%;
+  top: 91%;
   &::before {
     content: "";
     left: 0;
     position: absolute;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: white;
     border-radius: 200px;
-    margin-left: 5px;
+    margin-left: 7px;
   }
   @include breakpoint(sm) {
     left: 30%;
@@ -262,6 +278,11 @@ a {
   @include breakpoint(xl) {
     left: 35%;
     top: 94%;
+    &::before {
+      width: 35px;
+      height: 4px;
+      margin-left: 6px;
+    }
   }
   @include breakpoint(xxxl) {
     left: 40%;
@@ -281,16 +302,16 @@ a {
 
 .swiper-button-next.swiper-button-next.swiper-button-next {
   right: 25%;
-  top: 90%;
+  top: 91%;
   &::before {
     content: "";
     right: 0;
     position: absolute;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background-color: white;
     border-radius: 200px;
-    margin-right: 5px;
+    margin-right: 7px;
   }
   @include breakpoint(sm) {
     right: 30%;
@@ -303,6 +324,11 @@ a {
   @include breakpoint(lg) {
     right: 35%;
     top: 93%;
+    &::before {
+      width: 35px;
+      height: 4px;
+      margin-right: 6px;
+    }
   }
   @include breakpoint(xl) {
     right: 35%;
@@ -315,11 +341,24 @@ a {
 }
 
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-  font-size: 35px !important;
+  font-size: 30px !important;
   @include breakpoint(md) {
     font-size: 40px !important;
   }
   @include breakpoint(lg) {
     font-size: 50px !important;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+
+  @include breakpoint(md) {
+    font-size: 30px !important;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 45px !important;
   }
 }

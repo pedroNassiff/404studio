@@ -54,16 +54,16 @@ export default function App() {
         // spaceBetween={90}
         breakpoints={{
           0: {
-            spaceBetween: 20,
+            spaceBetween: 45,
           },
           375: {
-            spaceBetween: 15,
+            spaceBetween: 45,
           },
           380: {
             spaceBetween: 30,
           },
           768: {
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
           1024: {
             spaceBetween: 70,

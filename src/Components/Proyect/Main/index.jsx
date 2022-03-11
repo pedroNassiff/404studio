@@ -72,6 +72,7 @@ const Index = (props) => {
                   object_fit={item.object_fit}
                   object_position={item.object_position}
                   id={item.id}
+                  btn={item.btn}
                 />
               )}
               {props.props.plantilla === 6 && (
