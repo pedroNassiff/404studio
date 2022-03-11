@@ -13,8 +13,6 @@ export default function Index({
   plantilla,
 }) {
   const [state, setstate] = useState(true);
-
-  const [select, setSelect] = useState(1);
   const [scale, setScale] = useState(0);
   const [probar, setProbar] = useState("1.0");
 
@@ -68,16 +66,13 @@ export default function Index({
 
   useEffect(() => {
     if (position > screenSize && position < 300) {
-      setSelect(1);
       handleScale();
     }
     if (position < screenSize && position > 50) {
-      setSelect(2);
       setScale(position);
       handleScale();
     }
     if (position < 50) {
-      setSelect(1);
       handleScale();
     }
   }, [position, screenSize]);
@@ -101,22 +96,22 @@ export default function Index({
           {state ? (
             <div
               onClick={() => setstate(!state)}
-              className={`${styles["hero_bottom__icon"]}`}
-              style={{
-                objectFit: `${object_fit}`,
-                objectPosition: `${object_position}`,
-              }}
+              className={
+                object_position === "right bottom"
+                  ? `${styles["hero_bottom__icon__right"]}`
+                  : `${styles["hero_bottom__icon__left"]}`
+              }
             >
               <VolumeOffIcon className={styles["icon__muted"]}></VolumeOffIcon>
             </div>
           ) : (
             <div
               onClick={() => setstate(!state)}
-              className={`${styles["hero_bottom__icon"]}`}
-              style={{
-                objectFit: `${object_fit}`,
-                objectPosition: `${object_position}`,
-              }}
+              className={
+                object_position === "right bottom"
+                  ? `${styles["hero_bottom__icon__right"]}`
+                  : `${styles["hero_bottom__icon__left"]}`
+              }
             >
               <VolumeUpIcon className={styles["icon__unmuted"]}></VolumeUpIcon>
             </div>

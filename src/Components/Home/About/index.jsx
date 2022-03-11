@@ -15,27 +15,16 @@ const Index = () => {
         className={`${styles["about__container"]} custom_container custom_container--xxxl`}
       >
         <AnimationZoom link={"/about_v.mov"} id={1} item={false} ratio={"9by16"} />
-        {/* <div className={`${styles["about_right"]} aspect_ratio aspect_ratio--9by16`}>
-          <div className={`${styles["about_right__frame"]} `}></div>
-
-          <div className={`aspect_ratio__item object_fit_cover `}>
-            <video
-              src="/about_v.mov"
-              className={`${styles["about_right__video"]}`}
-              autoPlay
-              muted
-              loop
-            >
-              <source src="/about_v.mov" type="video/mov"></source>
-            </video>
-          </div>
-        </div> */}
 
         <div className={styles["about_left"]}>
           <div></div>
 
           <div className={styles["about_left__wrap"]}>
-            <h2 className={`${styles["about_left__subtitle"]}`}>Don`t blend</h2>
+            <div className={styles["about_left__cont"]}>
+              <Slide bottom text delay={1000}>
+                <h2 className={`${styles["about_left__subtitle"]}`}>Don`t blend</h2>
+              </Slide>
+            </div>
             <p className={`${styles["about_left__description"]}`}>
               Somos la banda de Garage, los graffitis de penumbra, la gambeta de potrero.
               Confiamos más en la intuición que en los concejos. Cuidamos a los nuestros y

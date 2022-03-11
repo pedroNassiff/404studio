@@ -26,15 +26,18 @@
 }
 
 @mixin cont {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+  margin-top: 90px;
+  margin-bottom: 90px;
+  @include breakpoint(md) {
+    margin-top: 190px;
+    margin-bottom: 190px;
+  }
+  @include breakpoint(xl) {
+    margin-top: 280px;
+    margin-bottom: 280px;
+  }
   @include breakpoint(xxxl) {
     margin-top: 320px;
     margin-bottom: 320px;
   }
-  // @include breakpoint() {
-  // }
-  // @include breakpoint() {
-  // }
 }

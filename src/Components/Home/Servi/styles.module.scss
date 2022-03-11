@@ -1,5 +1,10 @@
 @import "./../../../../styles/utils";
 
+.servi {
+  height: 100%;
+  width: 100%;
+}
+
 .conten {
   overflow: hidden;
   @include cont;

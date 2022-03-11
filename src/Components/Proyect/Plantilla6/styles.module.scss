@@ -1,4 +1,25 @@
 @import "./../../../../styles/utils";
+.hero_bottom__icon__right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.hero_bottom__icon__left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
 
 .hero_bottom__icon {
   position: absolute;
