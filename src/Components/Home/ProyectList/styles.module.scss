@@ -8,9 +8,10 @@
 .proyect_list__title {
   text-align: right;
   justify-content: flex-end;
-
   margin-right: 15px;
   @include Title;
+  margin: 0;
+  margin-right: 15px;
 }
 
 .my_masonry_grid {
