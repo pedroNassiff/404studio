@@ -87,7 +87,6 @@ export default function Index({
       window.removeEventListener("scroll", Probar);
     };
   }, []);
-  console.log(scale);
 
   return (
     <div className={`${styles["section"]} aspect_ratio aspect_ratio--16by9`}>

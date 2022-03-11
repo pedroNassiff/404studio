@@ -7,7 +7,7 @@ import { proyects } from "../../const";
 import styles from "../../styles/id.module.scss";
 
 export default function Proyect() {
-  const [state, setstate] = useState(null);
+  const [state, setstate] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -18,7 +18,6 @@ export default function Proyect() {
       const select = proyects.find((item) => item.id === parseInt(id));
       setstate(select);
     }
-    console.log(select);
   }, [router.query]);
 
   return state ? (
