@@ -44,8 +44,7 @@ export default function Index({ link, id, item, ratio }) {
     }
   };
   const ver = parseFloat(probar);
-  const Probar = () => {
-    // let image = document.querySelector(`#aspect_ratio__item${id}`);
+  const AnimationZoom = () => {
     if (!ref.current) return;
     const example = ref.current.getBoundingClientRect().top;
     let position = Math.trunc(example);
@@ -71,9 +70,9 @@ export default function Index({ link, id, item, ratio }) {
   }, [position, screenSize]);
 
   useEffect(() => {
-    window.addEventListener("scroll", Probar);
+    window.addEventListener("scroll", AnimationZoom);
     return () => {
-      window.removeEventListener("scroll", Probar);
+      window.removeEventListener("scroll", AnimationZoom);
     };
   }, []);
 
