@@ -19,6 +19,23 @@
   object-position: center;
 }
 
+.next_proyect__link--disable {
+  font-family: $font_3;
+  font-size: 32px;
+  cursor: not-allowed;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.164);
+  @include breakpoint(md) {
+    font-size: 48px;
+  }
+  @include breakpoint(lg) {
+    font-size: 64px;
+  }
+  @include breakpoint(xl) {
+    font-size: 64px;
+  }
+}
+
 .wrap {
   overflow: hidden;
   display: grid;
@@ -51,6 +68,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn--disable {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: not-allowed;
   width: 100%;
   display: flex;
   justify-content: center;

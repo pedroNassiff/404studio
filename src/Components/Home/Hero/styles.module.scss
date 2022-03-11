@@ -23,6 +23,7 @@
   font-weight: 400;
   color: white;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
   // margin-left: -5px;
 
@@ -77,7 +78,7 @@
   max-width: 300px;
 
   @include breakpoint(md) {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   @include breakpoint(xl) {
