@@ -6,7 +6,7 @@ import Link from "next/link";
 const Index = (props) => {
   return (
     <Fade>
-      <div className={`${styles["wrap_proyects"]}`}>
+      <div className={`${styles["wrap_proyects"]}`} id={`proyect_${props.id}`}>
         <Link
           href={`/proyect/${props.id}`}
           className={`${styles["wrap_proyects__link"]}`}
