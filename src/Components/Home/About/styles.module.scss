@@ -109,27 +109,35 @@
   width: 100%;
   font-family: $font_1;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 50px;
-  margin: 0;
-  margin-top: 35px;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 90px;
   padding: 14px 0;
+  margin: 0;
   width: 100%;
   background: linear-gradient(to left top, #0d3e5b, #752e50);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
+  @include breakpoint(s) {
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 35px;
+    padding: 14px 0;
+  }
 
   @include breakpoint(md) {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 34px;
     text-align: left;
-    // margin-bottom: 14px;
     margin-top: 0;
+    padding: 0;
   }
 
   @include breakpoint(lg) {
     font-size: 80px;
+    padding: 16px;
   }
 }
 

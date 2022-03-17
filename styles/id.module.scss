@@ -1,1 +1,17 @@
+@import "./utils";
 
+.back {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  z-index: 1000;
+  object-fit: contain;
+  @include breakpoint(md) {
+    height: 80px;
+    width: 80px;
+  }
+  @include breakpoint(lg) {
+    height: 100px;
+    width: 100px;
+  }
+}
