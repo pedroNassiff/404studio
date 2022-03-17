@@ -54,16 +54,19 @@ export default function App() {
         // spaceBetween={90}
         breakpoints={{
           0: {
-            spaceBetween: 45,
+            spaceBetween: 0,
           },
           375: {
-            spaceBetween: 45,
+            spaceBetween: 0,
           },
           380: {
-            spaceBetween: 30,
+            spaceBetween: 0,
+          },
+          640: {
+            spaceBetween: 0,
           },
           768: {
-            spaceBetween: 40,
+            spaceBetween: 60,
           },
           1024: {
             spaceBetween: 70,
@@ -88,7 +91,7 @@ export default function App() {
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
-                src="/imagenes/Desarrollo web .jpg"
+                src="/Carrusel/web 404 desarrollo web -07.png"
                 className={`${styles["img"]} ${styles["img--3"]}`}
                 alt="image"
               />
@@ -110,7 +113,7 @@ export default function App() {
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
-                src="/imagenes/Estrategia de comunicación .jpg"
+                src="/Carrusel/web 404 estragtegia de comunicación -07-07-07.png"
                 className={`${styles["img"]} ${styles["img--2"]}`}
                 alt="image1"
               />
@@ -133,7 +136,7 @@ export default function App() {
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
-                src="/imagenes/Generación de contenidos.jpg"
+                src="/Carrusel/web 404 Generación de contenidos -07-07.png"
                 className={`${styles["img"]} ${styles["img--3"]}`}
                 alt="image2"
               />
@@ -153,7 +156,7 @@ export default function App() {
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
-                src="/imagenes/identidad de marca -07.jpg"
+                src="/Carrusel/web 404 Identidad de marca -07-07.png"
                 className={styles.img}
                 alt="image3"
               />
@@ -174,7 +177,7 @@ export default function App() {
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
-                src="/imagenes/Marketing digital -07.jpg"
+                src="/Carrusel/web 404 Maketing digital -07.png"
                 className={styles.img}
                 alt="image4"
               />

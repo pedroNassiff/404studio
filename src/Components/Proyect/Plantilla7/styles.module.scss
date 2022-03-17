@@ -1,6 +1,6 @@
 @import "./../../../../styles/utils";
 
-.hero_bottom__icon__right {
+.hero_bottom__icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -11,29 +11,16 @@
   cursor: pointer;
 }
 
-.hero_bottom__icon__left {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 1000;
-  width: 30px;
-  height: 30px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
 .img {
   height: 100%;
   width: 100%;
-  // object-fit: cover;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 .video {
   height: 100%;
   width: 100%;
-  // object-fit: cover;
-  object-fit: contain;
+  object-fit: cover;
   object-position: right;
 }
 
@@ -43,7 +30,6 @@
   max-width: 600px;
   max-height: 800px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .im {
@@ -109,9 +95,7 @@
 }
 
 .section:nth-child(4n + 2) {
-  // grid-column-start: 3;
-  grid-column-start: 1;
-
+  grid-column-start: 2;
   grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
@@ -130,12 +114,50 @@
 }
 
 .section:nth-child(4n + 3) {
-  // --
-  grid-column-start: span 4;
-  // --
+  grid-column-start: 1;
+  grid-column-end: 3;
+  // grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: span 3;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: span 1;
+
+    // grid-row-start: 3;
+  }
+}
+
+.section:nth-child(4n + 4) {
+  // grid-column-start: 2;
+  // grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
-    grid-column-start: span 6;
+    // grid-column-start: 4;
+    // grid-column-end: -1;
+    grid-row-start: span 3;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    // grid-column-start: 1;
+    // grid-column-end: 6;
+    grid-row-start: span 2;
+  }
+}
+
+.section:nth-child(4) {
+  grid-column-start: span 4;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: span 8;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {
@@ -143,7 +165,44 @@
 
   @include breakpoint(xl) {
     grid-column-start: span 8;
+    grid-row-start: span 2;
+  }
+  @include breakpoint(xxl) {
+    grid-column-start: span 8;
     grid-row-start: span 3;
+  }
+}
+.section:nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 3;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: span 2;
+  }
+}
+.section:nth-child(6) {
+  grid-column-start: span 4;
+  grid-row-start: span 2;
+  @include breakpoint(md) {
+    grid-column-start: span 8;
+    grid-row-start: span 3;
+  }
+  @include breakpoint(lg) {
+  }
+
+  @include breakpoint(xl) {
+    grid-column-start: span 8;
+    grid-row-start: span 2;
   }
   @include breakpoint(xxl) {
     grid-column-start: span 8;
@@ -151,14 +210,13 @@
   }
 }
 
-.section:nth-child(4n + 4) {
-  // grid-column-start: 2;
+.section:nth-child(7) {
   grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: span 2;
+  grid-column-end: 3;
+  // grid-row-start: span 2;
   @include breakpoint(md) {
-    grid-column-start: 4;
-    grid-column-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 5;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {
@@ -171,50 +229,28 @@
   }
 }
 
-.section:nth-child(7) {
-  grid-column-start: 1;
+.section:nth-child(9) {
+  grid-column-start: 2;
   grid-column-end: -1;
-  // grid-column-end: 3;
   grid-row-start: span 2;
   @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-start: 4;
+    grid-column-end: -1;
     grid-row-start: span 3;
   }
   @include breakpoint(lg) {
   }
 
   @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 12;
-  }
-}
-
-.section:nth-child(11) {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  // grid-column-end: 3;
-  grid-row-start: span 2;
-  @include breakpoint(md) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: span 3;
-  }
-  @include breakpoint(lg) {
-  }
-
-  @include breakpoint(xl) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 15;
+    grid-column-start: 5;
+    grid-column-end: -1;
+    grid-row-start: span 2;
   }
 }
 
 .section:nth-child(15) {
   grid-column-start: 1;
-  grid-column-end: -1;
-  // grid-column-end: 3;
+  grid-column-end: 3;
   grid-row-start: span 2;
   @include breakpoint(md) {
     grid-column-start: 1;
@@ -233,9 +269,7 @@
 
 .section:nth-child(19) {
   grid-column-start: 1;
-  grid-column-end: -1;
-
-  // grid-column-end: 3;
+  grid-column-end: 3;
   grid-row-start: span 2;
   @include breakpoint(md) {
     grid-column-start: 1;

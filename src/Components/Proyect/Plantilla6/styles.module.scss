@@ -10,17 +10,113 @@
   cursor: pointer;
 }
 
-.hero_bottom__icon__left {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 1000;
-  width: 30px;
-  height: 30px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
+.center {
+  bottom: 25%;
+  @include breakpoint(s) {
+    bottom: 20%;
+    right: 20px;
+  }
+  @include breakpoint(sm) {
+    bottom: 5%;
+    right: 10%;
+  }
+  @include breakpoint(md) {
+    bottom: 6%;
+    right: 6%;
+  }
+  @include breakpoint(lg) {
+    bottom: 5%;
+    right: 15%;
+  }
+  @include breakpoint(xl) {
+    bottom: 6%;
+    right: 7%;
+  }
+  @include breakpoint(xll) {
+    bottom: 3%;
+    right: 11%;
+  }
 }
 
+.center_2 {
+  bottom: 5%;
+  right: 6%;
+  @include breakpoint(s) {
+    right: 10%;
+  }
+  @include breakpoint(sm) {
+    right: 30%;
+  }
+  @include breakpoint(md) {
+    right: 10%;
+    bottom: 10%;
+  }
+  @include breakpoint(lg) {
+    right: 13%;
+    bottom: 0%;
+  }
+  @include breakpoint(xl) {
+    right: 8%;
+    bottom: 3%;
+  }
+  @include breakpoint(xll) {
+    right: 15%;
+  }
+}
+
+.center_3 {
+  bottom: 2%;
+  right: 9%;
+  @include breakpoint(s) {
+    right: 17%;
+  }
+  @include breakpoint(sm) {
+    right: 30%;
+  }
+  @include breakpoint(md) {
+    right: 9%;
+  }
+  @include breakpoint(lg) {
+    right: 20%;
+  }
+  @include breakpoint(xl) {
+    right: 13%;
+  }
+  @include breakpoint(xll) {
+    right: 20%;
+  }
+}
+.center_4 {
+  bottom: 24%;
+  right: 6%;
+  @include breakpoint(s) {
+    right: 10%;
+  }
+  @include breakpoint(sm) {
+    right: 10%;
+    bottom: 10%;
+  }
+  @include breakpoint(md) {
+    right: 9%;
+    bottom: 29%;
+  }
+  @include breakpoint(lg) {
+    right: 13%;
+    bottom: 18%;
+  }
+  @include breakpoint(xl) {
+    right: 6%;
+    bottom: 24%;
+  }
+  @include breakpoint(xll) {
+    right: 10%;
+    bottom: 20%;
+  }
+  @include breakpoint(xxl) {
+    bottom: 16%;
+    right: 10%;
+  }
+}
 .hero_bottom__icon {
   position: absolute;
   bottom: 10px;
@@ -35,13 +131,13 @@
 .img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 .video {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: right;
 }
 
@@ -87,7 +183,6 @@
     grid-template-columns: repeat(8, 1fr);
     grid-auto-rows: 250px;
     row-gap: 200px;
-    grid-auto-flow: dense;
   }
   @include breakpoint(xxxl) {
     grid-template-columns: repeat(8, 1fr);
@@ -117,7 +212,7 @@
 }
 
 .section:nth-child(4n + 2) {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
@@ -137,7 +232,7 @@
 
 .section:nth-child(4n + 3) {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {
     grid-column-start: 1;
@@ -155,7 +250,7 @@
 }
 
 .section:nth-child(4n + 4) {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: span 2;
   @include breakpoint(md) {

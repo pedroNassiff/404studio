@@ -13,7 +13,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className={`${styles["servi__wrap"]} custom_container custom_container--xxxl`}>
+      <div className={`${styles["servi__wrap"]} `}>
         <Carousel />
       </div>
     </div>

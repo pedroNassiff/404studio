@@ -11,6 +11,8 @@ export default function Index({
   object_position,
   id,
   plantilla,
+  key,
+  title,
 }) {
   const [state, setstate] = useState(true);
   const [scale, setScale] = useState(0);
@@ -85,7 +87,7 @@ export default function Index({
   }, []);
 
   return (
-    <div className={`${styles["section"]}  aspect_ratio aspect_ratio--16by9`}>
+    <div className={`${styles["section"]}  aspect_ratio aspect_ratio--16by9`} key={id}>
       {video ? (
         <div
           className={` aspect_ratio__item`}
@@ -117,17 +119,14 @@ export default function Index({
             </div>
           )}
           <video
-            src={`/proyects/${description}/videos/${link}`}
+            src={`/proyects/${title}/videos/${link}`}
             autoPlay
             loop
             muted={state}
             className={` ${styles["img"]}`}
             style={{ objectFit: `${object_fit}`, objectPosition: `${object_position}` }}
           >
-            <source
-              src={`/proyects/${description}/videos/${link}`}
-              type="video/mp4"
-            ></source>
+            <source src={`/proyects/${title}/videos/${link}`} type="video/mp4"></source>
           </video>
         </div>
       ) : (
@@ -139,7 +138,7 @@ export default function Index({
         >
           <img
             loading="lazy"
-            src={`/proyects/${description}/photos/${link}`}
+            src={`/proyects/${title}/photos/${link}`}
             alt=""
             className={` ${styles["img"]}`}
             style={{ objectFit: `${object_fit}`, objectPosition: `${object_position}` }}
