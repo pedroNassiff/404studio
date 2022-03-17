@@ -13,7 +13,9 @@ export default function ProyectList() {
     <div className={`${styles["proyect_list"]} `}>
       <div className={`${styles["cont"]}`}>
         <Slide bottom text delay={1000}>
-          <h2 className={`${styles["proyect_list__title"]}`}>Our Proyects.</h2>
+          <h2 className={`${styles["proyect_list__title"]}`} id="proyectList">
+            Our Proyects.
+          </h2>
         </Slide>
       </div>
 
