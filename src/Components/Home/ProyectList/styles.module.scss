@@ -12,6 +12,9 @@
   @include Title;
   margin: 0;
   margin-right: 15px;
+  @include breakpoint(md) {
+    margin-right: 25px;
+  }
 }
 
 .my_masonry_grid {

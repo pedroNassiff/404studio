@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss";
 import WrapProyect from "../WrapProyect";
 import Masonry from "react-masonry-css";
-import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
 export default function ProyectList() {

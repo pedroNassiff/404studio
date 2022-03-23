@@ -6,7 +6,6 @@ import Plantilla3 from "../Plantilla3";
 import Plantilla4 from "../Plantilla4";
 import Plantilla5 from "../Plantilla5";
 import Plantilla6 from "../Plantilla6";
-import Plantilla7 from "../Plantilla7";
 
 import { proyects } from "../../../../const";
 
@@ -40,11 +39,12 @@ const Index = (props) => {
                   video={item.video}
                   description={props.props.description}
                   link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
                   id={item.id}
                   key={item.id}
                   title={props.props.title}
+                  ratio={item.ratio}
+                  size={item.size}
+                  heightBackground={item.heightBackground}
                 />
               )}
               {props.props.plantilla === 3 && (
@@ -86,19 +86,6 @@ const Index = (props) => {
               )}
               {props.props.plantilla === 6 && (
                 <Plantilla6
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  key={item.id}
-                  btn={item.btn}
-                  title={props.props.title}
-                />
-              )}
-              {props.props.plantilla === 7 && (
-                <Plantilla7
                   video={item.video}
                   description={props.props.description}
                   link={item.link}
