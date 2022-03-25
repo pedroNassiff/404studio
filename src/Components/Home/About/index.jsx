@@ -1,8 +1,11 @@
 import styles from "./styles.module.scss";
 import Slide from "react-reveal/Slide";
-import AnimationZoom from "../../Shared/AnimationZoom";
+// import AnimationZoom from "../../Shared/AnimationZoom";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const Index = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
   return (
     <div className={styles["about"]}>
       <div className={`${styles["cont"]}`}>
@@ -14,7 +17,20 @@ const Index = () => {
       <div
         className={`${styles["about__container"]} custom_container custom_container--xxxl`}
       >
-        <AnimationZoom link={"/about_v.mov"} id={1} item={false} ratio={"9by16"} />
+        {/* <AnimationZoom link={"/about_v.mov"} id={1} item={false} ratio={"9by16"} /> */}
+
+        <div className={`${styles["about_right"]} aspect_ratio aspect_ratio--3by4`}>
+          <div className={`${styles["about_right__frame"]}`}></div>
+          <video
+            src={`/about_v.mov`}
+            autoPlay
+            loop
+            muted={true}
+            className={`${styles["img"]}`}
+          >
+            <source src={`/about_v.mov`} type="video/mp4"></source>
+          </video>
+        </div>
 
         <div className={styles["about_left"]}>
           <div></div>
