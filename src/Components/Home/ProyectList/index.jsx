@@ -73,7 +73,21 @@ export default function ProyectList() {
             id={6}
             sm="six"
           />
+          <WrapProyect
+            left={true}
+            images="shujmanV1-home.png"
+            description="Shujman"
+            id={17}
+            sm="fourteen"
+          />
 
+          <WrapProyect
+            left={true}
+            images="moda2.jpg"
+            description="Mo<br/>da<br/> 1"
+            id={9}
+            sm="nine"
+          />
           <WrapProyect
             left={true}
             images="ranchov2.jpeg"
@@ -92,10 +106,17 @@ export default function ProyectList() {
 
           <WrapProyect
             left={true}
-            images="moda2.jpg"
-            description="Mo<br/>da<br/> 1"
-            id={9}
-            sm="nine"
+            images="lavazzaH3-home.png"
+            description="Lavazza"
+            id={16}
+            sm="fourteen"
+          />
+          <WrapProyect
+            left={true}
+            images="misiaV1-home.png"
+            description="Misia"
+            id={13}
+            sm="twelve"
           />
 
           <WrapProyect
@@ -120,6 +141,29 @@ export default function ProyectList() {
             description="NUT<br/> Mira<br/>so<br/>les"
             id={12}
             sm="twelve"
+          />
+
+          <WrapProyect
+            left={true}
+            images="chacoV1-home.png"
+            description="Chaco"
+            id={14}
+            sm="twelve"
+          />
+          <WrapProyect
+            left={true}
+            images="chacoH2-home.png"
+            description="Chaco"
+            id={15}
+            sm="twelve"
+          />
+
+          <WrapProyect
+            left={true}
+            images="clemenciaV1-home.png"
+            description="Clemencia"
+            id={18}
+            sm="fourteen"
           />
         </Masonry>
       </div>

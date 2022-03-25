@@ -15,7 +15,7 @@ export default function Proyect() {
 
   useEffect(() => {
     const { id } = router.query;
-    if (id > 12) {
+    if (id > 18) {
       setstate(false);
     } else {
       const select = proyects.find((item) => item.id === parseInt(id));
@@ -26,6 +26,7 @@ export default function Proyect() {
   return state ? (
     <div className={styles.container}>
       <img
+        alt="back home"
         src="/boton_back_home-09-removebg-preview.png"
         className={`${styles["back"]}`}
         onClick={() => router.push(`/#proyect_${id}`)}

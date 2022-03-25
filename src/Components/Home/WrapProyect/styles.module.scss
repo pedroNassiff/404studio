@@ -361,3 +361,27 @@
     width: 450px;
   }
 }
+
+.fourteen {
+  font-size: 30px;
+  line-height: 45px;
+  width: 120px;
+
+  @include breakpoint(md) {
+    font-size: 70px;
+    line-height: 90px;
+    width: 250px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 80px;
+    line-height: 100px;
+    width: 280px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 60px;
+    line-height: 80px;
+    width: 450px;
+  }
+}

@@ -1,11 +1,6 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
-import Animationfn from "../Animationfn";
 import Plantilla2 from "../Plantilla2";
-import Plantilla3 from "../Plantilla3";
-import Plantilla4 from "../Plantilla4";
-import Plantilla5 from "../Plantilla5";
-import Plantilla6 from "../Plantilla6";
 
 import { proyects } from "../../../../const";
 
@@ -22,18 +17,6 @@ const Index = (props) => {
         <div className={styles.wrap}>
           {props.props.content.map((item) => (
             <>
-              {props.props.plantilla === 1 && (
-                <Animationfn
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  key={item.id}
-                  title={props.props.title}
-                />
-              )}
               {props.props.plantilla === 2 && (
                 <Plantilla2
                   video={item.video}
@@ -45,56 +28,6 @@ const Index = (props) => {
                   ratio={item.ratio}
                   size={item.size}
                   heightBackground={item.heightBackground}
-                />
-              )}
-              {props.props.plantilla === 3 && (
-                <Plantilla3
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  key={item.id}
-                  title={props.props.title}
-                />
-              )}
-              {props.props.plantilla === 4 && (
-                <Plantilla4
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  key={item.id}
-                  title={props.props.title}
-                />
-              )}
-              {props.props.plantilla === 5 && (
-                <Plantilla5
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  btn={item.btn}
-                  key={item.id}
-                  title={props.props.title}
-                />
-              )}
-              {props.props.plantilla === 6 && (
-                <Plantilla6
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  object_fit={item.object_fit}
-                  object_position={item.object_position}
-                  id={item.id}
-                  key={item.id}
-                  btn={item.btn}
-                  title={props.props.title}
                 />
               )}
             </>

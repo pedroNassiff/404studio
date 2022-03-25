@@ -55,7 +55,6 @@ const proyects = [
     images: "topm5.JPG",
     description: "Top Mega",
     title: "Top Mega",
-
     plantilla: 2,
     content: [
       {
@@ -499,7 +498,6 @@ const proyects = [
     images: "ranchov2.jpeg",
     description: "Rancho Viejo",
     title: "Rancho Viejo",
-
     plantilla: 2,
     content: [
       {
@@ -846,7 +844,6 @@ const proyects = [
     images: "mirasoles1.jpg",
     description: "NUT Mirasoles",
     title: "NUT Mirasoles",
-
     plantilla: 2,
     content: [
       {
@@ -936,6 +933,132 @@ const proyects = [
         video: false,
         link: "DSC_0395-2B.jpg",
         ratio: "18by12",
+      },
+    ],
+  },
+  {
+    id: 18,
+    description: "Clemencia",
+    title: "Clemencia",
+    plantilla: 2,
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "clemenciaV1-home (1).png",
+        ratio: "16by9",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "clemenciaH1.png",
+        ratio: "16by9",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "clemenciah2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "clemenciaV2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "clemenciaH3.png",
+        ratio: "16by9",
+      },
+      {
+        id: 6,
+        video: false,
+        link: "clemenciaV3.png",
+        ratio: "16by9",
+      },
+    ],
+  },
+  {
+    id: 17,
+    description: "Shujman",
+    title: "Shujman",
+    plantilla: 2,
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "shujmanV1-home (1).png",
+        ratio: "16by9",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "shujmanH1.png",
+        ratio: "16by9",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "shujmanH2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "shujmanV2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "shujmnaH3.png",
+        ratio: "16by9",
+      },
+      {
+        id: 6,
+        video: false,
+        link: "shujmanV3.png",
+        ratio: "16by9",
+      },
+    ],
+  },
+  {
+    id: 17,
+    description: "Lavazza",
+    title: "Lavazza",
+    plantilla: 2,
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "lavazzaH3-home (1).png",
+        ratio: "16by9",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "lavazzaH2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "lavazzaV2.png",
+        ratio: "16by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "lavazzaH1.png",
+        ratio: "16by9",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "lavazzaV1.png",
+        ratio: "16by9",
       },
     ],
   },
