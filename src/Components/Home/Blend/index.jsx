@@ -1,15 +1,33 @@
+import { useEffect } from "react";
 import styles from "./styles.module.scss";
-// import AnimationZoom from "../../Shared/AnimationZoom";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Index = () => {
-  const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.fromTo(
+      `#blend_video`,
+      1,
+      {
+        scale: 0.8,
+      },
+      {
+        scale: 1,
+        scrollTrigger: {
+          trigger: `#blend_video`,
+          start: "center center",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+  }, []);
   return (
     <div
       className={`${styles["blend__container"]} custom_container custom_container--xxxl`}
     >
-      <div className={`${styles["blend__wrap"]}  `}>
+      <div className={`${styles["blend__wrap"]}`} id="blend_video">
         <div className={styles["blend__frame"]}></div>
 
         <div className={``}>

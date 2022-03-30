@@ -49,6 +49,11 @@
     column-gap: 16px;
     row-gap: 140px;
   }
+
+  @include breakpoint(xxxl) {
+    column-gap: 16px;
+    row-gap: 250px;
+  }
 }
 
 .btn {

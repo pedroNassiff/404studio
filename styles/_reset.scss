@@ -46,27 +46,97 @@ a {
 }
 
 .swiper-pagination {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   font-size: 0 !important;
+  margin-bottom: 0;
+  @include breakpoint(s) {
+    margin-bottom: 5px;
+  }
+  @include breakpoint(md) {
+    margin-bottom: 0;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: 10px;
+  }
+
+  @include breakpoint(xl) {
+    margin-bottom: 0px;
+  }
+  @include breakpoint(xxl) {
+    margin-bottom: 10px;
+  }
+  @include breakpoint(xxxl) {
+    margin-bottom: 0px;
+  }
   .swiper-pagination-current,
   .swiper-pagination-total {
-    font-size: 50px;
+    font-size: 30px;
+    @include breakpoint(md) {
+      font-size: 40px;
+    }
+    @include breakpoint(lg) {
+      font-size: 40px;
+    }
+    @include breakpoint(xl) {
+      font-size: 50px;
+    }
   }
   .swiper-pagination-current {
     order: 1;
-    margin-right: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+
+    @include breakpoint(md) {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+    @include breakpoint(lg) {
+      font-size: 40px;
+      margin-right: 25px;
+      margin-top: 5px;
+    }
+    @include breakpoint(xl) {
+      margin-top: 0;
+      font-size: 50px;
+      margin-right: 25px;
+    }
   }
   .swiper-pagination-total {
     order: 3;
-    margin-left: 50px;
+    margin-left: 15px;
+    margin-top: 5px;
+
+    @include breakpoint(md) {
+      font-size: 40px;
+      margin-left: 20px;
+    }
+    @include breakpoint(lg) {
+      font-size: 40px;
+      margin-left: 25px;
+      margin-top: 5px;
+    }
+    @include breakpoint(xl) {
+      margin-top: 0;
+      font-size: 50px;
+      margin-left: 25px;
+    }
   }
   &::before {
     content: "|";
     display: block;
-    font-size: 50px;
+    font-size: 35px;
     order: 2;
+
+    @include breakpoint(md) {
+      font-size: 40px;
+    }
+    @include breakpoint(lg) {
+      font-size: 40px;
+    }
+    @include breakpoint(xl) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -427,6 +497,9 @@ a {
   @include breakpoint(lg) {
     padding-bottom: 100px;
   }
+  @include breakpoint(xl) {
+    padding-bottom: 110px;
+  }
 }
 
 .swiper-button-next.swiper-button-next.swiper-button-next {
@@ -468,16 +541,6 @@ a {
     top: 96%;
   }
 }
-
-// .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-//   font-size: 30px !important;
-//   @include breakpoint(md) {
-//     font-size: 40px !important;
-//   }
-//   @include breakpoint(lg) {
-//     font-size: 50px !important;
-//   }
-// }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {

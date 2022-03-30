@@ -15,14 +15,14 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
       `#algo_${id}`,
       1,
       {
-        scale: 0.8,
+        scale: 1,
       },
       {
-        scale: 1,
+        scale: 1.13,
         scrollTrigger: {
           trigger: `#algo_${id}`,
-          start: "top bottom",
-          end: "bottom center",
+          start: "center 400px",
+          end: "bottom top",
           scrub: true,
         },
       }
