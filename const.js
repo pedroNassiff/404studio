@@ -3,9 +3,8 @@ const proyects = [
     id: 1,
     left: true,
     images: "anima3.jpeg",
-    description: "Anima",
+    title_2: "Anima",
     title: "Anima",
-    plantilla: 2,
     content: [
       {
         id: 2,
@@ -53,9 +52,8 @@ const proyects = [
     id: 2,
     left: true,
     images: "topm5.JPG",
-    description: "Top Mega",
+    title_2: "Top Mega",
     title: "Top Mega",
-    plantilla: 2,
     content: [
       {
         id: 1,
@@ -140,9 +138,8 @@ const proyects = [
     id: 3,
     left: false,
     images: "harlemsport1.jpg",
-    description: "Harlem Sportswear",
+    title_2: "Harlem Sportswear",
     title: "Harlem Sportswear",
-    plantilla: 2,
     content: [
       {
         id: 1,
@@ -211,8 +208,7 @@ const proyects = [
     id: 4,
     left: false,
     images: "rom1.jpg",
-    plantilla: 2,
-    description: "La Romeria de las rosas",
+    title_2: "La Romeria de las rosas",
     title: "La Romeria de las rosas",
     content: [
       {
@@ -286,9 +282,8 @@ const proyects = [
     id: 5,
     left: true,
     images: "harlem3.jpg",
-    description: "Harlem Bar",
+    title_2: "Harlem Bar",
     title: "Harlem Bar",
-    plantilla: 2,
     content: [
       {
         id: 1,
@@ -350,9 +345,8 @@ const proyects = [
     id: 6,
     left: false,
     images: "aljibe3.png",
-    description: "El aljibe <br/> de Mendez",
+    title_2: "El aljibe <br/> de Mendez",
     title: "El aljibe de Mendez",
-    plantilla: 2,
     content: [
       {
         id: 1,
@@ -496,9 +490,8 @@ const proyects = [
     id: 7,
     left: true,
     images: "ranchov2.jpeg",
-    description: "Rancho Viejo",
+    title_2: "Rancho Viejo",
     title: "Rancho Viejo",
-    plantilla: 2,
     content: [
       {
         id: 5,
@@ -553,9 +546,8 @@ const proyects = [
     id: 8,
     left: false,
     images: "marren2.jpg",
-    description: "Marren",
+    title_2: "Marren",
     title: "Marren",
-    plantilla: 2,
     content: [
       {
         id: 9,
@@ -648,9 +640,8 @@ const proyects = [
     id: 9,
     left: true,
     images: "moda2.jpg",
-    description: "Moda 1",
+    title_2: "Moda 1",
     title: "Moda 1",
-    plantilla: 2,
     content: [
       {
         id: 11,
@@ -735,9 +726,8 @@ const proyects = [
     id: 10,
     left: true,
     images: "somosc1.jpg",
-    description: "Somos Chola",
+    title_2: "Somos Chola",
     title: "Somos Chola",
-    plantilla: 2,
     content: [
       {
         id: 6,
@@ -787,8 +777,7 @@ const proyects = [
     id: 11,
     left: false,
     images: "WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg",
-    plantilla: 2,
-    description: "Paprika",
+    title_2: "Paprika",
     title: "Paprika",
     content: [
       {
@@ -842,9 +831,8 @@ const proyects = [
     id: 12,
     left: true,
     images: "mirasoles1.jpg",
-    description: "NUT Mirasoles",
+    title_2: "NUT Mirasoles",
     title: "NUT Mirasoles",
-    plantilla: 2,
     content: [
       {
         id: 1,
@@ -938,127 +926,271 @@ const proyects = [
   },
   {
     id: 18,
-    description: "Clemencia",
+    title_2: "Clemencia",
     title: "Clemencia",
-    plantilla: 2,
     content: [
       {
         id: 1,
         video: false,
         link: "clemenciaV1-home (1).png",
-        ratio: "16by9",
+        ratio: "18by14",
       },
       {
         id: 2,
         video: false,
         link: "clemenciaH1.png",
-        ratio: "16by9",
+        ratio: "18by9",
       },
       {
         id: 3,
         video: false,
         link: "clemenciah2.png",
-        ratio: "16by9",
+        ratio: "21by5",
       },
       {
         id: 4,
         video: false,
         link: "clemenciaV2.png",
-        ratio: "16by9",
+        ratio: "1by1",
       },
       {
         id: 5,
         video: false,
         link: "clemenciaH3.png",
-        ratio: "16by9",
+        ratio: "19by9",
       },
       {
         id: 6,
         video: false,
         link: "clemenciaV3.png",
-        ratio: "16by9",
+        ratio: "1by1",
       },
     ],
   },
   {
     id: 17,
-    description: "Shujman",
+    title_2: "Shujman",
     title: "Shujman",
-    plantilla: 2,
     content: [
       {
         id: 1,
         video: false,
         link: "shujmanV1-home (1).png",
-        ratio: "16by9",
+        ratio: "21by16",
       },
       {
         id: 2,
         video: false,
         link: "shujmanH1.png",
-        ratio: "16by9",
+        ratio: "19by9",
       },
       {
         id: 3,
         video: false,
         link: "shujmanH2.png",
-        ratio: "16by9",
+        ratio: "19by9",
       },
       {
         id: 4,
         video: false,
         link: "shujmanV2.png",
-        ratio: "16by9",
+        ratio: "18by12",
       },
       {
         id: 5,
         video: false,
         link: "shujmnaH3.png",
-        ratio: "16by9",
+        ratio: "21by7",
       },
       {
         id: 6,
         video: false,
         link: "shujmanV3.png",
-        ratio: "16by9",
+        ratio: "18by13",
       },
     ],
   },
   {
-    id: 17,
-    description: "Lavazza",
+    id: 16,
+    title_2: "Lavazza",
     title: "Lavazza",
-    plantilla: 2,
     content: [
       {
         id: 1,
         video: false,
-        link: "lavazzaH3-home (1).png",
-        ratio: "16by9",
+        link: "lavazzaV1.jpg",
+        ratio: "18by21",
       },
       {
         id: 2,
         video: false,
         link: "lavazzaH2.png",
-        ratio: "16by9",
+        ratio: "18by9",
       },
       {
         id: 3,
         video: false,
         link: "lavazzaV2.png",
-        ratio: "16by9",
+        ratio: "18by13",
       },
       {
         id: 4,
         video: false,
         link: "lavazzaH1.png",
-        ratio: "16by9",
+        ratio: "18by9",
       },
       {
         id: 5,
         video: false,
-        link: "lavazzaV1.png",
-        ratio: "16by9",
+        link: "lavazzaH3-home (1).png",
+        ratio: "21by10",
+      },
+    ],
+  },
+  {
+    id: 13,
+    title_2: "Misia",
+    title: "Misia",
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "misiaV1-home (1).png",
+        ratio: "18by13",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "misiaH1.png",
+        ratio: "21by10",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "misiah2.png",
+        ratio: "18by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "misiaV3.png",
+        ratio: "1by1",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "misiaH3.png",
+        ratio: "18by9",
+      },
+    ],
+  },
+  {
+    id: 14,
+    title_2: "Chaco",
+    title: "Chaco",
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "chacoH1.png",
+        ratio: "18by9",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "chacoH2-home.png",
+        ratio: "18by9",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "chacoH3.png",
+        ratio: "21by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "chacoH4.png",
+        ratio: "18by14",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "chacoH5.png",
+        ratio: "18by9",
+      },
+      {
+        id: 6,
+        video: false,
+        link: "chacoHV2.png",
+        ratio: "21by16",
+      },
+      {
+        id: 7,
+        video: false,
+        link: "chacoV1-home.png",
+        ratio: "18by12",
+      },
+      {
+        id: 8,
+        video: false,
+        link: "chacoV4.png",
+        ratio: "18by14",
+      },
+    ],
+  },
+  {
+    id: 15,
+    title_2: "Cenit",
+    title: "Cenit",
+    content: [
+      {
+        id: 1,
+        video: false,
+        link: "chacoH1.png",
+        ratio: "18by9",
+      },
+      {
+        id: 2,
+        video: false,
+        link: "chacoH2-home.png",
+        ratio: "18by9",
+      },
+      {
+        id: 3,
+        video: false,
+        link: "chacoH3.png",
+        ratio: "21by9",
+      },
+      {
+        id: 4,
+        video: false,
+        link: "chacoH4.png",
+        ratio: "18by14",
+      },
+      {
+        id: 5,
+        video: false,
+        link: "chacoH5.png",
+        ratio: "18by9",
+      },
+      {
+        id: 6,
+        video: false,
+        link: "chacoHV2.png",
+        ratio: "21by16",
+      },
+      {
+        id: 7,
+        video: false,
+        link: "chacoV1-home.png",
+        ratio: "18by12",
+      },
+      {
+        id: 8,
+        video: false,
+        link: "chacoV4.png",
+        ratio: "18by14",
       },
     ],
   },

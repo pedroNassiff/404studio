@@ -11,7 +11,7 @@ const Index = () => {
         title="AKA EL INGENIERO"
         name="Pedro Nassiff"
         description="Prófugo de la Prisión de Corrientes.<br/> Es capaz de vulnerar cualquier sistema conectado a internet"
-        img="/people/PedroNassiff.jpg"
+        img="/people/PedroNassiff-destock2.jpg"
       />
 
       <Card
@@ -27,7 +27,7 @@ const Index = () => {
         title="AKA LA INFILTRADA"
         name="Romina Ojeda"
         description="Las apariencias engañan.<br /> Sigilosa, observadora y analítica.<br /> Tiene la virtud de pasar desapersivida pero es capaz de proveer información infalible."
-        img="/people/RominaOjeda.jpg"
+        img="/people/RominaOjeda-destock.jpg"
       />
 
       <Card
@@ -35,7 +35,7 @@ const Index = () => {
         title="AKA EL MAGO"
         name="Pablo Chahin"
         description="Experto en el arte de la prestidigitación.<br />Hipnotiza a sus objetivos con humo y espejos para cometer sus fechorías"
-        img="/people/PabloChahin.jpg"
+        img="/people/PabloChahin-destock.jpg"
       />
     </div>
   );

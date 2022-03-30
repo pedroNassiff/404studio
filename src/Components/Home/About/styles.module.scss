@@ -34,24 +34,15 @@
   border: 2px solid white;
 }
 
-// ----------------------------
-
 .cont {
   overflow: hidden;
   @include cont;
 }
 
-.about {
-  // margin-top: 10px;
-  @include breakpoint(md) {
-    // margin-top: -40px;
-  }
-  @include breakpoint(lg) {
-    // margin-top: 150px;
-  }
-}
 .about_left__wrap {
-  margin-left: 32px;
+  @include breakpoint(md) {
+    margin-left: 32px;
+  }
 }
 
 .about__title {
@@ -60,19 +51,6 @@
   margin: 0;
   padding: 0;
   margin-right: 15px;
-  // margin-bottom: 44px;
-
-  @include breakpoint(md) {
-    // margin-bottom: 96px;
-  }
-
-  @include breakpoint(xl) {
-    // margin-bottom: 112px;
-  }
-
-  @include breakpoint(xxl) {
-    // margin-bottom: 128px;
-  }
 }
 
 .about__container {
@@ -94,7 +72,7 @@
   max-width: 270px;
 
   @include breakpoint(md) {
-    max-width: 970px;
+    max-width: 500px;
   }
 }
 
@@ -198,7 +176,7 @@
     line-height: 30px;
   }
   @include breakpoint(xxl) {
-    font-size: 32px;
+    font-size: 29px;
     line-height: 40px;
   }
 }

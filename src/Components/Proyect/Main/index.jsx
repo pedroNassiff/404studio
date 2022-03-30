@@ -1,36 +1,30 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
-import Plantilla2 from "../Plantilla2";
-
+import WrapProyects from "../WrapProyects";
 import { proyects } from "../../../../const";
 
-const Index = (props) => {
-  const linkId = props.props.id;
-
+const Index = ({ state }) => {
+  const { content, id, description, title } = state;
+  const linkId = id;
   const NextProyect = linkId + 1;
-
   const MaxProyects = proyects.length;
 
   return (
     <div>
       <div className={`custom_container custom_container--xxxl`}>
         <div className={styles.wrap}>
-          {props.props.content.map((item) => (
-            <>
-              {props.props.plantilla === 2 && (
-                <Plantilla2
-                  video={item.video}
-                  description={props.props.description}
-                  link={item.link}
-                  id={item.id}
-                  key={item.id}
-                  title={props.props.title}
-                  ratio={item.ratio}
-                  size={item.size}
-                  heightBackground={item.heightBackground}
-                />
-              )}
-            </>
+          {content.map((item) => (
+            <WrapProyects
+              video={item.video}
+              description={description}
+              link={item.link}
+              id={item.id}
+              key={item.id}
+              title={title}
+              ratio={item.ratio}
+              size={item.size}
+              heightBackground={item.heightBackground}
+            />
           ))}
         </div>
       </div>

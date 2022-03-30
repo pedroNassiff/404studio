@@ -2,23 +2,39 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-export default function Index({
-  video,
-  description,
-  link,
-  id,
-  ratio,
-  title,
-  size,
-  heightBackground,
-}) {
+export default function Index({ video, link, id, ratio, title, size, heightBackground }) {
   const [state, setstate] = useState(true);
+  gsap.registerPlugin(ScrollTrigger);
+  const imgRef = useRef(null);
+  const el = imgRef.current;
+  useEffect(() => {
+    gsap.fromTo(
+      `#algo_${id}`,
+      1,
+      {
+        scale: 1,
+      },
+      {
+        scale: 1.13,
+        scrollTrigger: {
+          trigger: `#algo_${id}`,
+          start: "center 400px",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+  }, []);
 
   return (
     <div
       className={`${styles["section"]} ${styles[`section--${size}`]}`}
       style={{ height: `${heightBackground}%` }}
+      key={id}
+      id={`algo_${id}`}
     >
       <div key={id} className={`aspect_ratio aspect_ratio--${ratio}`}>
         {video ? (

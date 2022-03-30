@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.scss";
@@ -12,55 +12,26 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css/effect-coverflow";
 
 // import Swiper core and required modules
-import SwiperCore, { EffectCoverflow } from "swiper";
+import SwiperCore from "swiper";
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
 
 export default function App() {
-  const [swiperRef, setSwiperRef] = useState(null);
-
-  let appendNumber = 4;
-  let prependNumber = 1;
-
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    ]);
-  };
-
-  const prepend = () => {
-    swiperRef.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div> "
-    );
-  };
-
-  const append = () => {
-    swiperRef.appendSlide('<div class="swiper-slide">Slide ' + ++appendNumber + "</div>");
-  };
-
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    ]);
-  };
   return (
     <>
       <Swiper
         slidesPerView={3}
         centeredSlides={true}
-        // spaceBetween={90}
         breakpoints={{
           0: {
-            spaceBetween: 0,
+            spaceBetween: 20,
           },
           375: {
-            spaceBetween: 0,
+            spaceBetween: 20,
           },
           380: {
-            spaceBetween: 0,
+            spaceBetween: 20,
           },
           640: {
             spaceBetween: 0,
