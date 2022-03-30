@@ -9,8 +9,6 @@ const Index = () => {
     <div
       className={`${styles["blend__container"]} custom_container custom_container--xxxl`}
     >
-      {/* <AnimationZoom link={"/about_h.mp4"} id={2} item={true} ratio={"16by9"} /> */}
-
       <div className={`${styles["blend__wrap"]}  `}>
         <div className={styles["blend__frame"]}></div>
 

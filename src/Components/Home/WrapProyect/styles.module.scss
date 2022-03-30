@@ -363,24 +363,53 @@
 }
 
 .fourteen {
-  font-size: 30px;
+  font-size: 23px;
   line-height: 45px;
-  width: 120px;
+  width: 115px;
 
   @include breakpoint(md) {
-    font-size: 70px;
-    line-height: 90px;
-    width: 250px;
+    font-size: 40px;
+    line-height: 60px;
+    width: 230px;
   }
 
   @include breakpoint(xl) {
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100px;
     width: 280px;
   }
 
   @include breakpoint(xxxl) {
+    font-size: 70px;
+    line-height: 80px;
+    width: 450px;
+  }
+}
+
+.fiveteen {
+  font-size: 18px;
+  line-height: 45px;
+  width: 100px;
+  @include breakpoint(sm) {
+    font-size: 35px;
+    line-height: 60px;
+    width: 230px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 38px;
+    line-height: 60px;
+    width: 230px;
+  }
+
+  @include breakpoint(xl) {
     font-size: 60px;
+    line-height: 100px;
+    width: 390px;
+  }
+
+  @include breakpoint(xxxl) {
+    font-size: 70px;
     line-height: 80px;
     width: 450px;
   }

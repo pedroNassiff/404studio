@@ -1,9 +1,5 @@
 @import "./../../../../styles/utils";
 
-.header-container {
-  // overflow: hidden;
-}
-
 .hero_top {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -25,11 +21,9 @@
   margin: 0;
   margin-left: 10px;
   padding: 0;
-  // margin-left: -5px;
 
   @include breakpoint(sm) {
     font-size: 48px;
-    // margin-left: -30px;
   }
 
   @include breakpoint(md) {
@@ -37,7 +31,6 @@
   }
 
   @include breakpoint(lg) {
-    // margin-left: -25px;
     font-size: 112px;
   }
   @include breakpoint(xxxl) {
@@ -171,12 +164,3 @@
     transform: translate(0, 400px);
   }
 }
-
-// ----------------------
-// .header-container {
-//   position: relative;
-// }
-
-// .hero_top__title {
-//   transform: translate(0, 400px);
-// }
