@@ -106,16 +106,16 @@ export default function ProyectList() {
 
           <WrapProyect
             left={true}
-            images="lavazzaV1.jpg"
-            description="Lavazza"
-            id={16}
-            sm="fourteen"
+            images="chacoH2-home.png"
+            description="Cenit"
+            id={15}
+            sm="seventeen"
           />
           <WrapProyect
             left={true}
-            images="misiaV1-home.png"
-            description="Misia"
-            id={13}
+            images="mirasoles1.jpg"
+            description="NUT<br/> Mira<br/>so<br/>les"
+            id={12}
             sm="twelve"
           />
 
@@ -128,6 +128,28 @@ export default function ProyectList() {
           />
 
           <WrapProyect
+            left={true}
+            images="chacoV1-home.png"
+            description="Ministerio de empleo del chaco"
+            id={14}
+            sm="nineteen"
+          />
+          <WrapProyect
+            left={true}
+            images="lavazzaV1.jpg"
+            description="La<br/>va<br/>zza"
+            id={16}
+            sm="twelve"
+          />
+
+          <WrapProyect
+            left={true}
+            images="misiaV1-home.png"
+            description="Misia"
+            id={13}
+            sm="seventeen"
+          />
+          <WrapProyect
             left={false}
             images="WhatsApp Image 2019-01-08 at 22.09.32-4.jpeg"
             description="Paprika"
@@ -135,36 +157,13 @@ export default function ProyectList() {
             sm="eleven"
           />
 
-          <WrapProyect
-            left={true}
-            images="mirasoles1.jpg"
-            description="NUT<br/> Mira<br/>so<br/>les"
-            id={12}
-            sm="twelve"
-          />
-
-          <WrapProyect
-            left={true}
-            images="chacoV1-home.png"
-            description="Chaco"
-            id={14}
-            sm="twelve"
-          />
-          <WrapProyect
-            left={true}
-            images="chacoH2-home.png"
-            description="Cenit"
-            id={15}
-            sm="twelve"
-          />
-
-          <WrapProyect
+          {/* <WrapProyect
             left={true}
             images="clemenciaV1-home.png"
             description="Clemencia"
             id={18}
             sm="fiveteen"
-          />
+          /> */}
         </Masonry>
       </div>
     </div>
