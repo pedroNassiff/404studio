@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: repeat(20, minmax(0, 1fr));
   column-gap: 16px;
-  row-gap: 40px;
+  row-gap: 65px;
   @include breakpoint(md) {
     column-gap: 16px;
     row-gap: 90px;
