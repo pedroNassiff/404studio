@@ -4,6 +4,7 @@ import Fade from "react-reveal/Fade";
 import Link from "next/link";
 
 const Index = (props) => {
+  console.log("log3");
   return (
     <Fade>
       <div className={`${styles["wrap_proyects"]}`} id={`proyect_${props.id}`}>
