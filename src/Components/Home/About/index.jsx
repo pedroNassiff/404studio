@@ -23,24 +23,6 @@ const Index = () => {
         },
       }
     );
-    gsap.fromTo(
-      `#text`,
-      1,
-      {
-        opacity: 0,
-        y: 250,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: `#text`,
-          start: "top bottom",
-          end: "bottom center",
-          scrub: true,
-        },
-      }
-    );
   }, []);
   return (
     <div className={styles["about"]}>
@@ -78,7 +60,7 @@ const Index = () => {
                 <h2 className={`${styles["about_left__subtitle"]}`}>Don`t blend</h2>
               </Slide>
             </div>
-            <p className={`${styles["about_left__description"]}`} id="text">
+            <p className={`${styles["about_left__description"]}`}>
               Somos la banda de Garage, los graffitis de penumbra, la gambeta de potrero.
               Confiamos más en la intuición que en los concejos. Cuidamos a los nuestros y
               siempre nos sumamos a empujar. No negociamos principios y confiamos en

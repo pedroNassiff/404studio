@@ -7,20 +7,19 @@ import { useRouter } from "next/router";
 import { proyects } from "../../const";
 import styles from "../../styles/id.module.scss";
 import { Description } from "@material-ui/icons";
+import { ContentPasteSearchOutlined } from "@mui/icons-material";
 
 export default function Proyect() {
-  const [state, setstate] = useState(false);
+  const [state, setState] = useState(false);
   const router = useRouter();
   const { id } = router.query;
 
   useEffect(() => {
     const { id } = router.query;
-    if (id > 18) {
-      setstate(false);
-    } else {
-      const select = proyects.find((item) => item.id === parseInt(id));
-      setstate(select);
-    }
+    const select = proyects.find((item) => item.id === parseInt(id));
+    if (select == undefined) {
+      return;
+    } else setState(select);
   }, [router.query]);
 
   return state ? (

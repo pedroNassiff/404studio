@@ -21,34 +21,43 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        // slidesPerView={1.8}
         centeredSlides={true}
         breakpoints={{
           0: {
             spaceBetween: 20,
+            slidesPerView: 2,
           },
           375: {
             spaceBetween: 20,
+            slidesPerView: 2,
           },
           380: {
             spaceBetween: 20,
+            slidesPerView: 2,
           },
           640: {
+            slidesPerView: 3,
             spaceBetween: 0,
           },
           768: {
             spaceBetween: 60,
+            slidesPerView: 3,
           },
           1024: {
             spaceBetween: 70,
+            slidesPerView: 3,
           },
           1536: {
             spaceBetween: 90,
+            slidesPerView: 3,
           },
           1792: {
             spaceBetween: 90,
+            slidesPerView: 3,
           },
         }}
+        effect={"fade"}
         modules={[Pagination]}
         navigation={true}
         pagination={{
@@ -58,12 +67,12 @@ export default function App() {
         className={styles["carousel__container"]}
       >
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles["container"]} `}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 desarrollo web -07.png"
-                className={`${styles["img"]} ${styles["img--3"]}`}
+                className={`${styles["img"]} `}
                 alt="image"
               />
               <div className={`${styles["hover"]} `}>
@@ -80,12 +89,12 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles["container"]} `}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 estragtegia de comunicación -07-07-07.png"
-                className={`${styles["img"]} ${styles["img--2"]}`}
+                className={`${styles["img"]} `}
                 alt="image1"
               />
               <div className={styles.hover}>
@@ -103,12 +112,12 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles["container"]} `}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 Generación de contenidos -07-07.png"
-                className={`${styles["img"]} ${styles["img--3"]}`}
+                className={`${styles["img"]} `}
                 alt="image2"
               />
               <div className={styles.hover}>
@@ -123,7 +132,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles["container"]} `}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
@@ -144,7 +153,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.container}>
+          <div className={`${styles["container"]} `}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img

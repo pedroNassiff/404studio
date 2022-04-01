@@ -45,6 +45,52 @@ a {
   box-sizing: border-box;
 }
 
+// ----- Spinner ---------------
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .swiper-pagination {
   display: flex;
   justify-content: center;
@@ -140,16 +186,7 @@ a {
   }
 }
 
-// ---------------------- swiper3 ----------------
-.swiper-wrapper {
-  margin-left: -50px;
-
-  @include breakpoint(s) {
-    margin-left: 0;
-  }
-  @include breakpoint(sm) {
-  }
-}
+// -------- Carousel -----------
 
 .swiper-slide.swiper-slide.swiper-slide {
   padding-top: 50px;
@@ -216,7 +253,7 @@ a {
   line-height: 5px;
   opacity: 0.5;
   padding-top: 50px;
-  min-width: 135px;
+  // min-width: 135px;
   height: 100%;
 
   @include breakpoint(s) {
@@ -295,7 +332,7 @@ a {
   line-height: 5px;
   opacity: 0.5;
   padding-top: 50px;
-  min-width: 135px;
+  // min-width: 135px;
   height: 100%;
 
   @include breakpoint(s) {
@@ -376,64 +413,54 @@ a {
   line-height: 8px;
   margin-top: -20px;
   height: 100%;
-  min-width: 180px;
+  padding-top: -50px;
+
   @include breakpoint(s) {
-    // min-width: 220px;
     height: 100%;
     min-width: auto;
   }
   @include breakpoint(sm) {
-    // min-width: none;
     margin-top: -30px;
-    // height: 430px;
     height: 100%;
   }
   @include breakpoint(md) {
     font-size: 14px;
     line-height: 18px;
     margin-top: -30px;
-    // height: 420px;
     height: 100%;
   }
   @include breakpoint(lg) {
     margin-top: -30px;
-    // height: 590px;
     height: 100%;
   }
   @include breakpoint(l) {
     margin-top: -30px;
-    // height: 650px;
     height: 100%;
   }
   @include breakpoint(xl) {
     font-size: 22px;
     line-height: 28px;
     margin-top: -30px;
-    // height: 700px;
     height: 100%;
   }
   @include breakpoint(xll) {
     font-size: 22px;
     line-height: 28px;
     margin-top: -30px;
-    // height: 750px;
     height: 100%;
   }
   @include breakpoint(xxl) {
     margin-top: -30px;
-    // height: 800px;
     height: 100%;
   }
   @include breakpoint(xxll) {
     margin-top: -30px;
-    // height: 890px;
     height: 100%;
   }
   @include breakpoint(xxxl) {
     font-size: 32px;
     line-height: 40px;
     margin-top: -30px;
-    // height: 950px;
     height: 100%;
   }
 }

@@ -924,49 +924,49 @@ const proyects = [
       },
     ],
   },
-  {
-    id: 18,
-    title_2: "Clemencia",
-    title: "Clemencia",
-    content: [
-      {
-        id: 1,
-        video: false,
-        link: "clemenciaV1-home (1).png",
-        ratio: "18by14",
-      },
-      {
-        id: 2,
-        video: false,
-        link: "clemenciaH1.png",
-        ratio: "18by9",
-      },
-      {
-        id: 3,
-        video: false,
-        link: "clemenciah2.png",
-        ratio: "21by5",
-      },
-      {
-        id: 4,
-        video: false,
-        link: "clemenciaV2.png",
-        ratio: "1by1",
-      },
-      {
-        id: 5,
-        video: false,
-        link: "clemenciaH3.png",
-        ratio: "19by9",
-      },
-      {
-        id: 6,
-        video: false,
-        link: "clemenciaV3.png",
-        ratio: "1by1",
-      },
-    ],
-  },
+  // {
+  //   id: 18,
+  //   title_2: "Clemencia",
+  //   title: "Clemencia",
+  //   content: [
+  //     {
+  //       id: 1,
+  //       video: false,
+  //       link: "clemenciaV1-home (1).png",
+  //       ratio: "18by14",
+  //     },
+  //     {
+  //       id: 2,
+  //       video: false,
+  //       link: "clemenciaH1.png",
+  //       ratio: "18by9",
+  //     },
+  //     {
+  //       id: 3,
+  //       video: false,
+  //       link: "clemenciah2.png",
+  //       ratio: "21by5",
+  //     },
+  //     {
+  //       id: 4,
+  //       video: false,
+  //       link: "clemenciaV2.png",
+  //       ratio: "1by1",
+  //     },
+  //     {
+  //       id: 5,
+  //       video: false,
+  //       link: "clemenciaH3.png",
+  //       ratio: "19by9",
+  //     },
+  //     {
+  //       id: 6,
+  //       video: false,
+  //       link: "clemenciaV3.png",
+  //       ratio: "1by1",
+  //     },
+  //   ],
+  // },
   {
     id: 17,
     title_2: "Shujman",
