@@ -27,7 +27,7 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
         },
       }
     );
-  }, []);
+  }, [id]);
 
   return (
     <div

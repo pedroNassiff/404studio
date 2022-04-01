@@ -2,8 +2,9 @@ import styles from "./styles.module.scss";
 import WrapProyect from "../WrapProyect";
 import Masonry from "react-masonry-css";
 import Slide from "react-reveal/Slide";
+import { useEffect, useState } from "react";
 
-export default function ProyectList() {
+function ProyectList() {
   const breakpoints = {
     default: 3,
     940: 2,
@@ -88,6 +89,7 @@ export default function ProyectList() {
             id={9}
             sm="nine"
           />
+
           <WrapProyect
             left={true}
             images="ranchov2.jpeg"
@@ -158,14 +160,16 @@ export default function ProyectList() {
           />
 
           {/* <WrapProyect
-            left={true}
-            images="clemenciaV1-home.png"
-            description="Clemencia"
-            id={18}
-            sm="fiveteen"
-          /> */}
+          left={true}
+          images="clemenciaV1-home.png"
+          description="Clemencia"
+          id={18}
+          sm="fiveteen"
+        /> */}
         </Masonry>
       </div>
     </div>
   );
 }
+
+export default ProyectList;

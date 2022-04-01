@@ -26,7 +26,6 @@ const Index = (props) => {
                   : `${styles["wrap_proyects__frame"]} ${styles["wrap_proyects__frame--right"]}`
               }
             ></div>
-
             <div className={styles["background"]}>
               <p
                 className={`${styles[props.sm]} ${styles["text"]}`}

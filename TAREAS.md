@@ -1,6 +1,10 @@
-[x] borrar clemencia
-[x] cambiar chaco por Ministerio de empleo del chaco
-[x] row gap en mobile
-[x] justificar a la derecha los textos de los proyectos nuevos
+[] crear api que contetnga (carousel, peopel y proyects)
+\_\_\_[] hacer el loading
 
-[]acomodar la lista de los proyectos
+[]skeleton
+
+[] mejorar el carusel
+**[x] centrar el carousel
+**[x] achicar las imagenes de atras
+
+[] descargar grabador de pantalla de buena calidad
