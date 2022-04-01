@@ -8,10 +8,8 @@ import Blend from "../src/Components/Home/Blend";
 import People from "../src/Components/Home/People";
 import Layout from "../src/Components/Layout/Layout";
 
-function Home({ data }) {
-  return !data ? (
-    <div>Cargando..</div>
-  ) : (
+function Home() {
+  return (
     <>
       <Layout>
         <Head>
@@ -28,15 +26,6 @@ function Home({ data }) {
       </Layout>
     </>
   );
-}
-export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api");
-  const data = await res.json();
-  return {
-    props: {
-      data,
-    },
-  };
 }
 
 export default Home;
