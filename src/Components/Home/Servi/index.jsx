@@ -1,6 +1,9 @@
-import Carousel from "../Carousel";
+import dynamic from "next/dynamic";
+
+const Carousel = dynamic(() => import("../Carousel"), { ssr: false });
+// import Carousel from "../Carousel";
 import styles from "./styles.module.scss";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-reveal";
 
 export default function Index() {
   return (

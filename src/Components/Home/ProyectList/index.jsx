@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import WrapProyect from "../WrapProyect";
 import Masonry from "react-masonry-css";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-reveal";
 import { useEffect, useState } from "react";
 
 function ProyectList() {

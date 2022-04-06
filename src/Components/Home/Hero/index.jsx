@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
@@ -42,21 +42,16 @@ export default function Hero() {
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--two"]}`}
             ></div>
 
-            {state ? (
-              <div
-                onClick={() => setstate(true)}
-                className={`${hero["hero_bottom__icon"]}`}
-              >
+            <div
+              onClick={() => setstate(!state)}
+              className={`${hero["hero_bottom__icon"]}`}
+            >
+              {state ? (
                 <VolumeOffIcon className={hero["icon__muted"]}></VolumeOffIcon>
-              </div>
-            ) : (
-              <div
-                onClick={() => setstate(true)}
-                className={`${hero["hero_bottom__icon"]}`}
-              >
+              ) : (
                 <VolumeUpIcon className={hero["icon__unmuted"]}></VolumeUpIcon>
-              </div>
-            )}
+              )}
+            </div>
 
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover`}

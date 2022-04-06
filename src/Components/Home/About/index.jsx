@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styles from "./styles.module.scss";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-reveal";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 

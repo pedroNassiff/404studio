@@ -25,31 +25,35 @@ export default function App() {
         centeredSlides={true}
         breakpoints={{
           0: {
-            spaceBetween: 20,
+            spaceBetween: 0,
             slidesPerView: 2,
           },
           375: {
-            spaceBetween: 20,
+            spaceBetween: 0,
             slidesPerView: 2,
           },
           380: {
+            spaceBetween: 0,
+            slidesPerView: 2,
+          },
+          420: {
             spaceBetween: 20,
             slidesPerView: 2,
           },
           640: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 20,
           },
           768: {
-            spaceBetween: 60,
+            spaceBetween: 30,
             slidesPerView: 3,
           },
           1024: {
-            spaceBetween: 70,
+            spaceBetween: 50,
             slidesPerView: 3,
           },
           1536: {
-            spaceBetween: 90,
+            spaceBetween: 60,
             slidesPerView: 3,
           },
           1792: {
@@ -67,12 +71,12 @@ export default function App() {
         className={styles["carousel__container"]}
       >
         <SwiperSlide>
-          <div className={`${styles["container"]} `}>
+          <div className={`${styles["container"]} hover`}>
             <div className={styles.borde}></div>
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 desarrollo web -07.png"
-                className={`${styles["img"]} `}
+                className={`${styles["img"]} im`}
                 alt="image"
               />
               <div className={`${styles["hover"]} `}>
@@ -94,7 +98,7 @@ export default function App() {
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 estragtegia de comunicación -07-07-07.png"
-                className={`${styles["img"]} `}
+                className={`${styles["img"]} im`}
                 alt="image1"
               />
               <div className={styles.hover}>
@@ -117,7 +121,7 @@ export default function App() {
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 Generación de contenidos -07-07.png"
-                className={`${styles["img"]} `}
+                className={`${styles["img"]} im`}
                 alt="image2"
               />
               <div className={styles.hover}>
@@ -137,7 +141,7 @@ export default function App() {
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 Identidad de marca -07-07.png"
-                className={styles.img}
+                className={`${styles.img} im`}
                 alt="image3"
               />
               <div className={styles.hover}>
@@ -158,7 +162,7 @@ export default function App() {
             <div className={`${styles["wrap"]} `}>
               <img
                 src="/Carrusel/web 404 Maketing digital -07.png"
-                className={styles.img}
+                className={`${styles.img} im`}
                 alt="image4"
               />
               <div className={styles.hover}>
