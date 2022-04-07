@@ -18,7 +18,7 @@ const Index = () => {
         <nav className={styles["social"]}>
           <ul className={styles["social__list"]}>
             <li className={styles["social__item"]}>
-              <Link href={"/"}>
+              <Link href={"https://www.instagram.com/somos.404/?hl=es"}>
                 <a className={styles["social__link"]} target="_blank">
                   <InstagramIcon className={`${styles["icon"]}`} />
                   Instagram
@@ -42,7 +42,7 @@ const Index = () => {
               </Link>
             </li>
             <li className={styles["social__item"]}>
-              <Link href={"/"}>
+              <Link href={"https://www.behance.net/pablochahin"}>
                 <a className={styles["social__link"]} target="_blank">
                   <FontAwesomeIcon
                     icon={faBehance}
