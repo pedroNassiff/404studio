@@ -8,19 +8,19 @@
 }
 
 .blend__container {
-  margin-top: 50px;
+  margin-top: 80px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   width: 100%;
 
   @include breakpoint(md) {
-    margin-top: 80px;
+    margin-top: 150px;
     margin-bottom: 150px;
   }
 
   @include breakpoint(xl) {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 200px;
   }
 
@@ -46,7 +46,7 @@
   }
 
   @include breakpoint(xxl) {
-    max-width: 1300px;
+    max-width: 1350px;
   }
 }
 

@@ -3,11 +3,38 @@ import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import { Fade } from "react-reveal";
+import gsap from "gsap";
+// import { SplitText } from "gsap";
+// import { SplitText } from "gsap/all";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
 
   const ref = useRef();
+
+  // --------------------------------
+  const tl = gsap.timeline({ repeat: 0 });
+
+  useEffect(() => {
+    tl.from(`#title_1`, 1, {
+      y: 200,
+      duration: 0.7,
+    });
+
+    tl.from(`#title_2`, 1, {
+      y: 200,
+      duration: 0.7,
+    });
+
+    tl.from(`#title_3`, 1, {
+      y: 200,
+      duration: 0.7,
+    });
+  }, []);
+
+  // ------------------------------
+
+  // const st = gsap.splitText("#title_1", { type: "words, lines, chars" });
 
   return (
     <div className={`${hero["hero"]}`}>
@@ -15,21 +42,26 @@ export default function Hero() {
         className={`${hero["hero__container"]} custom_container custom_container--xxxl`}
       >
         <section className={hero["hero_top"]}>
-          <Fade bottom cascade>
-            <div className={hero["cont"]}>
-              <h1 className={hero["hero_top__title"]}>Fuck the Roof</h1>
-            </div>
-            <div className={hero["cont"]}>
-              <h1 className={hero["hero_top__title"]}>Fuck the Limit</h1>
-            </div>
-            <div className={hero["cont"]}>
-              <h1
-                className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]} `}
-              >
-                Fuck Everthing.
-              </h1>
-            </div>
-          </Fade>
+          {/* <Fade bottom cascade> */}
+          <div className={hero["cont"]}>
+            <h1 className={hero["hero_top__title"]} id="title_1">
+              Fuck the Roof
+            </h1>
+          </div>
+          <div className={hero["cont"]}>
+            <h1 className={hero["hero_top__title"]} id="title_2">
+              Fuck the Limit
+            </h1>
+          </div>
+          <div className={hero["cont"]}>
+            <h1
+              className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]}`}
+              id="title_3"
+            >
+              Fuck Everthing.
+            </h1>
+          </div>
+          {/* </Fade> */}
         </section>
         <div className={`${hero["hero_bottom"]} `}>
           <div

@@ -14,10 +14,10 @@ const Index = () => {
         scale: 0.8,
       },
       {
-        scale: 1,
+        scale: 1.2,
         scrollTrigger: {
           trigger: `#about_video`,
-          start: "center center",
+          start: "top bottom",
           end: "bottom top",
           scrub: true,
         },
@@ -28,7 +28,7 @@ const Index = () => {
     <div className={styles["about"]}>
       <div className={`${styles["cont"]}`}>
         <Slide bottom text delay={1000}>
-          <h2 className={`${styles["about__title"]}`}>About us</h2>
+          <h2 className={`${styles["about__title"]}`}>About us.</h2>
         </Slide>
       </div>
 

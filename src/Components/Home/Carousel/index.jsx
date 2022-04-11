@@ -26,11 +26,11 @@ export default function App() {
         breakpoints={{
           0: {
             spaceBetween: 0,
-            slidesPerView: 2,
+            slidesPerView: 1.5,
           },
           375: {
             spaceBetween: 0,
-            slidesPerView: 2,
+            slidesPerView: 1.4,
           },
           380: {
             spaceBetween: 0,
