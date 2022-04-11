@@ -10,13 +10,13 @@ const Index = () => {
       `#blend_video`,
       1,
       {
-        scale: 0.8,
+        scale: 0.7,
       },
       {
-        scale: 1,
+        scale: 1.1,
         scrollTrigger: {
           trigger: `#blend_video`,
-          start: "center center",
+          start: "top bottom",
           end: "bottom top",
           scrub: true,
         },
@@ -25,7 +25,8 @@ const Index = () => {
   }, []);
   return (
     <div
-      className={`${styles["blend__container"]} custom_container custom_container--xxxl`}
+      className={`${styles["blend__container"]} custom_container custom_container--xxxl `}
+      id="contain"
     >
       <div className={`${styles["blend__wrap"]}`} id="blend_video">
         <div className={styles["blend__frame"]}></div>

@@ -26,7 +26,7 @@ const Index = () => {
               </Link>
             </li>
             <li className={styles["social__item"]}>
-              <Link href={"/"}>
+              <Link href={"https://wa.me/34672632656"}>
                 <a className={styles["social__link"]} target="_blank">
                   <LocalPhoneIcon className={`${styles["icon"]}`} />
                   Telefono
@@ -34,7 +34,7 @@ const Index = () => {
               </Link>
             </li>
             <li className={styles["social__item"]}>
-              <Link href={"/"}>
+              <Link href={"mailto:somos404studio@gmail.com"}>
                 <a className={styles["social__link"]} target="_blank">
                   <MailOutlineIcon className={`${styles["icon"]}`} />
                   Gmail
@@ -42,7 +42,7 @@ const Index = () => {
               </Link>
             </li>
             <li className={styles["social__item"]}>
-              <Link href={"https://www.behance.net/pablochahin"}>
+              <Link href={"https://404studio.myportfolio.com/"}>
                 <a className={styles["social__link"]} target="_blank">
                   <FontAwesomeIcon
                     icon={faBehance}

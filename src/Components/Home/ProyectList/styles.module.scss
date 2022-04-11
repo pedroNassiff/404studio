@@ -39,7 +39,7 @@
 
 .my_masonry_grid_column > div {
   background: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   @include breakpoint(md) {
     margin-bottom: 30px;
