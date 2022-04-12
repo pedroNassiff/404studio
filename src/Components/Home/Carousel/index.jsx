@@ -34,7 +34,7 @@ export default function App() {
           },
           380: {
             spaceBetween: 0,
-            slidesPerView: 2,
+            slidesPerView: 1.4,
           },
           420: {
             spaceBetween: 20,
