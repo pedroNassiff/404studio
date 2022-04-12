@@ -1,10 +1,9 @@
-[] crear api que contetnga (carousel, peopel y proyects)
-\_\_\_[] hacer el loading
+[x]margin top wrp product
 
-[]skeleton
+[x] cambia | por - en el carousel
 
-[] mejorar el carusel
-**[x] centrar el carousel
-**[x] achicar las imagenes de atras
+[x] carousel flechas y numeros como en el diseño
 
-[] descargar grabador de pantalla de buena calidad
+[x] hover del texto del carousel- cambiar su tamaño
+
+[] mejorar la animacion
