@@ -3,18 +3,15 @@ import { Fade } from "react-reveal";
 
 import Link from "next/link";
 
-const Index = (props) => {
+const Index = ({ id, images, left, title, font_title }) => {
   return (
-    <div id={`proyect_${props.id}`}>
+    <div id={`proyect_${id}`} key={id}>
       <Fade>
         <div className={`${styles["wrap_proyects"]}`}>
-          <Link
-            href={`/proyect/${props.id}`}
-            className={`${styles["wrap_proyects__link"]}`}
-          >
+          <Link href={`/proyect/${id}`} className={`${styles["wrap_proyects__link"]}`}>
             <a>
               <img
-                src={`/images/${props.images}`}
+                src={`/images/${images}`}
                 className={styles["wrap_proyects__images"]}
                 loading={"lazy"}
                 alt="imagen"
@@ -22,15 +19,15 @@ const Index = (props) => {
 
               <div
                 className={
-                  props.left
+                  left
                     ? `${styles["wrap_proyects__frame"]} ${styles["wrap_proyects__frame--left"]}`
                     : `${styles["wrap_proyects__frame"]} ${styles["wrap_proyects__frame--right"]}`
                 }
               ></div>
               <div className={styles["background"]}>
                 <p
-                  className={`${styles[props.sm]} ${styles["text"]}`}
-                  dangerouslySetInnerHTML={{ __html: props.description }}
+                  className={`${styles[font_title]} ${styles["text"]}`}
+                  dangerouslySetInnerHTML={{ __html: title }}
                 ></p>
               </div>
             </a>

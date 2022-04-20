@@ -1,9 +1,9 @@
-[x]margin top wrp product
+[] Animacion
 
-[x] cambia | por - en el carousel
+[x]Font size dinamicos e el wrap de proyects
 
-[x] carousel flechas y numeros como en el diseño
+[]Documentar
+--[] Home
+--[]Proyects
 
-[x] hover del texto del carousel- cambiar su tamaño
-
-[] mejorar la animacion
+[]Error

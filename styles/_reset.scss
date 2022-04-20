@@ -44,7 +44,51 @@ a {
 * {
   box-sizing: border-box;
 }
+// -------------
+.valor {
+  width: 100%;
+  height: 750vh;
+  overflow: hidden;
+}
+.valoracion {
+  position: relative;
+  height: 700vh;
+}
 
+.valor_1 {
+  position: absolute;
+  top: 80vh;
+  left: 3%;
+}
+
+// -------------
+
+.cont {
+  width: 100%;
+  height: 750vh;
+  overflow: hidden;
+  // border: 10px solid red;
+  // margin-top: -400vh;
+}
+
+.contain {
+  position: relative;
+  height: 700vh;
+  // border: 10px solid rgb(0, 55, 255);
+}
+
+.img_3 {
+  position: absolute;
+  top: 80vh;
+  left: 3%;
+  // border: 10px solid rgb(0, 255, 0);
+}
+
+.img_4 {
+  position: absolute;
+  top: 100vh;
+  left: 40%;
+}
 // ----- Spinner ---------------
 
 .lds-ring {

@@ -1,5 +1,9 @@
 @import "./../../../../styles/utils";
 
+.container_animacion {
+  display: flex;
+}
+
 .container_left {
   height: 100%;
   width: 100%;
@@ -37,11 +41,18 @@
 .cont {
   overflow: hidden;
   @include cont;
+
+  @include breakpoint(xxxl) {
+    margin-bottom: 0 !important;
+  }
 }
 
 .about_left__wrap {
   @include breakpoint(md) {
     margin-left: 32px;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: 42px;
   }
 }
 
@@ -74,7 +85,7 @@
 
   @include breakpoint(md) {
     margin-bottom: 20px;
-    max-width: 500px;
+    max-width: 360px;
   }
 
   @include breakpoint(xxl) {
@@ -116,6 +127,8 @@
 
   @include breakpoint(xxl) {
     margin-left: 80px;
+    // -----------
+    // max-width: 700px;
   }
 }
 

@@ -4,7 +4,7 @@ import WrapProyects from "../WrapProyects";
 import { proyects } from "../../../../const";
 
 const Index = ({ state }) => {
-  const { content, id, description, title } = state;
+  const { content, id, description, title, link_content } = state;
   const linkId = id;
   const NextProyect = linkId + 1;
   const MaxProyects = proyects.length;
@@ -20,7 +20,7 @@ const Index = ({ state }) => {
               link={item.link}
               id={item.id}
               key={item.id}
-              title={title}
+              title={link_content}
               ratio={item.ratio}
               size={item.size}
               heightBackground={item.heightBackground}
