@@ -21,7 +21,11 @@
 .section {
   width: 100%;
   height: 100%;
-  grid-column: span 20;
+  grid-column: span 17;
+
+  @include breakpoint(sm) {
+    grid-column: span 20;
+  }
 }
 
 .section--right {

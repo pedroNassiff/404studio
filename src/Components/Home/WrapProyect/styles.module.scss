@@ -98,7 +98,10 @@
 }
 
 .one {
-  font-size: 30px;
+  font-size: 25px;
+  @include breakpoint(s) {
+    font-size: 30px;
+  }
 
   @include breakpoint(md) {
     font-size: 55px;
@@ -115,7 +118,13 @@
 .two {
   font-size: 35px;
   line-height: 50px;
-  width: 120px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 35px;
+    line-height: 50px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 85px;
@@ -137,9 +146,15 @@
 }
 
 .three {
-  font-size: 30px;
-  line-height: 35px;
-  width: 120px;
+  font-size: 22px;
+  line-height: 28px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 30px;
+    line-height: 35px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 55px;
@@ -161,9 +176,15 @@
 }
 
 .four {
-  font-size: 25px;
-  line-height: 30px;
-  width: 120px;
+  font-size: 19px;
+  line-height: 23px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 25px;
+    line-height: 30px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 50px;
@@ -185,9 +206,15 @@
 }
 
 .five {
-  font-size: 35px;
-  line-height: 45px;
-  width: 120px;
+  font-size: 30px;
+  line-height: 40px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 35px;
+    line-height: 45px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 75px;
@@ -212,7 +239,12 @@
   text-align: center;
   width: 100%;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 25px;
+
+  @include breakpoint(s) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @include breakpoint(md) {
     font-size: 40px;
@@ -231,9 +263,15 @@
 }
 
 .seven {
-  font-size: 45px;
-  line-height: 55px;
-  width: 120px;
+  font-size: 35px;
+  line-height: 45px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 45px;
+    line-height: 55px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 90px;
@@ -255,9 +293,15 @@
 }
 
 .eight {
-  font-size: 40px;
-  line-height: 50px;
-  width: 120px;
+  font-size: 37px;
+  line-height: 47px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 40px;
+    line-height: 50px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 70px;
@@ -279,9 +323,15 @@
 }
 
 .nine {
-  font-size: 45px;
-  line-height: 55px;
-  width: 120px;
+  font-size: 40px;
+  line-height: 50px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 45px;
+    line-height: 55px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 90px;
@@ -303,9 +353,15 @@
 }
 
 .ten {
-  font-size: 35px;
-  line-height: 40px;
-  width: 120px;
+  font-size: 28px;
+  line-height: 35px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 35px;
+    line-height: 40px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 70px;
@@ -327,7 +383,11 @@
 }
 
 .eleven {
-  font-size: 25px;
+  font-size: 22px;
+
+  @include breakpoint(s) {
+    font-size: 25px;
+  }
 
   @include breakpoint(md) {
     font-size: 50px;
@@ -343,9 +403,15 @@
 }
 
 .twelve {
-  font-size: 30px;
-  line-height: 45px;
-  width: 120px;
+  font-size: 28px;
+  line-height: 40px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 30px;
+    line-height: 45px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 70px;
@@ -367,9 +433,12 @@
 }
 
 .fourteen {
-  font-size: 22px;
-  line-height: 45px;
-  width: 130px;
+  font-size: 16px;
+
+  @include breakpoint(s) {
+    font-size: 22px;
+    width: 130px;
+  }
 
   @include breakpoint(md) {
     font-size: 40px;
@@ -390,39 +459,14 @@
   }
 }
 
-.fiveteen {
-  font-size: 18px;
-  line-height: 45px;
-  width: 100px;
-  @include breakpoint(sm) {
-    font-size: 35px;
-    line-height: 60px;
-    width: 230px;
-  }
-
-  @include breakpoint(md) {
-    font-size: 38px;
-    line-height: 60px;
-    width: 230px;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 60px;
-    line-height: 100px;
-    width: 390px;
-  }
-
-  @include breakpoint(xxxl) {
-    font-size: 70px;
-    line-height: 80px;
-    width: 450px;
-  }
-}
-
 .seventeen {
-  font-size: 30px;
-  line-height: 45px;
-  width: 120px;
+  font-size: 28px;
+
+  @include breakpoint(s) {
+    font-size: 30px;
+    line-height: 45px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 70px;
@@ -444,9 +488,15 @@
 }
 
 .nineteen {
-  font-size: 16px;
-  line-height: 22px;
-  width: 120px;
+  font-size: 13px;
+  line-height: 20px;
+  width: 90px;
+
+  @include breakpoint(s) {
+    font-size: 16px;
+    line-height: 22px;
+    width: 120px;
+  }
 
   @include breakpoint(md) {
     font-size: 30px;
@@ -464,29 +514,5 @@
     font-size: 60px;
     line-height: 80px;
     width: 480px;
-  }
-}
-
-.twelve {
-  font-size: 35px;
-  line-height: 50px;
-  width: 110px;
-
-  @include breakpoint(md) {
-    font-size: 80px;
-    line-height: 100px;
-    width: 235px;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 90px;
-    line-height: 120px;
-    width: 280px;
-  }
-
-  @include breakpoint(xxxl) {
-    font-size: 130px;
-    line-height: 160px;
-    width: 430px;
   }
 }

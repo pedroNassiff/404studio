@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import { Fade } from "react-reveal";
 import gsap from "gsap";
 // import { SplitText } from "gsap";
 // import { SplitText } from "gsap/all";

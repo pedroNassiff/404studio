@@ -1,9 +1,10 @@
 import "../styles/globals.scss";
 import Router from "next/router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
+  const containerRef = useRef(null);
   Router.events.on("routeChangeStart", (url) => {
     setLoading(true);
   });

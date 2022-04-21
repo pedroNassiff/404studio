@@ -41,10 +41,6 @@
 .cont {
   overflow: hidden;
   @include cont;
-
-  @include breakpoint(xxxl) {
-    margin-bottom: 0 !important;
-  }
 }
 
 .about_left__wrap {

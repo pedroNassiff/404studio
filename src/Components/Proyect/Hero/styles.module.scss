@@ -19,10 +19,14 @@
 
 .title {
   font-family: $font_1;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 40px;
   text-align: left;
   font-weight: lighter;
+  @include breakpoint(s) {
+    font-size: 45px;
+    line-height: 60px;
+  }
   @include breakpoint(md) {
     font-size: 60px;
     line-height: 90px;
@@ -38,10 +42,14 @@
 
 .title--2 {
   font-family: $font_1;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 40px;
   text-align: left;
   font-weight: lighter;
+  @include breakpoint(s) {
+    font-size: 30px;
+    line-height: 60px;
+  }
   @include breakpoint(md) {
     font-size: 60px;
     line-height: 90px;
