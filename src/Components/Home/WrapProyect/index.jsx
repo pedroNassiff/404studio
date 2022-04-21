@@ -25,7 +25,7 @@ const Index = ({ id, images, left, title, font_title }) => {
         },
       }
     );
-  }, []);
+  }, [id]);
   return (
     <div id={`proyect_${id}`} key={id}>
       <div className={`${styles["wrap_proyects"]}`} id={`wrap_proyects_${id}`}>

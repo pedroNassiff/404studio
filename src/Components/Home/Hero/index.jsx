@@ -29,7 +29,7 @@ export default function Hero() {
       y: 200,
       duration: 0.7,
     });
-  }, []);
+  }, [tl]);
 
   // ------------------------------
 
