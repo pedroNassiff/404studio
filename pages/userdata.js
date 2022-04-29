@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {getIP} from "../components/services"
 
-const userData = (props) => {
+const UserData = (props) => {
     const [details, setDetails] = useState(null);
 
     const getUserDetails = () => {
@@ -26,4 +26,4 @@ const userData = (props) => {
   )
 }
 
-export default userData;
+export default UserData;
