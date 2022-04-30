@@ -3,8 +3,6 @@ import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import gsap from "gsap";
-// import { SplitText } from "gsap";
-// import { SplitText } from "gsap/all";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
