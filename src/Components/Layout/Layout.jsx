@@ -3,7 +3,7 @@ import Footer from "../Shared/Footer";
 export default function Layout({ children }) {
   return (
     <div>
-      <nav>{/* navbar */}</nav>
+      <nav></nav>
 
       <main>{children}</main>
 
