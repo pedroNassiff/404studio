@@ -23,13 +23,51 @@ const Index = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      `#about__title`,
+      1,
+      {
+        y: 200,
+        duration: 0.5,
+      },
+      {
+        y: 0,
+        duration: 0.5,
+
+        scrollTrigger: {
+          trigger: `#about__title`,
+          start: "top 80%",
+          end: "bottom bottom",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `#about_left__subtitle`,
+      1,
+      {
+        y: 200,
+        duration: 0.5,
+      },
+      {
+        y: 0,
+        duration: 0.5,
+
+        scrollTrigger: {
+          trigger: `#about_left__subtitle`,
+          start: "top 90%",
+          end: "bottom bottom",
+        },
+      }
+    );
   }, []);
   return (
     <div className={styles["about"]}>
       <div className={`${styles["cont"]}`}>
-        <Slide bottom text delay={1000}>
-          <h2 className={`${styles["about__title"]}`}>About us.</h2>
-        </Slide>
+        <h2 className={`${styles["about__title"]}`} id={`about__title`}>
+          About us.
+        </h2>
       </div>
 
       <div
@@ -56,9 +94,12 @@ const Index = () => {
 
           <div className={styles["about_left__wrap"]}>
             <div className={styles["about_left__cont"]}>
-              <Slide bottom text delay={1000}>
-                <h2 className={`${styles["about_left__subtitle"]}`}>Don`t blend</h2>
-              </Slide>
+              <h2
+                className={`${styles["about_left__subtitle"]}`}
+                id={`about_left__subtitle`}
+              >
+                Don`t blend
+              </h2>
             </div>
             <p className={`${styles["about_left__description"]}`}>
               Somos la banda de Garage, los graffitis de penumbra, la gambeta de potrero.

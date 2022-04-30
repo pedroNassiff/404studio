@@ -8,11 +8,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Index({ video, link, id, ratio, title, size, heightBackground }) {
   const [state, setstate] = useState(true);
   gsap.registerPlugin(ScrollTrigger);
-  const imgRef = useRef(null);
-  const el = imgRef.current;
+
   useEffect(() => {
     gsap.fromTo(
-      `#algo_${id}`,
+      `#animate_${id}`,
       1,
       {
         scale: 1,
@@ -20,8 +19,8 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
       {
         scale: 1.13,
         scrollTrigger: {
-          trigger: `#algo_${id}`,
-          start: "center 400px",
+          trigger: `#animate_${id}`,
+          start: "top 90%",
           end: "bottom top",
           scrub: true,
         },
@@ -34,7 +33,7 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
       className={`${styles["section"]} ${styles[`section--${size}`]}`}
       style={{ height: `${heightBackground}%` }}
       key={id}
-      id={`algo_${id}`}
+      id={`animate_${id}`}
     >
       <div key={id} className={`aspect_ratio aspect_ratio--${ratio}`}>
         {video ? (

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import { Fade } from "react-reveal";
 import gsap from "gsap";
 // import { SplitText } from "gsap";
 // import { SplitText } from "gsap/all";
@@ -30,11 +29,9 @@ export default function Hero() {
       y: 200,
       duration: 0.7,
     });
-  }, []);
+  }, [tl]);
 
   // ------------------------------
-
-  // const st = gsap.splitText("#title_1", { type: "words, lines, chars" });
 
   return (
     <div className={`${hero["hero"]}`}>
@@ -42,7 +39,6 @@ export default function Hero() {
         className={`${hero["hero__container"]} custom_container custom_container--xxxl`}
       >
         <section className={hero["hero_top"]}>
-          {/* <Fade bottom cascade> */}
           <div className={hero["cont"]}>
             <h1 className={hero["hero_top__title"]} id="title_1">
               Fuck the Roof
@@ -61,7 +57,6 @@ export default function Hero() {
               Fuck Everthing.
             </h1>
           </div>
-          {/* </Fade> */}
         </section>
         <div className={`${hero["hero_bottom"]} `}>
           <div

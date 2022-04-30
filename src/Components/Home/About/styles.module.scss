@@ -1,5 +1,9 @@
 @import "./../../../../styles/utils";
 
+.container_animacion {
+  display: flex;
+}
+
 .container_left {
   height: 100%;
   width: 100%;
@@ -43,6 +47,9 @@
   @include breakpoint(md) {
     margin-left: 32px;
   }
+  @include breakpoint(lg) {
+    margin-bottom: 42px;
+  }
 }
 
 .about__title {
@@ -74,7 +81,7 @@
 
   @include breakpoint(md) {
     margin-bottom: 20px;
-    max-width: 500px;
+    max-width: 360px;
   }
 
   @include breakpoint(xxl) {
@@ -116,6 +123,8 @@
 
   @include breakpoint(xxl) {
     margin-left: 80px;
+    // -----------
+    // max-width: 700px;
   }
 }
 

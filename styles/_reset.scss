@@ -34,6 +34,7 @@ body {
   background-color: #0f0f0f;
   color: white;
   overflow-x: hidden;
+  scroll-margin-top: 60px;
 }
 
 a {
@@ -45,6 +46,15 @@ a {
   box-sizing: border-box;
 }
 
+// -------------
+
+.cont {
+  width: 100%;
+  height: 650vh;
+  overflow: hidden;
+  // border: 10px solid red;
+  // margin-top: -400vh;
+}
 // ----- Spinner ---------------
 
 .lds-ring {
@@ -97,6 +107,8 @@ a {
   justify-content: center;
   font-size: 0 !important;
   margin-bottom: 0;
+  margin-bottom: 5px;
+
   @include breakpoint(s) {
     margin-bottom: 5px;
   }
@@ -104,7 +116,7 @@ a {
     margin-bottom: -6px;
   }
   @include breakpoint(lg) {
-    margin-bottom: -7px;
+    margin-bottom: -5px;
   }
 
   @include breakpoint(xl) {
@@ -118,7 +130,11 @@ a {
   }
   .swiper-pagination-current,
   .swiper-pagination-total {
-    font-size: 45px;
+    font-size: 35px;
+
+    @include breakpoint(s) {
+      font-size: 45px;
+    }
     @include breakpoint(md) {
       font-size: 40px;
     }
@@ -131,8 +147,12 @@ a {
   }
   .swiper-pagination-current {
     order: 1;
-    margin-right: 15px;
+    margin-right: 8px;
     margin-top: 5px;
+    @include breakpoint(s) {
+      margin-right: 15px;
+      margin-top: 5px;
+    }
 
     @include breakpoint(md) {
       font-size: 50px;
@@ -154,8 +174,12 @@ a {
   }
   .swiper-pagination-total {
     order: 3;
-    margin-left: 15px;
+    margin-left: 8px;
     margin-top: 5px;
+    @include breakpoint(s) {
+      margin-left: 15px;
+      margin-top: 5px;
+    }
 
     @include breakpoint(md) {
       font-size: 50px;
@@ -178,8 +202,11 @@ a {
   &::before {
     content: "-";
     display: block;
-    font-size: 55px;
+    font-size: 45px;
     order: 2;
+    @include breakpoint(s) {
+      font-size: 55px;
+    }
 
     @include breakpoint(md) {
       font-size: 55px;
@@ -232,8 +259,8 @@ a {
 }
 
 .swiper-slide-next.swiper-slide-next.swiper-slide-next {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 9px;
+  line-height: 12px;
 
   @include breakpoint(s) {
     font-size: 10px;
@@ -259,8 +286,12 @@ a {
 }
 
 .swiper-slide-prev.swiper-slide-prev.swiper-slide-prev {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 9px;
+  line-height: 12px;
+  @include breakpoint(s) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
   @include breakpoint(md) {
     font-size: 8px;
@@ -287,8 +318,8 @@ a {
   padding-top: 20px;
   padding-right: 0;
   padding-left: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
 
   @include breakpoint(s) {
     font-size: 14px;
@@ -371,7 +402,10 @@ a {
 }
 
 .swiper.swiper.swiper {
-  padding-bottom: 95px;
+  padding-bottom: 90px;
+  @include breakpoint(s) {
+    padding-bottom: 95px;
+  }
   @include breakpoint(md) {
     padding-bottom: 90px;
   }
@@ -432,29 +466,13 @@ a {
   }
 }
 
-// .swiper-pagination .swiper-pagination-current {
-//   &::before {
-//     content: "0";
-//     height: 100%;
-//     width: 100%;
-//     font-size: 45px;
-//     margin-right: 2px;
-//   }
-// }
-
-// .swiper-pagination .swiper-pagination-total {
-//   &::before {
-//     content: "0";
-//     height: 100%;
-//     width: 100%;
-//     font-size: 45px;
-//     margin-right: 2px;
-//   }
-// }
-
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 25px !important;
+
+  @include breakpoint(s) {
+    font-size: 25px !important;
+  }
 
   @include breakpoint(md) {
     font-size: 30px !important;
@@ -463,19 +481,4 @@ a {
   @include breakpoint(lg) {
     font-size: 45px !important;
   }
-}
-
-#proyect_1,
-#proyect_2,
-#proyect_3,
-#proyect_4,
-#proyect_5,
-#proyect_6,
-#proyect_7,
-#proyect_8,
-#proyect_9,
-#proyect_10,
-#proyect_11,
-#proyect_12 {
-  scroll-margin-top: 60px;
 }
