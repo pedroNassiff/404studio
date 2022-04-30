@@ -3,10 +3,10 @@ const proyects = [
     id: 1,
     left: true,
     images: "anima3.jpeg",
-    title_2: "anima",
+    title_2: "Anima",
     title: "Anima",
     font_title: "one",
-    link_content: "anima",
+    link_content: "Anima",
 
     content: [
       {
