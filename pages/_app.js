@@ -32,7 +32,7 @@ useEffect(() => {
     };
 }, []);
 useEffect(() => {
-  const GOOGLE_ANALYTICS = 'G-P391KWW5HX';
+  const GOOGLE_ANALYTICS = 'UA-233482687-1';
   const handleRouteChangeGA = (url) => {
       window.gtag("config", GOOGLE_ANALYTICS, {
           page_path: url,
