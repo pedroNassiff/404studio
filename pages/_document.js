@@ -22,7 +22,7 @@ class MyDocument extends Document {
                         }}
                     />
 
-                    {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+                    {/* <!-- Global site tag (gtag.js) - Google Analyticss --> */}
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS}`} />
                     <script dangerouslySetInnerHTML={{
                         __html: `
