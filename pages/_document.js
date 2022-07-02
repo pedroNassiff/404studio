@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
     render() {
         const GTM_ID = 'GTM-NG37GL7';
-        const GOOGLE_ANALYTICS = 'G-P391KWW5HX';
+        const GOOGLE_ANALYTICS = 'UA-233482687-1';
         return (
             <Html>
                 <Head>
