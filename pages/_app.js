@@ -1,7 +1,7 @@
 import "../styles/globals.scss";
 import {useRouter, Router} from "next/router";
 import { useState, useRef, useEffect } from "react";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { Cookies, getCookieConsentValue  } from "react-cookie-consent";
 
 
 function MyApp({ Component, pageProps }) {
@@ -38,6 +38,8 @@ useEffect(() => {
           page_path: url,
       });
   };
+  console.log(getCookieConsentValue());
+
   router.events.on("routeChangeComplete", handleRouteChangeGA);
   return () => {
       router.events.off("routeChangeComplete", handleRouteChangeGA);
@@ -53,19 +55,6 @@ useEffect(() => {
         <div></div>
       </div>
     </div>
-    <Component {...pageProps} />
-            <CookieConsent
-            location="bottom"
-            buttonText="Sí, utilizar cookies."
-            onAccept={() => location.reload()}
-            cookieName="CookieConsent"
-            expires={150}
-            enableDeclineButton="true"
-            declineButtonText="No, no utilizar cookies"
-            >
-            Poner aquí el mensaje sobre el uso de cookies
-            <a href="#enlace_hacia_politica_de_cookies">Política de Cookies</a>.
-        </CookieConsent>
     </>
   ) : (
     <Component {...pageProps} />

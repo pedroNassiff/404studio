@@ -3,11 +3,18 @@
   src: url("./Misto.ttf") format("truetype");
 }
 
+.buton-clas{
+  background-color:white;
+  color: red;
+}
 .title--distint {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
-
+.titulo1-cookies {
+  color: red;
+  border: "0";
+}
 html,
 body {
   padding: 0;

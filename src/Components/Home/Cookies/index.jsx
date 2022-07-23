@@ -4,7 +4,7 @@ import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import gsap from "gsap";
 
-export default function Hero() {
+export default function Cookies() {
   const [state, setstate] = useState(true);
 
   const ref = useRef();
@@ -39,7 +39,7 @@ export default function Hero() {
         <section className={hero["hero_top"]}>
           <div className={hero["cont"]}>
             <h1 className={hero["hero_top__title"]} id="title_1">
-              Fuck the Roof
+              Fuck the Roof 2
             </h1>
           </div>
           <div className={hero["cont"]}>
@@ -52,7 +52,7 @@ export default function Hero() {
               className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]}`}
               id="title_3"
             >
-              Fuck Everything.
+              Fuck Everthing.
             </h1>
           </div>
         </section>
