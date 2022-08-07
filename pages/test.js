@@ -26,7 +26,6 @@ const Test = () => {
         return [...combsWithoutFirst, ...combsWithFirst];
     }
 
-    console.log(combinations(['a','b','c']));
 
     return (
         <div>test</div>

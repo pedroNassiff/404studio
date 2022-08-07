@@ -54,6 +54,11 @@
   }
 }
 
+#home__title {
+  border: 1px solid red;
+  transform: translate(0px, 3px);
+}
+
 .hero_top__title--modify {
   color: transparent;
   -webkit-text-stroke-width: 1px;
