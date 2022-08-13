@@ -20,7 +20,7 @@ function Home(props) {
     let id = getCookie('key')
     if (id =='somos404'){
       console.log("key====", id);
-      setbtnAcceptState(false)
+      setbtnAcceptState(false);
     }
   }
 
@@ -51,21 +51,11 @@ useEffect(() => {
           <link rel="icon" href="/logo_2 (1).ico" />
         </Head>
        
-      
         <Hero />
         {btnAcceptState && (
                 <div className={`${hero["containerCookies"]} `} style={{ position: 'absolute', width: '800px'}}>
-                <div className={`${hero["hero_bottom"]} `}>
-                  <div
-                    className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}
-                  >
-                    <div
-                      className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--one"]}`}
-                    ></div>
-                    <div
-                      className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--two"]}`}
-                    ></div>
-        
+                <div className={`${hero["hero_bottom1"]} `}>
+                
         
                     <div
                       className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
@@ -86,7 +76,7 @@ useEffect(() => {
                         >CANCEL
                         </button>
                       </span>
-                      <div style={{ }}>
+                      <div>
           
                         <video
                       src="/cookies.mp4"
@@ -100,11 +90,8 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-                </div>
            )}
-        {
-
-      }
+    
      
         <ProyectList />
         <Services />
