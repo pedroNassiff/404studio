@@ -7,7 +7,7 @@ import CookieConsent, { Cookies, getCookieConsentValue  } from "react-cookie-con
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const containerRef = useRef(null);
+  const containerRef = useRef();
   Router.events.on("routeChangeStart", (url) => {
     setLoading(true);
   });

@@ -3,6 +3,7 @@ import hero from "./styles.module.scss";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Hero() {
   const [state, setstate] = useState(true);
@@ -10,24 +11,64 @@ export default function Hero() {
   const ref = useRef();
 
   // --------------------------------
-  const tl = gsap.timeline({ repeat: 0 });
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    tl.from(`#title_1`, 1, {
-      y: 200,
-      duration: 0.7,
-    });
+    gsap.fromTo(
+      `#home__title_one`,
+      1,
+      {
+        y: 200,
+        duration: 0.5,
+      },
+      {
+        y: 0,
+        duration: 0.5,
 
-    tl.from(`#title_2`, 1, {
-      y: 200,
-      duration: 0.7,
-    });
+        scrollTrigger: {
+          trigger: `#home__title_one`,
+          start: "bottom bottom",
+          end: "bottom bottom",
+        },
+      }
+    );
+    gsap.fromTo(
+      `#home__title_two`,
+      2,
+      {
+        y: 200,
+        duration: 0.5,
+      },
+      {
+        y: 0,
+        duration: 0.5,
 
-    tl.from(`#title_3`, 1, {
-      y: 200,
-      duration: 0.7,
-    });
-  }, [tl]);
+        scrollTrigger: {
+          trigger: `#home__title_two`,
+          start: "bottom bottom",
+          end: "bottom bottom",
+        },
+      }
+    );
+    gsap.fromTo(
+      `#home__title_three`,
+      3,
+      {
+        y: 200,
+        duration: 0.5,
+      },
+      {
+        y: 0,
+        duration: 0.5,
+
+        scrollTrigger: {
+          trigger: `#home__title_three`,
+          start: "bottom bottom",
+          end: "bottom bottom",
+        },
+      }
+    );
+  }, []);
 
   // ------------------------------
 
@@ -38,19 +79,19 @@ export default function Hero() {
       >
         <section className={hero["hero_top"]}>
           <div className={hero["cont"]}>
-            <h1 className={hero["hero_top__title"]} id="title_1">
+            <h1 className={hero["hero_top__title"]} id={`home__title_one`}>
               Fuck the Roof
             </h1>
           </div>
           <div className={hero["cont"]}>
-            <h1 className={hero["hero_top__title"]} id="title_2">
+            <h1 className={hero["hero_top__title"]} id={`home__title_two`}>
               Fuck the Limit
             </h1>
           </div>
           <div className={hero["cont"]}>
             <h1
               className={`${hero["hero_top__title"]} ${hero["hero_top__title--modify"]}`}
-              id="title_3"
+              id={`home__title_three`}
             >
               Fuck Everything.
             </h1>
