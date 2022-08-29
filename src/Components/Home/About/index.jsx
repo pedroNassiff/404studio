@@ -83,6 +83,7 @@ const Index = () => {
             autoPlay
             loop
             muted={true}
+            playsInline
             className={`${styles["img"]}`}
           >
             <source src={`/about_v.mov`} type="video/mp4"></source>
