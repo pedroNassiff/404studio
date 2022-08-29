@@ -95,7 +95,7 @@ export default function Cookies404() {
                   className={hero["hero_video__containerCokies"]}
                   autoPlay
                   muted
-
+                  playsInline
                 >
                   <source src="/cookies.mp4" type="video/mp4"></source>
                 </video>

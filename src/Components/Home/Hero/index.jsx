@@ -128,6 +128,7 @@ export default function Hero() {
                 autoPlay
                 muted={state}
                 ref={ref}
+                playsInline
               >
                 <source src="/header1.mp4" type="video/mp4"></source>
               </video>
