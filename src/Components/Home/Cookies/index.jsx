@@ -15,9 +15,9 @@ export default function Cookies404() {
 
   const getCokkie = () => {
     let id = getCookie('key')
-    if (id =='somos404'){
+    if (id == 'somos404') {
       console.log("key====", id);
-      setbtnAcceptState(true)
+      setbtnAcceptState(false);
     }
   }
 
@@ -31,11 +31,6 @@ export default function Cookies404() {
     setbtnAcceptState(false)
 
   }
-
-useEffect(() => {
-  getCokkie();
-}, [])
-
 
   // --------------------------------
   const tl = gsap.timeline({ repeat: 0 });
@@ -61,60 +56,54 @@ useEffect(() => {
 
   return (
 
-        <>
-          {btnAcceptState && (
-                <div className={`${hero["containerCookies"]} `} style={{ position: 'absolute', width: '800px'}}>
-                <div className={`${hero["hero_bottom"]} `}>
-                  <div
-                    className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}
-                  >
-                    <div
-                      className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--one"]}`}
-                    ></div>
-                    <div
-                      className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--two"]}`}
-                    ></div>
-        
-        
-                    <div
-                      className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
-                    >
-                      <div className={`${hero["hero_container_text2"]}`}>
-                        <div><h1 className={`${hero["hero_text_title"]}`}  style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica' }}>WELCOME TO OUR WORLD</h1></div>
-                        <div><h2 className={`${hero["hero_text_subtitle"]}`}  style={{ textAlign: 'center',  fontWeight: '700',fontFamily: 'Helvetica'}}>AVISO DE COOKIES</h2></div>
-                      </div>
-                      <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
-                        <button
-                        className={`${hero["hero_btn_ok"]}`}
-                        style={{ border: "none", color: 'blue', fontWeight: '700', marginLeft: "0px", cursor: 'pointer'}}
-                        onClick={aceptFunction}>OK</button>
-                        <button 
-                        style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer'}}
-                        className={`${hero["hero_btn_cancel"]}`}
-                        onClick={cancelFuncion}
-                        >CANCEL
-                        </button>
-                      </span>
-                      <div style={{ }}>
-          
-                        <video
-                      src="/cookies.mp4"
-                      className={hero["hero_video__containerCokies"]}
-                      autoPlay
-                      ref={ref}
-                    >
-                      <source src="/cookies.mp4" type="video/mp4"></source>
-                    </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-           )}
-        {
+    <>
+      <div className={`${hero["containerCookies"]} `} style={{ position: 'absolute', width: '800px' }}>
+        <div className={`${hero["hero_bottom"]} `}>
+          <div
+            className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}
+          >
+            <div
+              className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--one"]}`}
+            ></div>
+            <div
+              className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--two"]}`}
+            ></div>
 
-      }
-     
-          </>
+            <div
+              className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
+            >
+              <div className={`${hero["hero_container_text"]} content-end bg-white`} style={{  justifyContent: ' center' }}>
+                <div><h1 className={`${hero["hero_text_title"]} absolute inset-x-0 bottom-0`} style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica', justifyContent: 'center'  }}>WELCOME TO OUR WORLD</h1></div>
+                <div><h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
+              </div>
+              <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
+                <button
+                  className={`${hero["hero_btn_ok"]}`}
+                  style={{ border: "none", color: 'blue', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
+                  onClick={aceptFunction}>OK</button>
+                <button
+                  style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
+                  className={`${hero["hero_btn_cancel"]}`}
+                  onClick={cancelFuncion}
+                >CANCEL
+                </button>
+              </span>
+              <div>
+
+                <video
+                  // src="/cookies.mp4"
+                  className={hero["hero_video__containerCokies"]}
+                  autoPlay
+                  muted
+
+                >
+                  <source src="/cookies.mp4" type="video/mp4"></source>
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
