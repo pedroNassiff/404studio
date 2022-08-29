@@ -22,7 +22,6 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
           trigger: `#animate_${id}`,
           start: "top 90%",
           end: "bottom top",
-          scrub: true,
         },
       }
     );
