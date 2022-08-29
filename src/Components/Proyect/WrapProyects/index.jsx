@@ -53,7 +53,7 @@ export default function Index({ video, link, id, ratio, title, size, heightBackg
               autoPlay
               loop
               muted={state}
-              playsinline 
+              playsInline 
               className={`${styles["img"]} `}
             >
               <source src={`/proyects/${title}/videos/${link}`} type="video/mp4"></source>
