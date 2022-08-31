@@ -32,7 +32,7 @@ const Index = () => {
         <div className={styles["blend__frame"]}></div>
 
         <div className={``}>
-          <video className={`${styles["blend__video"]}`} autoPlay muted loop>
+          <video className={`${styles["blend__video"]}`} autoPlay muted loop playsInline>
             <source src="/about_h.mp4" type="video/mp4" />
           </video>
         </div>

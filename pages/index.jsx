@@ -52,7 +52,7 @@ useEffect(() => {
           <link rel="icon" href="/logo_2 (1).ico" />
         </Head>
         {btnAcceptState && (
-                <Cookies />
+                <Cookies btnAcceptState={btnAcceptState}  />
            )}
     
         <Hero />
