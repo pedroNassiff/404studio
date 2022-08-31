@@ -43,7 +43,12 @@
 .hero_container_text{
   position: absolute;
   top: 0;
+  left: 50px;
+  right: 50px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero_text_title{
