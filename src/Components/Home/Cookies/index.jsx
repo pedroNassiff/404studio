@@ -7,7 +7,7 @@ import { getCookies, getCookie, setCookie, deleteCookie } from 'cookies-next';
 
 import gsap from "gsap";
 
-export default function Cookies404(props) {
+export default function Cookies404() {
   const [btnAcceptState, setbtnAcceptState] = useState(true)
   const [btnCancel, setBtnCancel] = useState(true)
   const cookieConsentRef = useRef();
@@ -52,16 +52,15 @@ export default function Cookies404(props) {
     });
   }, [tl]);
 
-  
   // ------------------------------
 
   return (
 
     <>
-      <div className={`${hero["containerCookies"]} `} style={{ position: 'absolute', width: '800px' }}>
+      <div className={`${hero["containerCookies"]} `}>
         <div className={`${hero["hero_bottom"]} `}>
           <div
-            className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}
+            className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--1by1`}
           >
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--one"]}`}
@@ -70,26 +69,29 @@ export default function Cookies404(props) {
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--two"]}`}
             ></div>
 
-        <div
-          className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
-        >
-          <div className={`${hero["hero_container_text"]} content-end bg-white`} style={{  justifyContent: ' center' }}>
-            <div><h1 className={`${hero["hero_text_title"]} absolute inset-x-0 bottom-0`} style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica', justifyContent: 'center'  }}>WELCOME TO OUR WORLD</h1></div>
-            <div><h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
-          </div>
-          <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
-            <button
-              className={`${hero["hero_btn_ok"]}`}
-              style={{ border: "none", color: 'blue', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
-              onClick={aceptFunction}>OK</button>
-            <button
-              style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
-              className={`${hero["hero_btn_cancel"]}`}
-              onClick={cancelFuncion}
-            >CANCEL
-            </button>
-          </span>
-          <div>
+            <div
+              className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
+            >
+              <div className={`${hero["hero_container_text"]} content-end bg-white`} style={{ justifyContent: ' center' }}>
+                <div>
+                  <h1 className={`${hero["hero_text_title"]} absolute inset-x-0 bottom-0`} style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica', justifyContent: 'center' }}>WELCOME TO OUR WORLD</h1>
+                </div>
+                <div>
+                  <h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
+              </div>
+              <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
+                <button
+                  className={`${hero["hero_btn_ok"]}`}
+                  style={{ border: "none", color: 'blue', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
+                  onClick={aceptFunction}>OK</button>
+                <button
+                  style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
+                  className={`${hero["hero_btn_cancel"]}`}
+                  onClick={cancelFuncion}
+                >CANCEL
+                </button>
+              </span>
+              <div>
 
                 <video
                   // src="/cookies.mp4"
