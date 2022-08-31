@@ -16,7 +16,6 @@ export default function Cookies404() {
   const getCokkie = () => {
     let id = getCookie('key')
     if (id == 'somos404') {
-      console.log("key====", id);
       setbtnAcceptState(false);
     }
   }
@@ -55,8 +54,8 @@ export default function Cookies404() {
   // ------------------------------
 
   return (
-
     <>
+   {btnAcceptState && 
       <div className={`${hero["containerCookies"]} `}>
         <div className={`${hero["hero_bottom"]} `}>
           <div
@@ -107,6 +106,7 @@ export default function Cookies404() {
           </div>
         </div>
       </div>
+          }
     </>
   );
 }

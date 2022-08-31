@@ -20,7 +20,6 @@ function Home(props) {
   const getCokkie = () => {
     let id = getCookie('key')
     if (id =='somos404'){
-      console.log("key====", id);
       setbtnAcceptState(false);
     }
   }
