@@ -16,7 +16,6 @@ export default function Cookies404() {
   const getCokkie = () => {
     let id = getCookie('key')
     if (id == 'somos404') {
-      console.log("key====", id);
       setbtnAcceptState(false);
     }
   }
@@ -55,12 +54,12 @@ export default function Cookies404() {
   // ------------------------------
 
   return (
-
     <>
-      <div className={`${hero["containerCookies"]} `} style={{ position: 'absolute', width: '800px' }}>
+   {btnAcceptState && 
+      <div className={`${hero["containerCookies"]} `}>
         <div className={`${hero["hero_bottom"]} `}>
           <div
-            className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--16by9`}
+            className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--1by1`}
           >
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--one"]}`}
@@ -72,9 +71,12 @@ export default function Cookies404() {
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
             >
-              <div className={`${hero["hero_container_text"]} content-end bg-white`} style={{  justifyContent: ' center' }}>
-                <div><h1 className={`${hero["hero_text_title"]} absolute inset-x-0 bottom-0`} style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica', justifyContent: 'center'  }}>WELCOME TO OUR WORLD</h1></div>
-                <div><h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
+              <div className={`${hero["hero_container_text"]} content-end bg-white`} style={{ justifyContent: ' center' }}>
+                <div>
+                  <h1 className={`${hero["hero_text_title"]} absolute inset-x-0 bottom-0`} style={{ textAlign: 'center', color: 'yellow', fontWeight: '700', fontFamily: 'Helvetica', justifyContent: 'center' }}>WELCOME TO OUR WORLD</h1>
+                </div>
+                <div>
+                  <h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
               </div>
               <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
                 <button
@@ -95,7 +97,7 @@ export default function Cookies404() {
                   className={hero["hero_video__containerCokies"]}
                   autoPlay
                   muted
-                  playsInline
+
                 >
                   <source src="/cookies.mp4" type="video/mp4"></source>
                 </video>
@@ -104,6 +106,7 @@ export default function Cookies404() {
           </div>
         </div>
       </div>
+          }
     </>
   );
 }

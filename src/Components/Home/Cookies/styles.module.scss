@@ -7,34 +7,14 @@
   -webkit-text-stroke-color: white;
 }
 .containerCookies { 
-
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   z-index: 1000;
-  // margin-top: 20px; 
-  // margin-left: 20px; 
-  @include breakpoint(xs) {
-    margin-top: 150px;  
-    margin-left: -190px;
-    height: 100px;  
-  }
-  @include breakpoint(md) {
-    margin-left: 50px;
-    margin-top: 150px;
-
-  }
-  @include breakpoint(lg) {
-    margin-left: 50px;
-    margin-top: 150px;
-  }
-
-  @include breakpoint(xl) {
-    margin-left: 290px;
-    margin-top: 450px;
-  }
-
-  @include breakpoint(xxl) {
-    // top: -150px;
-    margin-left: 600px;
-  }
+  padding: 0 20px;
 }
 
 .container_text2{
@@ -44,25 +24,8 @@
 .hero_video__containerCokies{
   position: relative;
   width: 100%;
+  max-width: 700px;
   height: auto;
-  margin-top: -183px;
-  object-fit: cover;
-  z-index: -1001;
-  @include breakpoint(xs) { 
-    margin-top: -65px;
-  }
-  @include breakpoint(md) {
-    margin-top: -650px;
-
-  }
-
-  @include breakpoint(xl) {
-    max-width: 900px;
-  }
-
-  @include breakpoint(xxl) {
-    max-width: 1200px;
-  }
 }
 
 .buttonModal{
@@ -74,22 +37,20 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  top: "2px";
   position: relative;
 }
 
 .hero_container_text{
-  align-items:center;
-  justify-content: center;
-  margin-top: 500px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .hero_text_title{
-   font-size: 35px;
-   margin-bottom: 20px;
-  // position: absolute;
+  font-size: 35px;
+  margin-bottom: 20px;
   @include breakpoint(xs) { 
-    font-size: 11px;
+    font-size: 14px;
   }
   @include breakpoint(md) {
     font-size: 33px;
@@ -108,21 +69,17 @@
   font-size: 35px;
  @include breakpoint(xs) { 
    font-size: 11px;
-   margin-top: 0px;
  }
  @include breakpoint(md) {
    font-size: 35px;
-   margin-top: -15px;
  }
 
  @include breakpoint(xl) {
    font-size: 35px;
-   margin-top: -15px;
  }
 
  @include breakpoint(xxl) {
    font-size: 30px;
-   margin-top: -15px;
  }
 }
 
@@ -187,28 +144,15 @@
 
 .hero_bottom__container {
   position: relative;
-
-  max-width: 300px;
-
-  @include breakpoint(md) {
-    max-width: 500px;
-  }
-
-  @include breakpoint(xl) {
-    max-width: 900px;
-  }
-
-  @include breakpoint(xxl) {
-    max-width: 1200px;
-  }
+  max-width: 700px;
 }
 
 .hero_bottom__frame {
   position: absolute;
   border: 2px solid white;
   width: 100%;
-  height: 804px;
-  z-index: 1050;
+  height: 100%;
+  z-index: 1000;
 
   @include breakpoint(md) {
     border: 4px solid white;
@@ -260,23 +204,22 @@
   left: 0;
 }
 
-.hero_bottom__icon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 1000;
-  width: 30px;
-  height: 30px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
 .hero_video__container {
   position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 10;
+}
+
+.hero_container_btn {
+display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .lineParent {

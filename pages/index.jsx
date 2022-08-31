@@ -20,7 +20,6 @@ function Home(props) {
   const getCokkie = () => {
     let id = getCookie('key')
     if (id =='somos404'){
-      console.log("key====", id);
       setbtnAcceptState(false);
     }
   }
@@ -52,7 +51,7 @@ useEffect(() => {
           <link rel="icon" href="/logo_2 (1).ico" />
         </Head>
         {btnAcceptState && (
-                <Cookies />
+                <Cookies btnAcceptState={btnAcceptState}  />
            )}
     
         <Hero />
