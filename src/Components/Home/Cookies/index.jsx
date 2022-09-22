@@ -57,7 +57,7 @@ export default function Cookies404() {
     <>
    {btnAcceptState && 
       <div className={`${hero["containerCookies"]} `}>
-        <div className={`${hero["hero_bottom"]} `}>
+        {/* <div className={`${hero["hero_bottom"]} `}>
           <div
             className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--1by1`}
           >
@@ -104,7 +104,19 @@ export default function Cookies404() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+                      <div>
+
+<video
+  // src="/cookies.mp4"
+  className={hero["hero_video__containerCokies"]}
+  autoPlay
+  muted
+
+>
+  <source src="/cookie_desktop.mp4" type="video/mp4"></source>
+</video>
+</div>
       </div>
           }
     </>
