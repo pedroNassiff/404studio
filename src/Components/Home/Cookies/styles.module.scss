@@ -227,19 +227,15 @@
   margin-bottom: 20px;
   @include breakpoint(s) {
     bottom: 43px;
-    border: 5px solid red;
   }
   @include breakpoint(xs) {
     bottom: 5px;
-    border: 5px solid green;
   }
   @include breakpoint(n) {
     bottom: 35px;
-    border: 5px solid green;
   }
   @include breakpoint(sm) {
     bottom: 50px;
-    border: 5px solid blue;
   }
   @include breakpoint(md) {
     bottom: 43px;
