@@ -218,13 +218,32 @@
 }
 
 .hero_container_btn {
-display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 20px;
+  @include breakpoint(s) {
+    bottom: 43px;
+    border: 5px solid red;
+  }
+  @include breakpoint(xs) {
+    bottom: 5px;
+    border: 5px solid green;
+  }
+  @include breakpoint(n) {
+    bottom: 35px;
+    border: 5px solid green;
+  }
+  @include breakpoint(sm) {
+    bottom: 50px;
+    border: 5px solid blue;
+  }
+  @include breakpoint(md) {
+    bottom: 43px;
+  }
 }
 
 .lineParent {

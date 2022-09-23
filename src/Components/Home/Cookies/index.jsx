@@ -57,7 +57,7 @@ export default function Cookies404() {
     <>
    {btnAcceptState && 
       <div className={`${hero["containerCookies"]} `}>
-        <div className={`${hero["hero_bottom"]} `}>
+        {/* <div className={`${hero["hero_bottom"]} `}>
           <div
             className={`${hero["hero_bottom__container"]} aspect_ratio aspect_ratio--1by1`}
           >
@@ -78,6 +78,31 @@ export default function Cookies404() {
                 <div>
                   <h2 className={`${hero["hero_text_subtitle"]}`} style={{ textAlign: 'center', fontWeight: '700', fontFamily: 'Helvetica' }}>AVISO DE COOKIES</h2></div>
               </div>
+              <div>
+              
+                <video
+                  // src="/cookies.mp4"
+                  className={hero["hero_video__containerCokies"]}
+                  autoPlay
+                  muted
+
+                >
+                  <source src="/cookies.mp4" type="video/mp4"></source>
+                </video>
+              </div>
+              </div>
+              </div>
+        </div> */}
+<div className={hero["hero_video__containerCokies"]}>
+<video
+  // src="/cookies.mp4"
+  className={hero["hero_video__containerCokies"]}
+  autoPlay
+  muted
+
+>
+  <source src="/cookie_desktop.mp4" type="video/mp4"></source>
+</video>
               <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
                 <button
                   className={`${hero["hero_btn_ok"]}`}
@@ -90,21 +115,7 @@ export default function Cookies404() {
                 >CANCEL
                 </button>
               </span>
-              <div>
-
-                <video
-                  // src="/cookies.mp4"
-                  className={hero["hero_video__containerCokies"]}
-                  autoPlay
-                  muted
-
-                >
-                  <source src="/cookies.mp4" type="video/mp4"></source>
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
+</div>
       </div>
           }
     </>
