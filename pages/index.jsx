@@ -200,23 +200,22 @@ useEffect(() => {
            )}
     
         <Hero />
-        <div ref={projectsRef}>
-          {projectRefValue &&  <ProyectList />}
-        </div>
+     
+        <ProyectList />
+   
        
-        <div ref={serviceRef}>
-        {serviceRefValue && <Services  />}
+     
+      <Services  />
         
-        </div>
-      <div ref={aboutRef}>
-          {aboutRefValue && <About />}
-      </div>
-      <div ref={blendRef}>
-          {blendRefValue && <Blend />}
-      </div>
-      <div ref={peopleRef}>
-          {peopleRefValue && <People />}
-      </div>
+
+          <About />
+    
+
+         <Blend />
+
+
+    <People />
+    
         
         
         
