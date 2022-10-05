@@ -129,7 +129,7 @@
     margin-left: 130px; //notebook
   }
   @include breakpoint(xxxl) {
-    margin-left: 239px; //monitor 24'
+    margin-left: 183px; //monitor 24'
   }
 }
 
@@ -385,19 +385,18 @@
   background-color: transparent;
   border: none;
   font-size: 35px;
-  padding-bottom: 8px;
+ 
+  text-align: center;
 
   @include breakpoint(xs) {
     font-size: 25px;
-    height: 17px;
-    width: 70px;
+    height: 28px;
     margin-left: 200px;
   }
 
   @include breakpoint(n) {
     font-size: 30px;
     height: 50px;
-    width: 150px;
     margin-left: 200px;
 
   }
@@ -405,7 +404,6 @@
   @include breakpoint(xl) {
     font-size: 30px;
     height: 50px;
-    width: 150px;
     margin-left: 200px;
 
   }
