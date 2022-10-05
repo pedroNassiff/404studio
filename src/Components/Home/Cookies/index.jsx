@@ -55,34 +55,41 @@ export default function Cookies404() {
 
   return (
     <>
-   {btnAcceptState && 
-      <div className={`${hero["containerCookies"]} `}>
-       
-<div className={hero["hero_video__containerCokies"]}>
-<video
-  // src="/cookies.mp4"
-  className={hero["hero_video__containerCokies"]}
-  autoPlay
-  muted
+      {btnAcceptState &&
+        <div className={`${hero["containerCookies"]} grid grid-cols-4 `}>
+          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+            <div className={`${hero["hero_contenedor_imagen"]}  `} >
+              <img src="/logofooter.jpeg" alt="" className={`${hero["hero_imagen-log"]} `} />
+            </div>
+          </div>
 
->
-  <source src="/cookie_desktop.mp4" type="video/mp4"></source>
-</video>
-              <span className={hero["hero_container_btn"]} style={{ display: 'flex', justifyContent: ' center' }}>
-                <button
-                  className={`${hero["hero_btn_ok"]}`}
-                  style={{ border: "none", color: 'blue', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
-                  onClick={aceptFunction}>OK</button>
-                <button
-                  style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
-                  className={`${hero["hero_btn_cancel"]}`}
-                  onClick={cancelFuncion}
-                >CANCEL
-                </button>
-              </span>
-</div>
-      </div>
-          }
+          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+            <span className={`${hero["hero_titulo_cookies"]}  `}>AVISO DE COOKIES</span>
+            <span className={`${hero["hero_subtitulo_cookies"]}  `}>LO SIENTO PERO ALGO CAPITALISTA DEBEMOS SER</span>
+          </div>
+
+
+          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+            <span className={hero["hero_container_btn"]} >
+              <button
+                className={`${hero["hero_btn_ok"]}`}
+                style={{ color: 'white', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
+                onClick={aceptFunction}>ACCEPT</button>
+              {/* <button
+                style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
+                className={`${hero["hero_btn_cancel"]}`}
+                onClick={cancelFuncion}
+              >CANCEL
+              </button> */}
+            </span>
+          </div>
+          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+            <div className={`${hero["hero_contenedor_imagen_end"]}  `} >
+              <img src="/logofooter.jpeg" alt="" className={`${hero["hero_imagen-log_end"]} rotate-90	`} />
+            </div>
+          </div>
+        </div>
+      }
     </>
   );
 }

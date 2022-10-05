@@ -111,6 +111,7 @@
 
 // export default Home;
 import { useRef, useState, useEffect } from "react";
+import useOnScreen from "./useOnScreen";
 import Head from "next/head";
 import Hero from "../src/Components/Home/Hero";
 import hero from "./styles.module.scss";
@@ -124,10 +125,42 @@ import Layout from "../src/Components/Layout/Layout";
 import Cookies from "../src/Components/Home/Cookies"
 
 function Home(props) {
+
+  
+  const projectsRef = useRef();
+  const projectRefValue = useOnScreen(projectsRef);
+  const [isProjectRef, setIsProjectRef] =  useState(false);
+
+  const serviceRef = useRef();
+  const serviceRefValue = useOnScreen(serviceRef);
+  const [isServiceRef, setIsServiceRef] =  useState(false);
+
+  const aboutRef = useRef();
+  const aboutRefValue = useOnScreen(aboutRef);
+  const [isAboutRef, setIsAboutRef] =  useState(false);
+
+  const blendRef = useRef();
+  const blendRefValue = useOnScreen(blendRef);
+  const [isBlendRef, setIsBlendRef] =  useState(false);
+
+  const peopleRef = useRef();
+  const peopleRefValue = useOnScreen(peopleRef);
+  const [isPeopleRef, setIsPeopleRef] = useState(false);
+
   const [btnAcceptState, setbtnAcceptState] = useState(true)
   const [btnCancel, setBtnCancel] = useState(true)
   const cookieConsentRef = useRef();
   const ref = useRef();
+
+  
+  useEffect(() => {
+    if (!isProjectRef && !isServiceRef && !isAboutRef && !isBlendRef && isPeopleRef)
+        setIsProjectRef(projectRefValue);
+        setIsServiceRef(serviceRefValue);
+        setIsAboutRef(aboutRefValue);
+        setIsBlendRef(blendRefValue);
+        setIsPeopleRef(peopleRefValue);
+ }, [projectRefValue, serviceRefValue, aboutRefValue, blendRefValue, peopleRefValue])
 
   const getCokkie = () => {
     let id = getCookie('key')
@@ -167,13 +200,23 @@ useEffect(() => {
            )}
     
         <Hero />
-
      
         <ProyectList />
-        <Services />
-        <About />
-        <Blend />
-        <People />
+   
+       
+     
+      <Services  />
+        
+
+          <About />
+    
+
+         <Blend />
+
+
+    <People />
+    
+        
         
         
 
