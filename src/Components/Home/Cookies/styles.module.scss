@@ -359,19 +359,26 @@
    align-items: center;
     // margin-left: 94px;
     margin-left: 0px;
+
+    width: auto;
   }
   @include breakpoint(n) {
     bottom: 35px;
+    width: 159px;
+    margin-left: 0px;
   }
 
   @include breakpoint(sm) {
     bottom: 40px;
+    width: 159px;
+    margin-left: 0px;
   }
 
  
   @include breakpoint(md) {
     margin-top: -15px;
     margin-left: 30px;
+    margin-left: 0px;
   }
   @include breakpoint(xxll) {//notebook
     font-size: 35px;
@@ -395,30 +402,36 @@ width: 300px;
     font-size: 13px;
     height: 38px;
     margin-left: 0px;
+    width: 128px;
   }
 
   @include breakpoint(n) {
-    font-size: 30px;
+    font-size: 20px;
     height: 40px;
     margin-left: 200px;
 
   }
   @include breakpoint(l) {
-    font-size: 25px;
+    font-size: 20px;
     
 
   }
 
   @include breakpoint(xl) {
-    font-size: 30px;
+    font-size: 20px;
     height: 50px;
     margin-left: 200px;
 
   }
 
   @include breakpoint(xxl) {
-    font-size: 25px;
+    font-size: 20px;
     height: 40px;
+
+  }
+
+  @include breakpoint(xxxll) {//notebook
+    font-size: 25px;
 
   }
 }
