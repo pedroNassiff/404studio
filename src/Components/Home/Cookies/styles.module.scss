@@ -55,11 +55,13 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  
   @include breakpoint(xs) {
     visibility: hidden;
 
   }
   @include breakpoint(md) {
+    visibility: visible;
   }
   @include breakpoint(xxll) {//notebook
     visibility: visible;
