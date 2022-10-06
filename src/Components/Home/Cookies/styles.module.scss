@@ -341,13 +341,13 @@
 
 .hero_container_btn {
   display: flex;
-  justify-content: center !important;
+  // justify-content: center !important;
 
 
   z-index: 1;
   width: 159px;
   height: 45px;
-  margin-left: 30px;
+  // margin-left: 30px;
   margin-top: 10px;
 
 
@@ -357,7 +357,8 @@
 
     justify-content: center;
    align-items: center;
-    margin-left: 94px;
+    // margin-left: 94px;
+    margin-left: 0px;
   }
   @include breakpoint(n) {
     bottom: 35px;
@@ -391,9 +392,9 @@
   text-align: center;
 width: 300px;
   @include breakpoint(xs) {
-    font-size: 25px;
+    font-size: 13px;
     height: 38px;
-    margin-left: 200px;
+    margin-left: 0px;
   }
 
   @include breakpoint(n) {
