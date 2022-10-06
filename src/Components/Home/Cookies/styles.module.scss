@@ -55,11 +55,13 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  
   @include breakpoint(xs) {
     visibility: hidden;
 
   }
   @include breakpoint(md) {
+    visibility: visible;
   }
   @include breakpoint(xxll) {//notebook
     visibility: visible;
@@ -121,9 +123,9 @@
 
   @include breakpoint(md) {
     font-size: 13.2px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
-    margin-left: 130px;
+
   }
   @include breakpoint(xxll) {
     margin-left: 130px; //notebook
