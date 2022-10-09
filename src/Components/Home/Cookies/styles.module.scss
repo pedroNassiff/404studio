@@ -25,6 +25,7 @@
   }
 
   @include breakpoint(md) {
+    display: flex;
   }
   @include breakpoint(xxll) {//notebook
     display: flex;
@@ -42,6 +43,7 @@
 
   }
   @include breakpoint(md) {
+    visibility: visible;
   }
   @include breakpoint(xxll) {//notebook
     visibility: visible;
@@ -55,11 +57,12 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
-  
+  visibility: visible;
   @include breakpoint(xs) {
     visibility: hidden;
 
   }
+  
   @include breakpoint(md) {
     visibility: visible;
   }
@@ -82,11 +85,14 @@
   font-weight: bold;
 
   @include breakpoint(xs) {
-    font-size: 30px;
+    font-size: 27px;
     justify-content: center;
     margin-top: -88px;
   }
   @include breakpoint(md) {
+    font-size: 35px;
+    justify-content: flex-end;
+    margin-top: -15px;
   }
   @include breakpoint(xxll) {//notebook
     font-size: 35px;
@@ -115,7 +121,7 @@
   transform: scale(-1, 1);
 
   @include breakpoint(xs) {
-    font-size: 11.3px;
+    font-size: 10.3px;
     justify-content: center;
     margin-top: 0px;
     margin-left: -1px;
