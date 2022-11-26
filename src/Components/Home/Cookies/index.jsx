@@ -62,14 +62,14 @@ export default function Cookies404() {
               <img src="/logofooter.jpeg" alt="" className={`${hero["hero_imagen-log"]} `} />
             </div>
           </div>
-
-          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+        <div  className={`${hero["contenedorcokkies"]}  `}>
+        <div  className={`${hero["titulos_col_izq"]}  `}>
             <span className={`${hero["hero_titulo_cookies"]}  `}>AVISO DE COOKIES</span>
             <span className={`${hero["hero_subtitulo_cookies"]}  `}>LO SIENTO PERO ALGO CAPITALISTA DEBEMOS SER</span>
           </div>
 
 
-          <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
+          <div >
             <span className={hero["hero_container_btn"]} >
               <button
                 className={`${hero["hero_btn_ok"]}`}
@@ -83,6 +83,8 @@ export default function Cookies404() {
               </button> */}
             </span>
           </div>
+        </div>
+          
           <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
             <div className={`${hero["hero_contenedor_imagen_end"]}  `} >
               <img src="/logofooter.jpeg" alt="" className={`${hero["hero_imagen-log_end"]} rotate-90	`} />
