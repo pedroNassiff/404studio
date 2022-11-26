@@ -1,5 +1,10 @@
 @import "./../../../../styles/utils";
 
+@font-face {
+  font-family: Market Fresh;
+  src: url("./../../../../styles/MarketFresh.ttf") format("truetype");
+}
+
 
 .hero_top__title--modify {
   color: transparent;
@@ -390,6 +395,7 @@ width: 290px;
   z-index: 1;
   width: 159px;
   height: 45px;
+  margin-top: 2px;
   // margin-left: 30px;
   // margin-top: 10px;
 
@@ -427,9 +433,10 @@ width: 290px;
     font-size: 35px;
     justify-content: flex-end;
     // margin-top: -15px;
+    margin-top: 2px;
   }
   @include breakpoint(xxxl) {//monitor 24'
-
+    margin-top: 2px;
   }
 }
 
@@ -437,21 +444,21 @@ width: 290px;
 .hero_btn_ok {
   background-color: transparent;
   border: none;
-  font-size: 35px;
+align-items: center;
+justify-content: center;
+display: flex;
   border: 4px solid rgb(255, 255, 255);
-  text-align: center;
+
 width: 300px;
   @include breakpoint(xs) {
-    font-size: 13px;
     height: 38px;
     margin-left: 0px;
     width: 128px;
   }
 
   @include breakpoint(n) {
-    font-size: 20px;
     height: 40px;
-    margin-left: 200px;
+
 
   }
   @include breakpoint(l) {
@@ -461,24 +468,56 @@ width: 300px;
   }
 
   @include breakpoint(xl) {
-    font-size: 20px;
-    height: 50px;
-    margin-left: 200px;
+    height: 40px;
+ 
 
   }
 
   @include breakpoint(xxl) {
-    font-size: 20px;
-    height: 40px;
+    height: 49px;
 
   }
 
   @include breakpoint(xxxll) {//notebook
-    font-size: 25px;
 
   }
 }
+.hero_btn_ok_text{
+  text-align: center;
+  font-family: Market Fresh, serif;
+  color: white;
+  align-items: center;
 
+  @include breakpoint(xs) {
+    font-size: 23px;
+    margin-top: 3px;
+  }
+
+  @include breakpoint(n) {
+    font-size: 20px;
+
+  }
+  @include breakpoint(l) {
+    font-size: 20px;
+    
+
+  }
+
+  @include breakpoint(xl) {
+
+
+  }
+
+  @include breakpoint(xxl) {
+    font-size: 26px;
+
+  }
+
+  @include breakpoint(xxxll) {//notebook
+    font-size: 30px;
+
+  }
+}
 
 .lineParent {
   overflow: hidden;

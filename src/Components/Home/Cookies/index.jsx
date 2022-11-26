@@ -73,8 +73,8 @@ export default function Cookies404() {
             <span className={hero["hero_container_btn"]} >
               <button
                 className={`${hero["hero_btn_ok"]}`}
-                style={{ color: 'white', fontWeight: '700', marginLeft: "0px", cursor: 'pointer' }}
-                onClick={aceptFunction}>ACCEPT</button>
+               
+                onClick={aceptFunction}><span className={`${hero["hero_btn_ok_text"]}`} >ACCEPT</span></button>
               {/* <button
                 style={{ border: "none", color: 'blue', fontWeight: '700', cursor: 'pointer' }}
                 className={`${hero["hero_btn_cancel"]}`}
