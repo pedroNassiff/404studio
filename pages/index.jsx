@@ -110,14 +110,21 @@
 // }
 
 // export default Home;
-import { useRef, useState, useEffect } from "react";
+import dynamic from 'next/dynamic'
+import { useRef, useState, useEffect, Suspense  } from "react";
 import useOnScreen from "./useOnScreen";
 import Head from "next/head";
 import Hero from "../src/Components/Home/Hero";
 import hero from "./styles.module.scss";
 import { getCookies, getCookie, setCookie, deleteCookie } from 'cookies-next';
 import ProyectList from "../src/Components/Home/ProyectList";
-import Services from "../src/Components/Home/Servi";
+// import Services from "../src/Components/Home/Servi";
+// const Services = dynamic(() => import('../src/Components/Home/Servi'))
+
+const Services = dynamic(() => import('../src/Components/Home/Servi'), {
+  ssr: false 
+})
+
 import About from "../src/Components/Home/About";
 import Blend from "../src/Components/Home/Blend";
 import People from "../src/Components/Home/People";
@@ -203,10 +210,10 @@ useEffect(() => {
      
         <ProyectList />
    
-       
+     
      
       <Services  />
-        
+    
 
           <About />
     

@@ -1,7 +1,10 @@
+import {useEffect, useState} from 'react'
 import styles from "./styles.module.scss";
 import Card from "../Card";
 
 const Index = () => {
+  const [positionY, setPositionY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
   const peopel = [
     {
       id: 1,
@@ -40,21 +43,40 @@ const Index = () => {
       img: "/people/PabloChahin-destock.jpg",
     },
   ];
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let scroll = 0;
+      window.addEventListener('scroll', (event, scroll) => {
+
+        scroll = window.scrollY;
+        setPositionY(scroll)
+        if (scroll >= 6000) {
+          console.log("scroll", scroll);
+          setIsVisible(true)
+          console.log("isVisible", isVisible);
+        }
+      })
+    }
+  }, []);
   return (
     <div
       className={`${styles["people__container"]} custom_container custom_container--xxxl`}
     >
-      {peopel.map((item) => (
-        <Card
-          left={item.left}
-          title={item.title}
-          name={item.name}
-          description={item.description}
-          img={item.img}
-          id={item.id}
-          key={item.id}
-        />
-      ))}
+      {isVisible &&
+        peopel.map((item) => (
+          <Card
+            left={item.left}
+            title={item.title}
+            name={item.name}
+            description={item.description}
+            img={item.img}
+            id={item.id}
+            key={item.id}
+          />
+        ))
+      }
+    
     </div>
   );
 };

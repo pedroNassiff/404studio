@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import { Slide } from "react-reveal";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Index = () => {
+  const [positionY, setPositionY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     gsap.fromTo(
@@ -62,6 +64,23 @@ const Index = () => {
       }
     );
   }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let scroll = 0;
+      window.addEventListener('scroll', (event, scroll) => {
+
+        scroll = window.scrollY;
+        setPositionY(scroll)
+        if (scroll >= 4900) {
+          console.log("scroll", scroll);
+          setIsVisible(true)
+          console.log("isVisible", isVisible);
+        }
+      })
+    }
+  }, []);
+
   return (
     <div className={styles["about"]}>
       <div className={`${styles["cont"]}`}>
@@ -78,16 +97,19 @@ const Index = () => {
           id="about_video"
         >
           <div className={`${styles["about_right__frame"]}`}></div>
-          <video
-            src={`/about_v.mov`}
-            autoPlay
-            loop
-            muted={true}
-            playsInline
-            className={`${styles["img"]}`}
-          >
-            <source src={`/about_v.mov`} type="video/mp4"></source>
-          </video>
+          {isVisible &&
+            <video
+              src={`/about_v.mov`}
+              autoPlay
+              loop
+              muted={true}
+              playsInline
+              className={`${styles["img"]}`}
+            >
+              {/* <source src={`/about_v.mov`} type="video/mp4"></source> */}
+            </video>
+          }
+
         </div>
 
         <div className={styles["about_left"]}>
