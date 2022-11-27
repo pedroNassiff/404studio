@@ -449,37 +449,40 @@ justify-content: center;
 display: flex;
   border: 4px solid rgb(255, 255, 255);
 
-width: 300px;
+  width: 140px;
   @include breakpoint(xs) {
     height: 38px;
     margin-left: 0px;
     width: 128px;
+    margin-top: 15px;
   }
 
   @include breakpoint(n) {
     height: 40px;
-
+    width: 140px;
 
   }
   @include breakpoint(l) {
     font-size: 20px;
-    
+    width: 140px;
 
   }
 
   @include breakpoint(xl) {
-    height: 40px;
- 
-
+    height: 47px;
+    width: 140px;
+    margin-top: 0px;
   }
 
   @include breakpoint(xxl) {
-    height: 49px;
-
+    height: 48px;
+    width: 140px;
+    margin-top: 1px;
   }
 
   @include breakpoint(xxxll) {//notebook
-
+    width: 140px;
+    margin-top: 0px;
   }
 }
 .hero_btn_ok_text{
@@ -487,7 +490,7 @@ width: 300px;
   font-family: Market Fresh, serif;
   color: white;
   align-items: center;
-
+  cursor: pointer;
   @include breakpoint(xs) {
     font-size: 23px;
     margin-top: 3px;
@@ -504,7 +507,7 @@ width: 300px;
   }
 
   @include breakpoint(xl) {
-
+    font-size: 23px;
 
   }
 

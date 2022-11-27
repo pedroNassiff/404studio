@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import { useEffect } from "react";
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
 const Carousel = dynamic(() => import("../Carousel"), { ssr: false });
 // import Carousel from "../Carousel";
@@ -11,6 +11,9 @@ export default function Index() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    
+
+
     gsap.fromTo(
       `#servi__title`,
       1,
@@ -29,6 +32,7 @@ export default function Index() {
         },
       }
     );
+
   }, []);
 
   return (
@@ -41,9 +45,13 @@ export default function Index() {
         </div>
       </div>
 
-      <div className={`${styles["servi__wrap"]} `}>
-        <Carousel />
+<div className={`${styles["servi__wrap"]} `}>
+  <Carousel />
+    
+       
       </div>
+
+   
     </div>
   );
 }

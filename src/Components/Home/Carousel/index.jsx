@@ -1,4 +1,6 @@
 // Import Swiper React components
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.scss";
 
@@ -17,6 +19,24 @@ import SwiperCore from "swiper";
 SwiperCore.use([Pagination, Navigation]);
 
 export default function App() {
+  const [positionY, setPositionY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let scroll = 0;
+      window.addEventListener('scroll', (event, scroll) => {
+
+        scroll = window.scrollY;
+        setPositionY(scroll)
+        if (scroll >= 4000) {
+          console.log("scroll", scroll);
+          setIsVisible(true)
+          console.log("isVisible", isVisible);
+        }
+      })
+    }
+  }, []);
   const carousel = [
     {
       id: 1,
@@ -101,7 +121,8 @@ export default function App() {
             <div className={`${styles["container"]} hover`}>
               <div className={styles.borde}></div>
               <div className={`${styles["wrap"]} `}>
-                <img src={item.image} className={`${styles["img"]} im`} alt="image" />
+                {isVisible && <img src={item.image} className={`${styles["img"]} im`} alt="image" />}
+
                 <div className={`${styles["hover"]} `}>
                   <div className={`${styles["text"]} `}>{item.text}</div>
                 </div>
