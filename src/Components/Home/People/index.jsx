@@ -47,15 +47,28 @@ const Index = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let scroll = 0;
-      window.addEventListener('scroll', (event, scroll) => {
+      let width = 0;
+      window.addEventListener('scroll', (event) => {
 
         scroll = window.scrollY;
+        width = window.innerWidth
+        console.log("scroll", scroll);
+        console.log("window.innerWidth", window.innerWidth);
         setPositionY(scroll)
-        if (scroll >= 6000) {
-          console.log("scroll", scroll);
-          setIsVisible(true)
-          console.log("isVisible", isVisible);
+        if(width >= 500 ) {
+          if (scroll >= 6000) {
+            console.log("scroll", scroll);
+            setIsVisible(true)
+            console.log("isVisible", isVisible);
+          }
+        }else {
+          if (scroll >= 2180) {
+            console.log("scroll", scroll);
+            setIsVisible(true)
+            console.log("isVisible", isVisible);
+          }
         }
+   
       })
     }
   }, []);
