@@ -33,19 +33,30 @@ export default function App() {
         console.log("scroll", scroll);
         console.log("window.innerWidth", window.innerWidth);
         setPositionY(scroll)
-        if(width >= 500 ) {
-          if (scroll >= 6000) {
+        switch(width){
+          case (width >= 500):
+            if (scroll >= 6000) {
+              console.log("scroll", scroll);
+              setIsVisible(true)
+              console.log("isVisible", isVisible);
+            }
+            break;
+          case(width >=1000):
+          if (scroll >= 2000) {
             console.log("scroll", scroll);
             setIsVisible(true)
             console.log("isVisible", isVisible);
           }
-        }else {
-          if (scroll >= 1000) {
-            console.log("scroll", scroll);
-            setIsVisible(true)
-            console.log("isVisible", isVisible);
-          }
+          break;
+          default:
+            if (scroll >= 1000) {
+              console.log("scroll", scroll);
+              setIsVisible(true)
+              console.log("isVisible", isVisible);
+            }
+            break;
         }
+       
       })
     }
   }, []);

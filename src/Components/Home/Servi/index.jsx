@@ -11,7 +11,7 @@ export default function Index() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    
+
 
 
     gsap.fromTo(
@@ -45,13 +45,9 @@ export default function Index() {
         </div>
       </div>
 
-<div className={`${styles["servi__wrap"]} `}>
-  <Carousel />
-    
-       
+      <div className={`${styles["servi__wrap"]} `}>
+        <Carousel />
       </div>
-
-   
     </div>
   );
 }
