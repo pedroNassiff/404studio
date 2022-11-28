@@ -1,0 +1,56 @@
+@import "./../../../styles/utils";
+
+.contenedor-modal{
+  background-color: none;
+  width: 800px;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.background-modal{
+  background-color: black;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn{
+  border: 2px solid white;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+  font-family: Market Fresh, serif;
+
+}
+
+.contenedor-email{
+  
+}
+.label-email{
+  font-family: Market Fresh, serif;
+
+}
+.input-email{
+  font-family: Market Fresh, serif;
+  margin-left: 20px;
+}
+
+.contenedor-codigo{
+  margin-top: 10px;
+}
+.input-codigo{
+  font-family: Market Fresh, serif;
+  margin-left: 15px;
+
+}
+.label-codigo{
+  font-family: Market Fresh, serif;
+
+}

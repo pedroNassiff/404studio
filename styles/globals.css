@@ -32,3 +32,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.contenedor-login-modal{
+  background-color: #0f0f0f;
+}
