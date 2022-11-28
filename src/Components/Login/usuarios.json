@@ -1,0 +1,17 @@
+[
+  {
+    "email": "pablo.chain@somos404.com",
+    "id": "pablo1234" ,
+    "role": "admin"
+  },
+  {
+    "email": "pedro.nassiff@somos404.com",
+    "id": "nassiffpedro1234" ,
+    "role": "admin"
+  },
+  {
+    "email": "cosme.fulano@gmail.com",
+    "id": "cosme1234" ,
+    "role": "user"
+  }
+]
