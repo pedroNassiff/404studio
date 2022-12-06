@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Modal from "react-modal";
 import styles from "./styles.module.scss";
-import usuarios from './usuarios.json'
+import usuarios from '../usuarios.json'
 import { useRouter } from "next/router"
 
 const LoginModal = () => {
