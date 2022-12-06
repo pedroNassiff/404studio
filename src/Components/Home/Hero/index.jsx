@@ -4,6 +4,9 @@ import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Vimeo from '@u-wave/react-vimeo';
+
+import axios from 'axios';
 
 export default function Hero() {
   const [state, setstate] = useState(true);
@@ -12,6 +15,10 @@ export default function Hero() {
 
   // --------------------------------
   gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+
+  }, []);
 
   useEffect(() => {
     gsap.fromTo(
@@ -115,8 +122,8 @@ export default function Hero() {
               {state ? (
                 <VolumeOffIcon className={hero["icon__muted"]}></VolumeOffIcon>
               ) : (
-                <VolumeUpIcon className={hero["icon__unmuted"]}></VolumeUpIcon>
-              )}
+                  <VolumeUpIcon className={hero["icon__unmuted"]}></VolumeUpIcon>
+                )}
             </div>
 
             <div
@@ -129,9 +136,12 @@ export default function Hero() {
                 muted={state}
                 ref={ref}
                 playsInline
+                
               >
+                <link rel="preload" as="script" ></link>
                 <source src="/header1.mp4" type="video/mp4"></source>
               </video>
+  
             </div>
           </div>
         </div>

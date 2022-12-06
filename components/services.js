@@ -6,7 +6,6 @@ export const getIP = () => {
             //   headers: { Authorization: `Bearer `+TOKEN }      
         })
         .then(res => {
-            console.log("resdata====>", json);
             function getIP(json) {
                 console.log("My public IP address is: ", json.ip);
               }
