@@ -129,6 +129,7 @@ export default function Hero() {
             <div
               className={`${hero["hero_bottom__frame"]} ${hero["hero_bottom__frame--three"]} aspect_ratio__item object_fit_cover div-video`}
             >
+                    <link rel="preload" as="script" href="header1.mp4"></link>
               <video
                 src="/header1.mp4"
                 className={hero["hero_video__container"]}
@@ -138,7 +139,7 @@ export default function Hero() {
                 playsInline
                 
               >
-                <link rel="preload" as="script" ></link>
+          
                 <source src="/header1.mp4" type="video/mp4"></source>
               </video>
   
