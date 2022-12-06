@@ -31,7 +31,7 @@ const Index = ({ id, images, left, title, font_title }) => {
       <div className={`${styles["wrap_proyects"]}`} id={`wrap_proyects_${id}`}>
         <Link href={`/proyect/${id}`} className={`${styles["wrap_proyects__link"]}`}>
           <a>
-          <link rel="preload" as="image" />
+          <link rel="preload" as="image" href={`/images/${images}`} />
             <img
               src={`/images/${images}`}
               className={styles["wrap_proyects__images"]}

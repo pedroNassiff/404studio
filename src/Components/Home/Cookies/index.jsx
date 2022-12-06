@@ -58,14 +58,17 @@ export default function Cookies404() {
       {btnAcceptState &&
         <div className={`${hero["containerCookies"]} grid grid-cols-4 `}>
           <div className={`${hero["hero_video__containerCokies"]}  grid-cols-1 `}>
-            <div className={`${hero["hero_contenedor_imagen"]}  `} >
+            <div className={`${hero["hero_contenedor_imagen"]}  `}  >
               <img src="/logofooter.jpeg" alt="" className={`${hero["hero_imagen-log"]} `} />
             </div>
           </div>
-        <div  className={`${hero["contenedorcokkies"]}  `}>
-        <div  className={`${hero["titulos_col_izq"]}  `}>
-            <span className={`${hero["hero_titulo_cookies"]}  `}>AVISO DE COOKIES</span>
-            <span className={`${hero["hero_subtitulo_cookies"]}  `}>LO SIENTO PERO ALGO CAPITALISTA DEBEMOS SER</span>
+        <div  className={`${hero["contenedorcokkies"]}  `} rel="stylesheet">
+        <div  className={`${hero["titulos_col_izq"]}  `} rel="stylesheet">
+        <link rel="preload" as="style" href="./styles.module.scss" /> 
+        <span className={`${hero["hero_titulo_cookies"]}  `} rel="stylesheet">AVISO DE COOKIES</span>
+            <span className={`${hero["hero_subtitulo_cookies"]}  `} rel="stylesheet">LO SIENTO PERO ALGO CAPITALISTA DEBEMOS SER</span>
+
+        
           </div>
 
 
