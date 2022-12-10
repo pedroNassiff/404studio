@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
 import { useEffect } from "react";
+import Image from 'next/image'
 
 const Index = ({ id, images, left, title, font_title }) => {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,6 +36,8 @@ const Index = ({ id, images, left, title, font_title }) => {
             <img
               src={`/images/${images}`}
               className={styles["wrap_proyects__images"]}
+              loading="lazy"
+              alt="imagen"
               loading={"lazy"}
               alt="imagen"
             />

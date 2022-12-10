@@ -106,7 +106,7 @@ const Index = () => {
           <div className={`${styles["about_right__frame"]}`}></div>
           {isVisible &&
             <video
-              src={`/about_v.mov`}
+              src={`/about_v.mp4`}
               autoPlay
               loop
               muted={true}
