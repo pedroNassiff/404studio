@@ -355,7 +355,7 @@ const proyects = [
   {
     id: 6,
     left: false,
-    images: "aljibe3.png",
+    images: "aljibe3.jpg",
     title_2: "El aljibe de Mendez",
     title: "El aljibe<br/> de Mendez",
     font_title: "six",
@@ -504,7 +504,7 @@ const proyects = [
     title_2: "Shujman",
     title: "Shujman",
     font_title: "fourteen",
-    images: "shujmanV1-home.png",
+    images: "shujmanV1-home.jpg",
     frame: "left",
     link_content: "Shujman",
     content: [
@@ -793,7 +793,7 @@ const proyects = [
   {
     id: 15,
     left: true,
-    images: "chacoH2-home.png",
+    images: "chacoH2-home.jpg",
     title_2: "Cenit",
     title: "Cenit",
     font_title: "seventeen",
