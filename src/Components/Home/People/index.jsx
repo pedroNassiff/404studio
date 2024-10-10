@@ -9,37 +9,28 @@ const Index = () => {
     {
       id: 1,
       left: true,
-      title: "AKA EL INGENIERO",
-      name: "Pedro Nassiff",
+      title: "Pablo Viscui",
+      name: "FOTÒGRAFO",
       description:
-        "Prófugo de la Prisión de Corrientes.<br/> Es capaz de vulnerar cualquier sistema conectado a internet",
-      img: "/people/PedroNassiff-destock2.jpg",
+        "Es el cazador de sombras y luz, el que captura lo que no se puede ver a simple vista. No dispara para documentar, sino para revelar lo oculto, lo inquietante.<br />  En cada toma, congela el caos y lo transforma en arte. Su lente no observa, desafía. Es el ojo que convierte la distopía en belleza brutal.",
+      img: "/people/polperfilI.jpeg",
     },
     {
       id: 2,
       left: false,
-      title: "AKA LA PROVEEDORA",
-      name: "Ana Belén de Bardeci",
+      title: "Pedro Nassiff",
+      name: "DESARROLLADOR WEB",
       description:
-        "Origen desconocido.<br />Capaz de montar operaciones complejas en cualquier lugar del mundo en cuestión de horas",
-      img: "/gray.jpg",
+        "Arquitecto del futuro digital, construye mundos donde la estética se encuentra con la funcionalidad. No escribe código, teje realidades. <br /> Su trabajo es la estructura invisible que sostiene lo imposible, <br />donde cada línea de código es un pulso de vida en el caos. <br /> Transforma lo abstracto en experiencia, lo complejo en intuitivo. <br /> Es el ingeniero de lo inexplorado.",
+      img: "/people/PedroNassiff-destock2.jpg",
     },
     {
       id: 3,
       left: true,
-      title: "AKA LA INFILTRADA",
-      name: "Romina Ojeda",
+      title: "Pablo Chahin",
+      name: "DC Y FILMMAKER",
       description:
-        "Las apariencias engañan.<br /> Sigilosa, observadora y analítica.<br /> Tiene la virtud de pasar desapersivida pero es capaz de proveer información infalible.",
-      img: "/people/RominaOjeda-destock.jpg",
-    },
-    {
-      id: 4,
-      left: false,
-      title: "AKA EL MAGO",
-      name: "Pablo Chahin",
-      description:
-        "Experto en el arte de la prestidigitación.<br />Hipnotiza a sus objetivos con humo y espejos para cometer sus fechorías",
+        "Su poder está en lo disruptivo, en la capacidad de transformar lo absurdo en arte. Es el visionario que convierte lo banal en experiencias que descolocan y cautivan. Con sus ideas y su lente, hace que un simple video se convierta en un film simplemente desde los colores o ángulos.",
       img: "/people/PabloChahin-destock.jpg",
     },
   ];
