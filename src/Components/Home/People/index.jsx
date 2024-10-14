@@ -9,8 +9,8 @@ const Index = () => {
     {
       id: 1,
       left: true,
-      title: "Pablo Viscui",
-      name: "FOTÒGRAFO",
+      title: "Pablo Viscubi",
+      name: "FOTÓGRAFO",
       description:
         "Es el cazador de sombras y luz, el que captura lo que no se puede ver a simple vista. No dispara para documentar, sino para revelar lo oculto, lo inquietante.<br />  En cada toma, congela el caos y lo transforma en arte. Su lente no observa, desafía. Es el ojo que convierte la distopía en belleza brutal.",
       img: "/people/polperfilI.jpeg",
@@ -21,7 +21,7 @@ const Index = () => {
       title: "Pedro Nassiff",
       name: "DESARROLLADOR WEB",
       description:
-        "Arquitecto del futuro digital, construye mundos donde la estética se encuentra con la funcionalidad. No escribe código, teje realidades. <br /> Su trabajo es la estructura invisible que sostiene lo imposible, <br />donde cada línea de código es un pulso de vida en el caos. <br /> Transforma lo abstracto en experiencia, lo complejo en intuitivo. <br /> Es el ingeniero de lo inexplorado.",
+        "Arquitecto del futuro digital, construye mundos donde la estética se encuentra con la funcionalidad. No escribe código, teje realidades. Su trabajo es la estructura invisible que sostiene lo imposible, donde cada línea de código es un pulso de vida en el caos. Transforma lo abstracto en experiencia, lo complejo en intuitivo. Es el ingeniero de lo inexplorado.",
       img: "/people/PedroNassiff-destock2.jpg",
     },
     {

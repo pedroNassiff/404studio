@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm install --legacy-peer-deps",
     "build": "next build",
     "start": "next start",
     "export": "next export",
@@ -44,5 +45,8 @@
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "tailwindcss": "^3.1.8"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
