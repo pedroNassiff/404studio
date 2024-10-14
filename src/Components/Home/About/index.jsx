@@ -72,14 +72,14 @@ const Index = () => {
 
       window.addEventListener('scroll', (event, scroll) => {
 
-         scroll = window.scrollY;
+        scroll = window.scrollY;
         width = window.innerWidth
         setPositionY(scroll)
-        if(width >= 500 ) {
+        if (width >= 500) {
           if (scroll >= 6000) {
             setIsVisible(true)
           }
-        }else {
+        } else {
           if (scroll >= 2180) {
             setIsVisible(true)
           }
@@ -132,10 +132,18 @@ const Index = () => {
               </h2>
             </div>
             <p className={`${styles["about_left__description"]}`}>
-              Somos la banda de Garage, los graffitis de penumbra, la gambeta de potrero.
-              Confiamos más en la intuición que en los concejos. Cuidamos a los nuestros y
-              siempre nos sumamos a empujar. No negociamos principios y confiamos en
-              nuestras ideas. No olvidamos de donde somos y tenemos claro donde vamos.
+              Somos el Big Bang de la nueva era. Una fusión de culturas, estilos y épocas que colisionan para crear algo nuevo, incómodo y disruptivo. Somos el error que redefine lo establecido, el glitch que transforma lo obvio en un valor agregado.
+
+              Nos alimentamos de lo oscuro y lo psicodélico. Buscamos la belleza en el caos, el arte en lo distorsionado. Nuestro futuro es distópico y no tememos habitarlo.
+
+              No seguimos tendencias, las descomponemos y volvemos a armarlas . Somos el renacimiento de la creatividad, una rebelión constante.
+
+              Lo incómodo es nuestro territorio. Porque de allí nace la innovación. Es en el error donde encontramos la verdad.
+              <br />  
+              
+              ¿Listos para una nueva actualización?
+              404 studio.
+
             </p>
           </div>
         </div>
