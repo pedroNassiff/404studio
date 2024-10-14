@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "postinstall": "npm install --legacy-peer-deps",
-    "build": "next build",
+    "install": "npm install --legacy-peer-deps",
+    "build": "npm run install && next build",
     "start": "next start",
     "export": "next export",
     "lint": "next lint"
